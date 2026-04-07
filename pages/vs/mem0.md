@@ -9,7 +9,7 @@ og_description: "Mem0 is a developer tool. Mirror is a product for your entire w
 
 # Mirror vs Mem0: Personal Memory for Everyone, Not Just Developers
 
-Mem0 is genuinely impressive infrastructure. It just won Market Leader on G2 in March 2026, and the product deserves that recognition—it's a mature, well-designed SDK for developers who want to bolt persistent memory into AI applications. If you're building apps, Mem0 is the right choice.
+Mem0 is genuinely impressive infrastructure. It just won Market Leader on IT Brand Pulse in March 2026, and the product deserves that recognition—it's a mature, well-designed SDK for developers who want to bolt persistent memory into AI applications. If you're building apps, Mem0 is the right choice.
 
 But here's the thing: you don't need to be a developer to need personal AI memory.
 
@@ -74,4 +74,4 @@ See how Mirror compares to [OpenAI's built-in ChatGPT Memory](/vs/chatgpt-memory
 
 ---
 
-*Mirror is in private beta. [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.*
+*Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.*

@@ -84,4 +84,4 @@ Compare Mirror to other approaches: [vs ChatGPT Memory](/vs/chatgpt-memory) or [
 
 ---
 
-*Mirror is in private beta. [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.*
+*Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.*

@@ -121,4 +121,4 @@ Mirror connects to email and calendar at launch. Notes, meeting transcripts, and
 
 90 seconds to set up. No prompts to write. No Markdown to maintain.
 
-*Mirror is in private beta. [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.*
+*Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.*

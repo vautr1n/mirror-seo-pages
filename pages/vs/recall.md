@@ -85,4 +85,4 @@ Microsoft had to delay Recall twice because the market rejected it. That's not a
 
 ---
 
-*Mirror is in private beta. [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.*
+*Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.*

@@ -173,7 +173,7 @@ Mirror turns your calendar from a list of obligations into a story you understan
 
 ---
 
-Mirror is in private beta. [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.
+Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.
 
 **Related:**
 - [Meeting Prep: Context Before Every Call](/use-case/meeting-prep)

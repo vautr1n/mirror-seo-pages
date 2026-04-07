@@ -40,9 +40,9 @@ Calendly booked the meeting. You're winging the conversation.
 
 ## How Mirror Closes It: Automatic Briefings for Every Meeting
 
-Mirror integrates with Calendly to deliver automatic briefings. The moment Calendly schedules a meeting, Mirror prepares you for it.
+Mirror works alongside Calendly to deliver automatic briefings. When Calendly schedules a meeting, Mirror prepares you for it.
 
-**Every Calendly event automatically triggers a Mirror briefing:**
+**For every Calendly event, Mirror delivers a briefing:**
 
 - **Who is this person?** Full relationship history, previous calls, what you know about them
 - **What did you talk about last time?** Previous meeting notes, decisions, outcomes, open threads
@@ -131,15 +131,15 @@ You get:
 
 ## The Setup: 90 Seconds
 
-Mirror integrates with Calendly, your calendar, email, and Slack.
+Mirror works alongside Calendly, your calendar, email, and Slack.
 
-From that moment, every Calendly meeting comes with a briefing. No configuration needed. No manual prep required.
+From that moment, Mirror delivers a briefing for every meeting. No configuration needed. No manual prep required.
 
 ## Get Started
 
 Mirror is in private beta. We're building the missing layer for people who take meetings at scale and want to make every one count.
 
-[Join the Mirror Waitlist](https://openclaw.bymirror.ai)
+[Join the Mirror Waitlist](/waitlist)
 
 ---
 

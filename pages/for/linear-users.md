@@ -131,7 +131,7 @@ From that moment, every ticket you open has context. Every sprint you plan has r
 
 Mirror is in private beta. We're the missing layer for teams that care about both process and people.
 
-[Join the Mirror Waitlist](https://openclaw.bymirror.ai)
+[Join the Mirror Waitlist](/waitlist)
 
 ---
 

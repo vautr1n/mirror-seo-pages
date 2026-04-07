@@ -170,7 +170,7 @@ That's what great managers do. Mirror helps you do it with 8 or 80 people.
 
 ---
 
-Mirror is in private beta. [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.
+Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.
 
 **Related:**
 - [Daily Brief: Morning Map of Your Team](/use-case/daily-brief)

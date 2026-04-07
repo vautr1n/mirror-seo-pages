@@ -82,4 +82,4 @@ Compare Mirror to [OpenAI's built-in ChatGPT Memory](/vs/chatgpt-memory) or expl
 
 ---
 
-*Mirror is in private beta. [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.*
+*Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.*

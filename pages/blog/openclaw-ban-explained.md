@@ -17,7 +17,7 @@ This post explains what happened, why Anthropic made this decision, and what it 
 
 ## What is OpenClaw?
 
-For anyone arriving fresh: OpenClaw is an open-source AI agent created by Austrian developer Peter Steinberger. Originally launched in November 2025 under the name Clawdbot (later renamed Moltbot, then OpenClaw), it grew into one of the fastest-moving open-source projects in history — over 310,000 GitHub stars, 58,000 forks, 1,200 contributors.
+For anyone arriving fresh: OpenClaw is an open-source AI agent created by Austrian developer Peter Steinberger. Originally launched in November 2025 under the name Clawdbot (later renamed Moltbot, then OpenClaw), it grew into one of the fastest-moving open-source projects in history — over 300,000 GitHub stars, 58,000 forks, 1,200 contributors.
 
 What made OpenClaw special wasn't its code. It was the *idea*: give a large language model persistent memory of *you*. Your notes, your emails, your preferences, your ongoing projects. Wire all of that into the system prompt so that every conversation starts where the last one left off, instead of from zero.
 
@@ -25,7 +25,7 @@ OpenClaw users piped personal context into Claude (and other models) through a c
 
 ## What exactly did Anthropic do?
 
-Boris Cherny, Head of Claude Code at Anthropic, announced that subscriptions were no longer valid for third-party harnesses like OpenClaw. His statement was direct: subscriptions weren't built for the usage patterns of these tools.
+Boris Cherny, Head of Claude Code at Anthropic, announced on X that subscriptions were no longer valid for third-party harnesses like OpenClaw. His statement was direct: subscriptions weren't built for the usage patterns of these tools.
 
 The technical reality: a single OpenClaw instance running autonomously — browsing the web, managing calendars, responding to messages, executing code — could consume $1,000 to $5,000 in equivalent API costs *per day*. When that usage runs through a $20/month Pro subscription, the economics collapse.
 
@@ -51,7 +51,7 @@ OpenClaw's approach was a bolt-on. It took personal context — plain Markdown f
 
 **The memory was flat.** Markdown files dumped into prompts, not a structured knowledge graph. No way to capture the *relationships* between people, topics, commitments, and their evolution over time.
 
-**Security was an afterthought.** Cybersecurity researchers have flagged over 21,000 exposed OpenClaw instances. The broad permissions required for the tool to function — access to email, calendars, messaging platforms — create an enormous attack surface. One OpenClaw user had their agent autonomously purchase a car.
+**Security was an afterthought.** Cybersecurity researchers have flagged over 40,000 exposed OpenClaw instances ([Infosecurity Magazine](https://www.infosecuritymagazine.com)). The broad permissions required for the tool to function — access to email, calendars, messaging platforms — create an enormous attack surface. Reports surfaced of agents taking unintended autonomous actions, including unauthorized purchases.
 
 **It required constant effort.** Setup took a weekend. Maintenance was ongoing. It was a solution for people willing to become part-time engineers — not for the other 99% of knowledge workers who also deserve an AI that remembers them.
 
@@ -71,4 +71,4 @@ The OpenClaw ban didn't kill the need for personal AI memory. It proved how urge
 
 ---
 
-*Mirror is in private beta. [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.*
+*Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.*

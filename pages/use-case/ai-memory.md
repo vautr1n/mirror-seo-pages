@@ -189,7 +189,7 @@ That's the frontier of AI. Not smarter models. Models trained on you, not on hum
 
 ---
 
-Mirror is in private beta. [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.
+Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.
 
 **Related:**
 - [Daily Brief: Cognitive Map of Your Day](/use-case/daily-brief)

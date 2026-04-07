@@ -115,7 +115,7 @@ You have a decade of professional context. Your competitors do too. But Mirror h
 
 ---
 
-**Mirror is in private beta.** [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.
+**Mirror is in private beta.** [Join the waitlist](/waitlist) for the missing layer for personal AI.
 
 **Related pages:**
 - [Mirror for Superhuman users](/for/superhuman-users) — For ultra-fast email with context

@@ -53,7 +53,7 @@ ChatGPT becomes a true thought partner instead of a brilliant stranger.
 Mirror works silently in the background. You don't see it. You're still using ChatGPT exactly the way you always do.
 
 But when you start a conversation with ChatGPT:
-- Mirror provides the context proactively
+- Mirror prepares the context you need beforehand
 - ChatGPT can reference your actual situation
 - You don't have to re-explain who you are, what you're working on, what the constraints are
 
@@ -100,7 +100,7 @@ You describe a problem. ChatGPT doesn't ask clarifying questions because it alre
 Stuck on a problem? ChatGPT can ideate with you. But the ideas are way better when ChatGPT actually understands your constraints, your market, your team, your customers' needs.
 
 **Follow-ups are automatic.**
-You talk to ChatGPT about something. Weeks later, ChatGPT proactively reminds you: "You were thinking about the API redesign. Here's what's changed in the market since then. Here's what you should consider."
+You talk to ChatGPT about something. Weeks later, Mirror surfaces relevant context and reminders: "You were thinking about the API redesign. Here's what's changed in the market since then. Here's what you should consider."
 
 ## The Competitive Advantage of Context
 
@@ -130,7 +130,7 @@ You stay in ChatGPT. Mirror works in the background, making sure you're never re
 
 ---
 
-**Mirror is in private beta.** [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.
+**Mirror is in private beta.** [Join the waitlist](/waitlist) for the missing layer for personal AI.
 
 **Related pages:**
 - [Mirror for Claude users](/for/claude-users) — For even more powerful reasoning with your context

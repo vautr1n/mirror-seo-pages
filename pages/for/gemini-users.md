@@ -12,7 +12,7 @@ We know what happens. OpenClaw users found out the hard way.
 
 ## The Platform Risk Behind Deep Integration
 
-In 2024, Google quietly banned OpenClaw users from using Gemini. No warning. No negotiation. One policy change, and 400+ companies lost access. Their AI integrations stopped working. Their workflows broke. The context they'd built on Gemini was suddenly inaccessible.
+In February 2026, Google banned OpenClaw users whose usage violated its terms of service, cutting off accounts without warning. One policy change, and hundreds of users lost access. Their AI integrations stopped working. Their workflows broke. The context they'd built on Gemini was suddenly inaccessible.
 
 This wasn't a bug. It was a policy enforcement. Google has every right to make that decision. But the users — the people who built their workflows on top of Gemini — had no choice and no recourse.
 
@@ -55,7 +55,7 @@ Mirror goes everywhere:
 
 Mirror builds a knowledge graph of your entire professional life, not just the parts that live in Google.
 
-Then Mirror can feed that context to *any* AI:
+Then Mirror prepares your personal context so you can bring it to *any* AI:
 - Gemini (if you want to keep using it)
 - Claude (if you switch)
 - ChatGPT (if you prefer it)
@@ -146,7 +146,7 @@ That's what it means to have a personal AI layer that's truly personal.
 
 ---
 
-**Mirror is in private beta.** [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.
+**Mirror is in private beta.** [Join the waitlist](/waitlist) for the missing layer for personal AI.
 
 **Related pages:**
 - [Mirror for ChatGPT users](/for/chatgpt-users) — For an AI that isn't locked into any platform

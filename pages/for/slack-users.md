@@ -109,7 +109,7 @@ Your competitors might have Slack. They don't have your institutional memory. Yo
 
 ---
 
-**Mirror is in private beta.** [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.
+**Mirror is in private beta.** [Join the waitlist](/waitlist) for the missing layer for personal AI.
 
 **Related pages:**
 - [Mirror for Superhuman users](/for/superhuman-users) — Because email is part of the communication story too

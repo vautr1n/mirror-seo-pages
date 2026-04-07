@@ -56,7 +56,7 @@ With Mirror:
 - Claude knows what actually matters to you
 - Claude can reason about real constraints, not hypothetical ones
 - Claude's advice is grounded in your actual situation
-- Claude remembers context across conversations (not just within one chat)
+- Mirror tracks your ongoing threads and surfaces context across conversations (not just within one chat)
 
 The result is that Claude becomes less of a smart tool and more of a true thought partner.
 
@@ -78,7 +78,7 @@ You ask Claude to research something. Claude researches not just the topic, but 
 Generic advice is hard to act on. Claude's advice with your context is specific. It knows your constraints. It knows what's feasible. It knows who needs to be involved. It's not "here's what companies typically do." It's "here's what you should do given your specific situation."
 
 **Follow-ups are proactive.**
-You've been thinking about something with Claude. Weeks later, Claude proactively brings it back: new information has emerged that's relevant. Market conditions have changed. One of your stakeholders did something that affects your decision. Claude is thinking about it even when you're not.
+You've been thinking about something with Claude. Weeks later, Mirror surfaces relevant context: new information has emerged that's relevant. Market conditions have changed. One of your stakeholders did something that affects your decision. Mirror is tracking it even when you're not.
 
 ## The Claude Advantage: Best Reasoning + Your Context
 
@@ -134,7 +134,7 @@ It's the difference between a brilliant advisor who knows your business and a br
 
 ---
 
-**Mirror is in private beta.** [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.
+**Mirror is in private beta.** [Join the waitlist](/waitlist) for the missing layer for personal AI.
 
 **Related pages:**
 - [Mirror for ChatGPT users](/for/chatgpt-users) — For the most popular AI with your context

@@ -21,6 +21,14 @@ if (fs.existsSync(path.join(__dirname, 'robots.txt'))) {
   fs.copyFileSync(path.join(__dirname, 'robots.txt'), path.join(DIST_DIR, 'robots.txt'));
 }
 
+// Copy waitlist page
+if (fs.existsSync(path.join(__dirname, 'waitlist.html'))) {
+  const waitlistDir = path.join(DIST_DIR, 'waitlist');
+  fs.mkdirSync(waitlistDir, { recursive: true });
+  fs.copyFileSync(path.join(__dirname, 'waitlist.html'), path.join(waitlistDir, 'index.html'));
+  console.log('  ✓ /waitlist');
+}
+
 let pageCount = 0;
 
 function processDir(dir, urlPrefix) {

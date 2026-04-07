@@ -96,7 +96,7 @@ As you grow and your tools change, Mirror moves with you. It's the persistent la
 
 ---
 
-**Mirror is in private beta.** [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.
+**Mirror is in private beta.** [Join the waitlist](/waitlist) for the missing layer for personal AI.
 
 **Related pages:**
 - [Mirror for Gmail users](/for/gmail-users) — If you're not on Superhuman yet

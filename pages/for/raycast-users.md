@@ -122,7 +122,7 @@ Mirror integrates with Raycast the same way it integrates everywhere else—it's
 
 Mirror is in private beta. We're building the missing layer for your entire productivity stack—Raycast, Linear, Slack, Calendar, Gmail, and more.
 
-[Join the Mirror Waitlist](https://openclaw.bymirror.ai)
+[Join the Mirror Waitlist](/waitlist)
 
 ---
 

@@ -64,7 +64,7 @@ Mirror is designed from the ground up with a different principle: **You own your
 
 ### Institutional-Grade Security
 
-- **SOC 2 Type II compliant:** Annual third-party audits of our security practices
+- **Pursuing SOC 2 Type II certification:** Designed with SOC 2 compliance in mind, supported by annual third-party audits of our security practices
 - **Regular penetration testing:** We hire security researchers to attack our system. If they find vulnerabilities, we fix them.
 - **Responsible disclosure:** If security issues are found, we fix them first, then disclose.
 - **Security team:** Dedicated security engineers, not security as an afterthought
@@ -132,7 +132,7 @@ We're building for people who do care. People who understand that their personal
 
 ---
 
-Mirror is in private beta. [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.
+Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.
 
 **Learn More:** [Mirror Security & Privacy](/security)
 

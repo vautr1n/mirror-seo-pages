@@ -54,7 +54,7 @@ Mirror builds this briefing automatically.
 
 **The setup is trivial**: Connect your email and calendar. Mirror ingests your history—years of conversations, meeting notes, relationship patterns—and begins synthesizing.
 
-**Five minutes before your meeting**: A briefing appears. Mirror synthesizes:
+**Five minutes before your meeting**: Mirror delivers a briefing, synthesizing:
 - All emails with the attendees
 - Past meeting notes from your calendar
 - Relevant Slack conversations and channel history
@@ -66,15 +66,15 @@ Mirror builds this briefing automatically.
 
 **It stays current**: If someone sends an email or pings you on Slack while you're prepping, the briefing learns about it. Your context reshuffles with new information.
 
-**It works for everyone**: Whether you're a founder managing board meetings, a sales leader preparing for customer calls, or a manager preparing for 1:1s, every meeting gets the same treatment. You never walk in unprepared again.
+**It's designed to work across roles**: Whether you're a founder managing board meetings, a sales leader preparing for customer calls, or a manager preparing for 1:1s, Mirror is built to give every meeting the same intelligent treatment. You walk in prepared.
 
-The result: You spend 90 seconds reading instead of 15 minutes scrambling. You have context that's complete, coherent, and sourced. You remember the detail that matters. You ask sharper questions. You close more deals. You manage more effectively.
+The result: Mirror enables you to spend 90 seconds reading instead of 15 minutes scrambling. You get context that's complete, coherent, and sourced. You're positioned to remember the detail that matters, ask sharper questions, and move deals forward more effectively.
 
-You look prepared because you are.
+You walk in prepared.
 
 ---
 
-Mirror is in private beta. [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI.
+Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.
 
 **Related:**
 - [Daily Brief: Start Every Morning With a Cognitive Map](/use-case/daily-brief)

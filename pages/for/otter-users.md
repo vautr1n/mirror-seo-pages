@@ -23,13 +23,13 @@ After the QBR, Otter captures excellent notes. But showing how this quarter's co
 
 ## How Mirror Fills the Gap
 
-Mirror connects Otter transcripts into a coherent, evolving story. One meeting at a time, Otter's great. Across meetings, Mirror makes you unstoppable.
+Mirror works alongside Otter, weaving transcripts into a coherent, evolving story. One meeting at a time, Otter's great. Across meetings, Mirror makes you unstoppable.
 
 **Scenario 1: Pre-Meeting Context**
 Before your Otter-recorded meeting, Mirror delivers a briefing in seconds: this person's key questions across all prior meetings, how their concerns have evolved, commitments they've made and whether they're tracking, your relationship temperature trend based on communication patterns. You're not rereading old summaries—Mirror gives you the narrative. You walk in fully prepared, and ready to listen rather than reconstruct.
 
 **Scenario 2: The Meeting Story**
-Here's what shifts: Otter captures the transcript. Mirror connects it. It shows you: which prior concerns were addressed, which new ones emerged, how this conversation relates to other meetings with this person (and with others), whether the relationship is on track or diverging from expected trajectory. Your Otter summary isn't filed away as an isolated artifact—it's woven into the continuous story of the relationship.
+Here's what shifts: Otter captures the transcript. Mirror captures the context from your recorded meetings. It shows you: which prior concerns were addressed, which new ones emerged, how this conversation relates to other meetings with this person (and with others), whether the relationship is on track or diverging from expected trajectory. Your Otter summary isn't filed away as an isolated artifact—it's woven into the continuous story of the relationship.
 
 **Scenario 3: Pattern Recognition**
 Otter transcribes meetings one at a time. Mirror holds the pattern across all of them. Over six months of Otter transcripts, Mirror shows you: how your relationship with this person has evolved, which topics keep surfacing (and whether they're getting closer to resolution), how their communication patterns have shifted, whether they're engaging more deeply or staying surface-level. You're not manually comparing transcripts. Mirror does it for you.

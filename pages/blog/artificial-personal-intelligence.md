@@ -29,7 +29,7 @@ Now consider what happens when you open Claude, ChatGPT, or any AI assistant. Yo
 
 This is not a problem that better models solve. GPT-5 will still forget you. Claude 5 will still forget you. No amount of general intelligence compensates for the absence of *personal* intelligence — the knowledge of who you are, who you work with, what you've committed to, what's unresolved, and how all of it connects.
 
-OpenClaw proved this. Over 300,000 developers starred an open-source project whose core value proposition was: *give your AI memory of you*. People spent weekends wiring up Markdown files, scraping emails, piping in notes — because a model that remembers you, even crudely, is orders of magnitude more useful than one that doesn't.
+OpenClaw proved this. Over 300,000 GitHub stars on an open-source project whose core value proposition was: *give your AI memory of you*. People spent weekends wiring up Markdown files, scraping emails, piping in notes — because a model that remembers you, even crudely, is orders of magnitude more useful than one that doesn't.
 
 ## What Artificial Personal Intelligence actually means
 
@@ -83,7 +83,7 @@ Three things make Artificial Personal Intelligence possible in 2026 when it wasn
 
 **The connectors exist.** Email, calendar, meeting transcription, notes — the APIs and integration points that let a system ingest your context are mature. The fragmentation of personal data across tools is still real, but the plumbing to connect those tools is no longer the bottleneck.
 
-**The demand was proven.** OpenClaw's explosive growth — 300,000+ stars, 135,000+ active instances, users willing to spend a weekend on setup — demonstrated that the market for personal AI memory is enormous and underserved. The Anthropic ban didn't kill the demand. It sharpened it.
+**The demand was proven.** OpenClaw's explosive growth — over 300,000 GitHub stars, 135,000+ active instances, users willing to spend a weekend on setup — demonstrated that the market for personal AI memory is enormous and underserved. The Anthropic ban didn't kill the demand. It sharpened it.
 
 ## The road ahead
 
@@ -95,4 +95,4 @@ That's what we're building.
 
 ---
 
-*Mirror is in private beta. [Join the waitlist](https://openclaw.bymirror.ai/#signup) for the missing layer for personal AI — Artificial Personal Intelligence, trained on you.*
+*Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI — Artificial Personal Intelligence, trained on you.*

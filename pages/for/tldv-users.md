@@ -23,13 +23,13 @@ tl;dv gives you the tool. You have to bring the judgment.
 
 ## How Mirror Fills the Gap
 
-Mirror gives you the context intelligence to know what actually matters before you hit record—and after you do.
+Mirror works alongside tl;dv, giving you the context intelligence to know what actually matters before you hit record—and after you do.
 
 **Scenario 1: Smart Recording**
 You're about to enter a tl;dv-recorded meeting. Mirror sends a pre-call briefing: here's what this person has raised before, here's what changed since your last conversation, here are the moments from prior conversations that shifted the relationship. You're walking into the meeting knowing exactly what to listen for. When they say something new, you recognize it as new. When they circle back to something, you know you've heard it before—and you know whether it's moving toward resolution or getting stuck.
 
 **Scenario 2: Smart Clipping**
-The meeting is recorded in tl;dv. Now Mirror goes to work. It identifies the moments that matter: the new objection, the shifted priority, the unmet commitment, the signal that the deal is accelerating or stalling. It suggests clips you might want to share and with whom (your CEO needs to see commitment drift; your product team needs to hear the feature request). You're not manually searching through the recording trying to find the important bits—Mirror surfaces them.
+The meeting is recorded in tl;dv. Now Mirror goes to work. It helps you identify the moments that matter: the new objection, the shifted priority, the unmet commitment, the signal that the deal is accelerating or stalling. It surfaces the context around key moments you might want to share and with whom (your CEO needs to see commitment drift; your product team needs to hear the feature request). You're not manually searching through the recording trying to find the important bits—Mirror surfaces them.
 
 **Scenario 3: Context for Sharing**
 You're sharing a tl;dv clip with your team. Mirror packages the context alongside it: why this moment matters, what changed since the last conversation, what it means for next steps. Your team sees the 45-second clip *and* understands its strategic weight. Without that context, the clip is interesting. With it, it's actionable.
