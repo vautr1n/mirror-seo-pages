@@ -72,27 +72,10 @@
       text-decoration: none;
       display: flex;
       align-items: center;
-      gap: 0.4rem;
     }
-    .nav-logo .dot {
-      display: inline-block;
-      width: 26px;
-      height: 26px;
-      border-radius: 50%;
-      border: 2px solid var(--text);
-      position: relative;
-      overflow: hidden;
-    }
-    .nav-logo .dot::after {
-      content: '';
-      position: absolute;
-      top: -2px;
-      right: -6px;
-      width: 22px;
-      height: 30px;
-      border-radius: 50%;
-      background: var(--bg);
-      border-left: 2px solid var(--text);
+    .nav-logo svg {
+      height: 24px;
+      width: auto;
     }
     .nav-links { display: flex; gap: 1.25rem; font-size: 0.875rem; }
     .nav-links a { color: var(--muted); text-decoration: none; transition: color 0.15s; }
@@ -385,7 +368,7 @@
 
   <nav class="nav">
     <a href="https://bymirror.ai" class="nav-logo">
-      <span class="dot"></span> mirror
+      <svg width="120" height="24" viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="mirror"><circle cx="38" cy="40" r="36" fill="#71717A" opacity="0.06"/><path d="M38 4 A36 36 0 0 0 38 76 A9 36 0 0 1 38 4 Z" fill="#71717A" opacity="0.18"/><path d="M38 4 A36 36 0 0 1 38 76 A22 36 0 0 0 38 4 Z" fill="#0A0A0A"/><text x="96" y="52" font-family="Satoshi, Inter, system-ui, sans-serif" font-size="38" font-weight="500" letter-spacing="-1" fill="#0A0A0A">mirror</text></svg>
     </a>
     <div class="nav-links">
       <a href="/integrations">Integrations</a>
