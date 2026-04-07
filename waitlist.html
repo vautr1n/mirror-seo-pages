@@ -76,20 +76,23 @@
     }
     .nav-logo .dot {
       display: inline-block;
-      width: 22px;
-      height: 22px;
+      width: 26px;
+      height: 26px;
       border-radius: 50%;
       border: 2px solid var(--text);
       position: relative;
+      overflow: hidden;
     }
     .nav-logo .dot::after {
       content: '';
       position: absolute;
-      top: 50%;
-      left: 0;
-      width: 50%;
-      height: 2px;
-      background: var(--text);
+      top: -2px;
+      right: -6px;
+      width: 22px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--bg);
+      border-left: 2px solid var(--text);
     }
     .nav-links { display: flex; gap: 1.25rem; font-size: 0.875rem; }
     .nav-links a { color: var(--muted); text-decoration: none; transition: color 0.15s; }
