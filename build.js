@@ -21,11 +21,12 @@ if (fs.existsSync(path.join(__dirname, 'robots.txt'))) {
   fs.copyFileSync(path.join(__dirname, 'robots.txt'), path.join(DIST_DIR, 'robots.txt'));
 }
 
-// Copy waitlist page
+// Copy waitlist page (also as homepage)
 if (fs.existsSync(path.join(__dirname, 'waitlist.html'))) {
   const waitlistDir = path.join(DIST_DIR, 'waitlist');
   fs.mkdirSync(waitlistDir, { recursive: true });
   fs.copyFileSync(path.join(__dirname, 'waitlist.html'), path.join(waitlistDir, 'index.html'));
+  fs.copyFileSync(path.join(__dirname, 'waitlist.html'), path.join(DIST_DIR, 'index.html'));
   console.log('  ✓ /waitlist');
 }
 

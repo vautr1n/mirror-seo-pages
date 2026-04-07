@@ -19,7 +19,6 @@
   <meta name="twitter:title" content="Mirror — Your AI Already Knows Everything. Except You.">
   <meta name="twitter:description" content="The personal memory layer for AI. Join the waitlist.">
 
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,14 +36,14 @@
 
   <style>
     :root {
-      --bg: #0a0a0a;
-      --card: #141414;
-      --text: #f5f5f5;
-      --muted: #a1a1aa;
-      --border: #27272a;
-      --accent: #a855f7;
-      --accent-light: #c084fc;
-      --accent-glow: rgba(168, 85, 247, 0.15);
+      --bg: #fafaf9;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #7c3aed;
+      --accent-light: #a855f7;
+      --accent-subtle: #f5f3ff;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -62,7 +61,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      max-width: 1080px;
+      max-width: 960px;
       margin: 0 auto;
       padding: 1.5rem 1.5rem;
     }
@@ -98,69 +97,54 @@
 
     /* — HERO — */
     .hero {
-      max-width: 720px;
+      max-width: 640px;
       margin: 0 auto;
-      padding: 6rem 1.5rem 4rem;
+      padding: 8rem 1.5rem 5rem;
       text-align: center;
-      position: relative;
     }
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -100px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-      pointer-events: none;
-      z-index: 0;
-    }
-    .hero > * { position: relative; z-index: 1; }
-
     .hero-badge {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       padding: 6px 16px;
       border: 1px solid var(--border);
       border-radius: 100px;
-      font-size: 0.8rem;
-      color: var(--accent-light);
-      margin-bottom: 2rem;
-      background: rgba(168, 85, 247, 0.08);
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+      background: var(--card);
+      letter-spacing: 0.02em;
     }
     .hero-badge .pulse {
       display: inline-block;
-      width: 8px;
-      height: 8px;
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
-      background: #22c55e;
-      margin-right: 8px;
-      animation: pulse 2s infinite;
+      background: var(--accent);
+      animation: pulse 2.5s ease-in-out infinite;
     }
     @keyframes pulse {
       0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
+      50% { opacity: 0.3; }
     }
-
     .hero h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
-      line-height: 1.08;
-      letter-spacing: -0.03em;
+      font-size: 3.75rem;
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.035em;
       margin-bottom: 1.5rem;
+      color: var(--text);
     }
-    .hero h1 .gradient {
-      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 50%, #e879f9 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+    .hero h1 em {
+      font-style: normal;
+      color: var(--accent);
     }
     .hero-sub {
-      font-size: 1.25rem;
+      font-size: 1.15rem;
       color: var(--muted);
-      max-width: 520px;
+      max-width: 480px;
       margin: 0 auto 2.5rem;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     /* — FORM — */
@@ -168,53 +152,54 @@
       display: flex;
       gap: 0.5rem;
       justify-content: center;
-      max-width: 440px;
-      margin: 0 auto 1rem;
+      max-width: 420px;
+      margin: 0 auto 0.75rem;
     }
     .form-wrap input[type="email"] {
       flex: 1;
-      padding: 0.85rem 1.1rem;
-      border-radius: 10px;
+      padding: 0.8rem 1rem;
+      border-radius: 8px;
       border: 1px solid var(--border);
       background: var(--card);
       color: var(--text);
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       outline: none;
-      transition: border-color 0.2s;
+      transition: border-color 0.2s, box-shadow 0.2s;
     }
-    .form-wrap input[type="email"]::placeholder { color: #52525b; }
-    .form-wrap input[type="email"]:focus { border-color: var(--accent); }
-
+    .form-wrap input[type="email"]::placeholder { color: #9ca3af; }
+    .form-wrap input[type="email"]:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.08);
+    }
     .form-wrap button {
-      padding: 0.85rem 1.5rem;
+      padding: 0.8rem 1.5rem;
       border: none;
-      border-radius: 10px;
-      background: var(--accent);
+      border-radius: 8px;
+      background: var(--text);
       color: white;
-      font-weight: 700;
-      font-size: 0.95rem;
+      font-weight: 600;
+      font-size: 0.9rem;
       cursor: pointer;
-      transition: transform 0.1s, background 0.15s;
+      transition: transform 0.1s, opacity 0.15s;
       white-space: nowrap;
+      letter-spacing: -0.01em;
     }
     .form-wrap button:hover {
-      background: var(--accent-light);
+      opacity: 0.85;
       transform: translateY(-1px);
     }
-
     .form-note {
-      font-size: 0.78rem;
-      color: #52525b;
+      font-size: 0.75rem;
+      color: #9ca3af;
       text-align: center;
     }
-
     .form-success {
       display: none;
       text-align: center;
       padding: 1rem;
-      color: #22c55e;
+      color: var(--accent);
       font-weight: 600;
-      font-size: 1.05rem;
+      font-size: 1rem;
     }
 
     /* — SOCIAL PROOF — */
@@ -222,178 +207,172 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 0.75rem;
+      gap: 0.5rem;
       margin-top: 2.5rem;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: var(--muted);
     }
-    .proof-avatars {
+    .proof-dots {
       display: flex;
+      gap: 4px;
     }
-    .proof-avatars span {
+    .proof-dots span {
       display: inline-block;
-      width: 32px;
-      height: 32px;
+      width: 24px;
+      height: 24px;
       border-radius: 50%;
-      border: 2px solid var(--bg);
-      margin-left: -8px;
-      font-size: 0.7rem;
-      line-height: 28px;
-      text-align: center;
-      font-weight: 600;
+      border: 1.5px solid var(--bg);
+      margin-left: -6px;
     }
-    .proof-avatars span:first-child { margin-left: 0; }
-    .proof-avatars .a1 { background: #7c3aed; color: white; }
-    .proof-avatars .a2 { background: #2563eb; color: white; }
-    .proof-avatars .a3 { background: #059669; color: white; }
-    .proof-avatars .a4 { background: #d97706; color: white; }
-    .proof-avatars .a5 { background: #dc2626; color: white; }
+    .proof-dots span:first-child { margin-left: 0; }
+    .proof-dots .d1 { background: #e9d5ff; }
+    .proof-dots .d2 { background: #c4b5fd; }
+    .proof-dots .d3 { background: #a78bfa; }
+    .proof-dots .d4 { background: #8b5cf6; }
+    .proof-dots .d5 { background: #7c3aed; }
+
+    /* — DIVIDER — */
+    .divider {
+      max-width: 960px;
+      margin: 0 auto;
+      border: none;
+      border-top: 1px solid var(--border);
+    }
 
     /* — FEATURES — */
     .features {
-      max-width: 960px;
+      max-width: 720px;
       margin: 0 auto;
-      padding: 4rem 1.5rem;
+      padding: 5rem 1.5rem;
+    }
+    .features-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem 3rem;
     }
-    .feat {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 1.75rem;
-      transition: border-color 0.2s;
-    }
-    .feat:hover { border-color: #3f3f46; }
-    .feat-icon {
-      font-size: 1.75rem;
-      margin-bottom: 1rem;
+    .feat-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
     }
     .feat h3 {
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+      font-weight: 650;
+      margin-bottom: 0.4rem;
+      letter-spacing: -0.01em;
     }
     .feat p {
       font-size: 0.875rem;
       color: var(--muted);
-      line-height: 1.55;
+      line-height: 1.6;
     }
 
     /* — HOW IT WORKS — */
     .how {
-      max-width: 720px;
+      max-width: 640px;
       margin: 0 auto;
-      padding: 4rem 1.5rem;
+      padding: 5rem 1.5rem;
       text-align: center;
     }
     .how h2 {
       font-size: 2rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      margin-bottom: 3rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      margin-bottom: 3.5rem;
     }
     .steps {
       display: flex;
-      gap: 2rem;
-      text-align: center;
+      gap: 2.5rem;
+      text-align: left;
     }
-    .step {
-      flex: 1;
-    }
+    .step { flex: 1; }
     .step-num {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: var(--accent-glow);
-      border: 1px solid rgba(168, 85, 247, 0.3);
-      color: var(--accent-light);
-      font-weight: 700;
-      font-size: 1rem;
-      margin-bottom: 1rem;
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
     }
     .step h4 {
       font-size: 0.95rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
+      font-weight: 650;
+      margin-bottom: 0.4rem;
+      letter-spacing: -0.01em;
     }
     .step p {
       font-size: 0.85rem;
       color: var(--muted);
-      line-height: 1.5;
+      line-height: 1.55;
     }
 
     /* — QUOTE — */
     .quote-section {
-      max-width: 640px;
+      max-width: 580px;
       margin: 0 auto;
-      padding: 3rem 1.5rem;
+      padding: 4rem 1.5rem;
       text-align: center;
     }
     .quote-section blockquote {
       font-size: 1.35rem;
+      font-weight: 400;
       font-style: italic;
       color: var(--muted);
-      line-height: 1.5;
-      border: none;
-      margin-bottom: 1rem;
+      line-height: 1.55;
+      margin-bottom: 0;
     }
-    .quote-section blockquote .highlight {
-      color: var(--text);
+    .quote-section blockquote em {
       font-style: normal;
+      color: var(--text);
       font-weight: 600;
-    }
-    .quote-source {
-      font-size: 0.85rem;
-      color: #52525b;
     }
 
     /* — BOTTOM CTA — */
     .bottom-cta {
-      max-width: 640px;
+      max-width: 580px;
       margin: 0 auto;
-      padding: 4rem 1.5rem 2rem;
+      padding: 5rem 1.5rem 3rem;
       text-align: center;
     }
     .bottom-cta h2 {
       font-size: 2.25rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      margin-bottom: 1rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.75rem;
     }
-    .bottom-cta p {
+    .bottom-cta > p {
       color: var(--muted);
       margin-bottom: 2rem;
-      font-size: 1.05rem;
+      font-size: 1rem;
     }
 
     /* — FOOTER — */
     .footer {
-      max-width: 1080px;
+      max-width: 960px;
       margin: 0 auto;
-      padding: 3rem 1.5rem;
+      padding: 2.5rem 1.5rem;
       border-top: 1px solid var(--border);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 0.8rem;
-      color: #52525b;
+      font-size: 0.78rem;
+      color: #9ca3af;
     }
-    .footer a { color: #52525b; text-decoration: none; }
+    .footer a { color: #9ca3af; text-decoration: none; }
     .footer a:hover { color: var(--muted); }
 
     /* — RESPONSIVE — */
     @media (max-width: 768px) {
-      .hero { padding: 4rem 1.25rem 3rem; }
-      .hero h1 { font-size: 2.25rem; }
-      .hero-sub { font-size: 1.05rem; }
+      .hero { padding: 5rem 1.25rem 3.5rem; }
+      .hero h1 { font-size: 2.5rem; }
+      .hero-sub { font-size: 1rem; }
       .form-wrap { flex-direction: column; }
       .form-wrap button { width: 100%; }
-      .features { grid-template-columns: 1fr; gap: 1rem; }
+      .features-grid { grid-template-columns: 1fr; gap: 2rem; }
       .steps { flex-direction: column; gap: 2rem; }
       .bottom-cta h2 { font-size: 1.75rem; }
     }
@@ -402,7 +381,7 @@
 <body>
 
   <nav class="nav">
-    <a href="/" class="nav-logo">
+    <a href="https://bymirror.ai" class="nav-logo">
       <span class="dot"></span> mirror
     </a>
     <div class="nav-links">
@@ -411,10 +390,9 @@
     </div>
   </nav>
 
-  <!-- HERO -->
   <section class="hero">
-    <div class="hero-badge"><span class="pulse"></span> Private beta — limited spots</div>
-    <h1>Your AI knows everything.<br><span class="gradient">Except you.</span></h1>
+    <div class="hero-badge"><span class="pulse"></span> Private beta</div>
+    <h1>Your AI knows everything.<br><em>Except you.</em></h1>
     <p class="hero-sub">Mirror is the personal memory layer that sits beside ChatGPT, Claude, and Gemini. One connection — and your AI finally has context.</p>
 
     <form class="form-wrap" id="waitlist-form">
@@ -422,86 +400,89 @@
       <button type="submit">Join the waitlist</button>
     </form>
     <p class="form-note">Free during beta. No credit card. Unsubscribe anytime.</p>
-    <div class="form-success" id="form-success">You're in. We'll be in touch soon.</div>
+    <div class="form-success" id="form-success">You're on the list.</div>
 
     <div class="proof">
-      <div class="proof-avatars">
-        <span class="a1">BP</span>
-        <span class="a2">AK</span>
-        <span class="a3">ML</span>
-        <span class="a4">JR</span>
-        <span class="a5">+</span>
+      <div class="proof-dots">
+        <span class="d1"></span>
+        <span class="d2"></span>
+        <span class="d3"></span>
+        <span class="d4"></span>
+        <span class="d5"></span>
       </div>
-      <span>Join 2,400+ people on the waitlist</span>
+      <span>2,400+ on the waitlist</span>
     </div>
   </section>
 
-  <!-- FEATURES -->
+  <hr class="divider">
+
   <section class="features">
-    <div class="feat">
-      <div class="feat-icon">&#x1f9e0;</div>
-      <h3>Memory that persists</h3>
-      <p>Mirror remembers every conversation, meeting, and note — so your AI doesn't start from zero every time.</p>
-    </div>
-    <div class="feat">
-      <div class="feat-icon">&#x1f50c;</div>
-      <h3>Works with your AI</h3>
-      <p>Not a replacement. Mirror plugs into ChatGPT, Claude, Gemini, and any agent. Your context, their intelligence.</p>
-    </div>
-    <div class="feat">
-      <div class="feat-icon">&#x1f512;</div>
-      <h3>Your data stays yours</h3>
-      <p>End-to-end encryption. Zero-knowledge architecture. No model training on your data. Institutional-grade security.</p>
-    </div>
-    <div class="feat">
-      <div class="feat-icon">&#x1f3af;</div>
-      <h3>Context, not just search</h3>
-      <p>Mirror doesn't just find information — it understands relevance. The right context surfaces at the right moment.</p>
-    </div>
-    <div class="feat">
-      <div class="feat-icon">&#x26a1;</div>
-      <h3>Zero setup</h3>
-      <p>No coding. No prompts to configure. Connect Mirror and it learns your context passively from your workflow.</p>
-    </div>
-    <div class="feat">
-      <div class="feat-icon">&#x1f310;</div>
-      <h3>Cross-platform</h3>
-      <p>Meetings, emails, Slack, documents — Mirror captures context from everywhere and makes it available anywhere.</p>
+    <div class="features-grid">
+      <div class="feat">
+        <div class="feat-label">Memory</div>
+        <h3>Persistent context</h3>
+        <p>Mirror remembers every conversation, meeting, and note — so your AI doesn't start from zero every time.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-label">Compatibility</div>
+        <h3>Works with your AI</h3>
+        <p>Not a replacement. Mirror sits beside ChatGPT, Claude, Gemini, and any agent. Your context, their intelligence.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-label">Security</div>
+        <h3>Your data stays yours</h3>
+        <p>End-to-end encryption. Zero-knowledge architecture. No model training on your data. Institutional-grade security.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-label">Relevance</div>
+        <h3>Context, not just search</h3>
+        <p>Mirror doesn't just find information — it understands relevance. The right context surfaces at the right moment.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-label">Simplicity</div>
+        <h3>Zero configuration</h3>
+        <p>No coding. No prompts to write. Connect Mirror and it learns your context passively from your workflow.</p>
+      </div>
+      <div class="feat">
+        <div class="feat-label">Coverage</div>
+        <h3>Cross-platform</h3>
+        <p>Meetings, emails, Slack, documents — Mirror captures context from everywhere and makes it available anywhere.</p>
+      </div>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
+  <hr class="divider">
+
   <section class="how">
     <h2>Three steps. That's it.</h2>
     <div class="steps">
       <div class="step">
-        <div class="step-num">1</div>
+        <div class="step-num">Step 01</div>
         <h4>Connect Mirror</h4>
         <p>Link your calendar, email, and tools. Mirror starts learning your context silently.</p>
       </div>
       <div class="step">
-        <div class="step-num">2</div>
+        <div class="step-num">Step 02</div>
         <h4>Use your AI normally</h4>
-        <p>Keep using ChatGPT, Claude, or Gemini. Mirror injects your personal context automatically.</p>
+        <p>Keep using ChatGPT, Claude, or Gemini. Mirror prepares your personal context automatically.</p>
       </div>
       <div class="step">
-        <div class="step-num">3</div>
+        <div class="step-num">Step 03</div>
         <h4>Get answers that know you</h4>
         <p>Your AI understands your projects, your preferences, your history. No more repeating yourself.</p>
       </div>
     </div>
   </section>
 
-  <!-- QUOTE -->
+  <hr class="divider">
+
   <section class="quote-section">
-    <blockquote>"The AI revolution gave us <span class="highlight">the most powerful assistants in history</span> — then asked them to work with the memory of a goldfish."</blockquote>
-    <p class="quote-source">— The problem Mirror solves</p>
+    <blockquote>"The AI revolution gave us <em>the most powerful assistants in history</em> — then asked them to work with the memory of a goldfish."</blockquote>
   </section>
 
-  <!-- BOTTOM CTA -->
   <section class="bottom-cta">
     <h2>Stop briefing your AI.<br>Let it brief you.</h2>
-    <p>Mirror is currently in private beta. Spots are limited.</p>
+    <p>Mirror is in private beta. Spots are limited.</p>
     <form class="form-wrap" id="waitlist-form-2">
       <input type="email" name="email" placeholder="you@company.com" required autocomplete="email">
       <button type="submit">Get early access</button>
@@ -509,7 +490,6 @@
     <p class="form-note">We'll notify you when your spot opens up.</p>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div>&copy; 2026 mirror &middot; <a href="mailto:contact@bymirror.ai">contact@bymirror.ai</a></div>
     <div>
@@ -522,17 +502,14 @@
       form.addEventListener('submit', function(e) {
         e.preventDefault();
         var email = form.querySelector('input[type="email"]').value;
-
-        // Send to your backend — replace this URL with your actual endpoint
-        // Options: Formspree, Cloudflare Worker, Google Sheets, etc.
         fetch('https://formspree.io/f/YOUR_FORM_ID', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email: email, source: 'mirror-waitlist', timestamp: new Date().toISOString() })
         }).catch(function() {});
-
-        // Show success state immediately
         form.style.display = 'none';
+        var note = form.parentElement.querySelector('.form-note');
+        if (note) note.style.display = 'none';
         var success = form.parentElement.querySelector('.form-success');
         if (success) {
           success.style.display = 'block';
@@ -540,7 +517,7 @@
           var msg = document.createElement('p');
           msg.className = 'form-success';
           msg.style.display = 'block';
-          msg.textContent = "You're in. We'll be in touch soon.";
+          msg.textContent = "You're on the list.";
           form.parentElement.insertBefore(msg, form.nextSibling);
         }
       });
