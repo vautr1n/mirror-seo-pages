@@ -29,7 +29,7 @@ That's the cost of putting your AI intelligence inside someone else's platform.
 
 ## Why Context Portability Matters
 
-Context is your competitive advantage. It's your knowledge graph. It's your understanding of your relationships, your projects, your commitments. Over time, you build intelligence that's genuinely valuable.
+Context is your competitive advantage. It's your knowledge graph. It's your understanding of your relationships, your projects, your commitments. Over time, you build intelligence that's deeply valuable.
 
 If that intelligence lives inside Gemini, you're betting that:
 - Google will always want to support your use case

@@ -1,98 +1,181 @@
 ---
-title: "What is Artificial Personal Intelligence? The Case for AI Trained on You"
-slug: artificial-personal-intelligence
-date: 2026-04-06
-description: "Artificial General Intelligence is trained on humanity. Artificial Personal Intelligence is trained on you. Here's why the distinction matters — and why it's the missing piece of the AI stack."
-keywords: ["artificial personal intelligence", "personal AI", "AI memory layer", "AI context layer", "AI that knows you", "personal AI memory"]
-og_title: "Artificial Personal Intelligence: The Missing Piece of the AI Stack"
-og_description: "AGI is trained on everyone. API is trained on you. Here's why it matters."
-author: "Mirror"
+title: "Artificial Personal Intelligence: The Next Platform Shift"
+slug: blog/artificial-personal-intelligence
+description: "The race to AGI misses the point. The next platform shift isn't artificial general intelligence trained on humanity. It's artificial personal intelligence — trained on you."
+keywords: ["artificial personal intelligence", "personal AI", "AI memory", "context layer", "AI that knows you", "personal AI agent"]
+og_title: "The Next Platform Shift Isn't AGI. It's API."
+og_description: "Artificial Personal Intelligence — trained on you, not on humanity."
+author: "Benoît Pellevoizin"
+date: "2026-04-12"
+schema: Article
 ---
 
-# What is Artificial Personal Intelligence? The Case for AI Trained on You
+# The Next Platform Shift Isn't AGI. It's API.
 
-There is a gap at the center of the AI revolution, and almost nobody is talking about it.
+Every major AI lab is racing toward the same finish line: artificial general intelligence. A system that can reason about anything, trained on all of humanity's knowledge, capable of solving problems no human can.
 
-We've spent four years watching artificial general intelligence accelerate at a rate that bends comprehension. GPT-4 to Claude Opus to Gemini Ultra to open-source models that run on a laptop — the trajectory is extraordinary. These models know more about more topics than any human who has ever lived.
+That race is real. It matters. And it completely misses what most people actually need.
 
-And yet, every single one of them will forget your name the moment you close the tab.
-
-This isn't a bug. It's the architecture. Large language models are trained on the *average* of humanity — billions of pages of text, the collective knowledge and patterns of our species. That's what makes them powerful. It's also what makes them fundamentally impersonal. They know everything about everyone in general and nothing about anyone in particular.
-
-We call the opposite direction **Artificial Personal Intelligence**: not trained on humanity, trained on *you*.
-
-## The gap that AGI can't close
-
-Consider what happens when you sit down with a colleague who has worked with you for three years. They know your priorities. They know which commitments are running behind. They know who you trust and who frustrates you. They know the shorthand — the context that doesn't need explaining because it has been built over hundreds of shared hours.
-
-Now consider what happens when you open Claude, ChatGPT, or any AI assistant. You start from zero. You explain who you are. You provide background. You re-establish context that existed yesterday but was wiped overnight. Every conversation is a first date.
-
-This is not a problem that better models solve. GPT-5 will still forget you. Claude 5 will still forget you. No amount of general intelligence compensates for the absence of *personal* intelligence — the knowledge of who you are, who you work with, what you've committed to, what's unresolved, and how all of it connects.
-
-OpenClaw proved this. Over 300,000 GitHub stars on an open-source project whose core value proposition was: *give your AI memory of you*. People spent weekends wiring up Markdown files, scraping emails, piping in notes — because a model that remembers you, even crudely, is orders of magnitude more useful than one that doesn't.
-
-## What Artificial Personal Intelligence actually means
-
-Artificial Personal Intelligence (API — yes, the acronym is intentional) rests on four pillars:
-
-### 1. Memory that compounds
-
-Not a chat history that resets. Not a flat text dump stuffed into a prompt. A *living* knowledge graph of people, organizations, projects, commitments, and their evolution over time.
-
-When you tell your AI that you promised to follow up with Sarah after the board meeting, that commitment should persist. It should surface the next time Sarah's name appears in your calendar. It should connect to the project Sarah is working on, the open questions from your last conversation, and the email she sent you two weeks ago that you haven't replied to.
-
-Memory in Artificial Personal Intelligence isn't storage. It's *structure*. The connections between facts matter as much as the facts themselves.
-
-### 2. Context that reconciles
-
-Your life isn't in one place. Your calendar says you have a meeting at 2 PM. Your email thread reveals it was rescheduled from last week because of a disagreement about scope. Your notes contain the three questions you wanted to raise. Your Slack messages show that the person you're meeting with just closed a big deal and is likely in a good mood.
-
-No single tool has this picture. Each has a fragment. Artificial Personal Intelligence reconciles the fragments into a unified signal — so that when you show up at 2 PM, you show up with the full context, not a calendar invite and a blank mind.
-
-### 3. Push, not pull
-
-Here's a deceptively important distinction: current AI assistants are *pull-based*. You ask, they answer. You have to know what to ask, when to ask it, and have the presence of mind to ask at all.
-
-Artificial Personal Intelligence is *push-based*. Context arrives before you need it. The meeting briefing lands five minutes before the meeting. The daily brief appears every morning — not a calendar summary, but a cognitive map: meetings with context previews, relationship temperature checks, open commitments, patterns you'd otherwise miss.
-
-You shouldn't have to ask for your own context. The whole point is that it's already there when you need it.
-
-### 4. Security as foundation
-
-Personal memory is the most sensitive data you own. More sensitive than your financial records. More sensitive than your health data. It is the complete graph of who you are, who you know, what you've promised, what you've decided, and what you care about.
-
-Any system that holds this data without institutional-grade security isn't a product — it's a liability. Artificial Personal Intelligence requires encryption in transit and at rest, domain separation between work and personal context (so a work query never surfaces personal data and vice versa), no training on private data, full ownership, consent, traceability, and auditability.
-
-This is not a feature list to be bolted on later. It's the foundation the rest of the system stands on.
-
-## How API relates to AGI
-
-Artificial Personal Intelligence isn't a competitor to artificial general intelligence. It's the complement.
-
-Think of it this way: AGI models are the *playgrounds* — brilliant, open-ended, capable of reasoning about anything. API is the *context* you bring into those playgrounds. It's the difference between showing up to a conversation as a stranger and showing up as yourself.
-
-ChatGPT, Claude, Gemini — they don't need to be rebuilt. They need a *layer beside them*. A persistent memory that travels with you across every tool and every session. So that when you open any AI assistant, it starts from where you left off, not from zero.
-
-This is what we mean when we say Mirror is the missing layer for personal AI. It doesn't replace the playgrounds. It makes them personal.
-
-## Why now
-
-Three things make Artificial Personal Intelligence possible in 2026 when it wasn't before:
-
-**The models are good enough.** Four years ago, language models couldn't reliably extract relationships from unstructured text or maintain coherent long-term context. Today they can. The raw capability to build and maintain a personal knowledge graph over time now exists.
-
-**The connectors exist.** Email, calendar, meeting transcription, notes — the APIs and integration points that let a system ingest your context are mature. The fragmentation of personal data across tools is still real, but the plumbing to connect those tools is no longer the bottleneck.
-
-**The demand was proven.** OpenClaw's explosive growth — over 300,000 GitHub stars, 135,000+ active instances, users willing to spend a weekend on setup — demonstrated that the market for personal AI memory is enormous and underserved. The Anthropic ban didn't kill the demand. It sharpened it.
-
-## The road ahead
-
-Artificial Personal Intelligence is early. The category is forming. The vocabulary is still being written. But the direction is clear: the next frontier in AI isn't making models smarter in general. It's making them smarter about *you* in particular.
-
-The models that know everything about everyone will keep getting better. The question is whether there will be a layer that knows the one person in front of the screen.
-
-That's what we're building.
+You don't need an AI that knows everything. You need an AI that knows *you*.
 
 ---
 
-*Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI — Artificial Personal Intelligence, trained on you.*
+## The Amnesia Problem
+
+Here's what happened this morning: you opened ChatGPT, Claude, or Gemini. You asked it something about your work. It responded brilliantly — with the intelligence of a system trained on the sum of human knowledge. And it had no idea who you are.
+
+It didn't know you have a board meeting Thursday. It didn't know Sarah from Axiom pushed back on your pricing last week. It didn't know you promised your VP of Engineering a decision on the database migration by Friday. It didn't know that the email you got at 7am changes everything about your 10am call.
+
+So you did what you do every day. You re-explained yourself. You copied context from one tool to another. You spent 15 minutes before your meeting reconstructing what you already know from six different tabs.
+
+Your AI is the smartest amnesia patient in history.
+
+It can write poetry in the style of Pessoa, debug a distributed system, explain quantum entanglement to a child. But it can't remember that you talked to Sarah yesterday. It doesn't know what you're working on. It has no idea what matters to you.
+
+This is the gap. Not intelligence. Context.
+
+---
+
+## Why the Labs Won't Fix This
+
+OpenAI, Google, Anthropic, and Meta are solving a different problem. They're building *general* intelligence — systems that perform well on average, across all users, on all tasks. That's the correct engineering decision for a platform serving hundreds of millions of people.
+
+But general intelligence is, by definition, impersonal. It reflects the average of humanity. It doesn't reflect you.
+
+ChatGPT added Memory. It remembers that you prefer dark mode and your name is Alex. Google Gemini connects to your Gmail and Calendar. Apple Intelligence processes on-device. Microsoft Recall takes screenshots of everything.
+
+These are features, not solutions. ChatGPT's memory is locked inside ChatGPT. Gemini's context is locked inside Google. Apple Intelligence is locked inside your device. Recall is locked inside Windows. Each lab built a walled garden of personal context — optimized to keep you inside their ecosystem, not to actually understand you.
+
+The result: your personal context is fragmented across five different AI tools, none of which talk to each other, each holding a different sliver of who you are.
+
+That's not personal intelligence. That's five different amnesia patients, each remembering a different fact about you.
+
+---
+
+## What Personal Intelligence Actually Means
+
+Personal intelligence isn't a feature bolted onto a general model. It's a different architecture. A different category.
+
+**General intelligence** asks: "Given everything humanity knows, what is the best answer to this question?"
+
+**Personal intelligence** asks: "Given everything *you* know — your relationships, your commitments, your history, your priorities — what do *you* need right now?"
+
+The difference isn't philosophical. It's structural.
+
+Personal intelligence requires a **context graph** — a persistent, evolving model of your relationships, topics, commitments, and interactions. Not a list of facts ("Alex likes dark mode"). A graph of relationships ("Alex committed to reviewing Sarah's product roadmap by Friday, Sarah's priority is shipping mobile, and the last email exchange had tension about timeline").
+
+It requires **multi-source ingestion** — pulling context from email, calendar, Slack, meeting transcripts, documents, notes. Not just one tool. Everything.
+
+It requires **proactive delivery** — surfacing what you need before you ask. Five minutes before your meeting with Sarah, your AI should brief you: here's your relationship history, here are open commitments, here's what changed since your last conversation, here's what she's likely to bring up.
+
+It requires **portability** — your context works with every AI you use. ChatGPT, Claude, Gemini, Copilot, your own tools. Your personal intelligence isn't locked inside one vendor.
+
+It requires **ownership** — your context is yours. Not training data for a model. Not monetized by an ad network. Not held hostage by a platform. Yours to keep, modify, export, delete.
+
+None of the major labs are building this. They can't. Their business model is general intelligence at scale. Personal intelligence requires a company that is solely accountable to the individual — not to advertisers, not to enterprise contracts, not to the aggregate.
+
+---
+
+## The Category: Artificial Personal Intelligence
+
+We call this category **Artificial Personal Intelligence** — API.
+
+The acronym is deliberate. Just as APIs became the connective tissue of software — letting systems talk to each other — Artificial Personal Intelligence is the connective tissue of your digital life. It's the layer that lets every AI tool you use understand who you are.
+
+AGI is trained on humanity. API is trained on you.
+
+AGI answers questions about the world. API answers questions about *your* world.
+
+AGI gets smarter with more data from more people. API gets smarter with more context from *your* life.
+
+This isn't a feature within an existing product. It's a new category — the missing layer between your fragmented digital life and the AI agents that act on your behalf.
+
+---
+
+## The Evidence Is Already Here
+
+The market is signaling this shift, even if it hasn't named it yet.
+
+**OpenClaw** proved that personal AI memory is a real need — so real that thousands of people ran an open-source tool with known security vulnerabilities because no legitimate alternative existed. OpenClaw was banned in March 2026 after 21,000 exposed instances and CFAA charges. The demand didn't disappear. The supply did.
+
+**Mem0** raised $24 million to build AI memory infrastructure for developers. They process 186 million API calls per quarter. The developer ecosystem is screaming for persistent memory. But developers are building it because end users can't yet buy it.
+
+**Limitless** raised money and built hardware for personal AI. Then Meta acquired them and discontinued the product. The users were orphaned — proof that depending on a big lab's subsidiary for personal intelligence is structurally fragile.
+
+**Granola** hit a $1.5 billion valuation capturing meeting context. Fireflies crossed a billion. Otter built a business on transcription. These companies proved that even *one slice* of personal context (meeting transcripts) is worth billions. The full graph — email, calendar, Slack, meetings, documents, relationships — is an order of magnitude larger.
+
+**ChatGPT, Gemini, and Apple Intelligence** all added memory features in 2025-2026. They're acknowledging the problem. Their solutions are walled gardens. The market is validating the need while demonstrating that general AI labs can't solve it.
+
+Every signal points the same direction: personal AI context is real demand, and the labs are structurally unable to serve it.
+
+---
+
+## What This Looks Like in Practice
+
+Forget features. Think about your day.
+
+**6am.** Your AI briefs you: three meetings today, here's what matters about each one. Sarah from Axiom — you committed to sending revised pricing. Your VP of Engineering — the database migration decision is due. Your investor call — they asked about churn last time, here's the data.
+
+**9am.** You switch from Claude to ChatGPT because each does different things well. Both know exactly who you are, what you're working on, what matters today. Zero re-explanation.
+
+**Before your meeting.** A briefing arrives. Not a calendar reminder. A relationship snapshot: your history with this person, open commitments in both directions, likely discussion topics, recommended talking points. Sourced from your email, Slack, and meeting notes. You read it in 90 seconds. You walk in prepared.
+
+**After your meeting.** Your context graph updates. New commitments tracked. Relationship dynamics noted. Next time you talk to this person — next week, next month, next year — all of this context is there.
+
+**Every day.** Your AI gets better at being *your* AI. Not smarter in general. Smarter about you. Your relationships compound. Your commitments don't drop. Your context doesn't fragment.
+
+This is Artificial Personal Intelligence. Not a better chatbot. Not a smarter assistant. A persistent, evolving intelligence that is uniquely, specifically, irrevocably *yours*.
+
+---
+
+## Why Now
+
+Three things converged in 2025-2026 to make this category viable:
+
+**1. LLMs became commoditized.** GPT-4, Claude, Gemini, Llama — the base intelligence layer is now table stakes. The next competitive moat isn't the model. It's the context.
+
+**2. Personal data infrastructure matured.** End-to-end encryption, secure multi-tenant architectures, privacy-preserving computation. You can build a system that processes someone's most intimate data without ever having access to it. Five years ago, this was research. Now it's engineering.
+
+**3. The walled garden failure became obvious.** OpenClaw's ban. Limitless's acquisition. Recall's delays. ChatGPT Memory's limitations. Every attempt to add personal context as a *feature* of a general AI platform failed — either on security, portability, depth, or all three. The market now understands that personal AI context needs to be a *product*, not a feature.
+
+---
+
+## Mirror
+
+We built Mirror because we've lived this problem.
+
+Benoît ran marketing at Ledger and CoinShares — managing dozens of stakeholder relationships across boards, investors, media, and partners. The context was always there. It was never connected.
+
+Vincent co-taught NLP and deep learning at Stanford, then built AI for legal professionals — people who carry 30 active matters and hundreds of relationships. The cost of missing context in law isn't inefficiency. It's malpractice.
+
+Vishal spent 11 years at Microsoft as an Azure Director. He built the security infrastructure that protects enterprise data. He knows exactly where Recall fails — and exactly what it takes to build trust.
+
+Mirror maintains your context graph. It ingests your email, calendar, Slack, and meeting transcripts. It builds a persistent model of your relationships, commitments, and priorities. It briefs you before every interaction. It works with every AI tool you use. It's end-to-end encrypted. It takes 90 seconds to set up.
+
+Mirror is Artificial Personal Intelligence.
+
+---
+
+## The Choice
+
+The AI industry wants you to choose a walled garden. Pick OpenAI, or Google, or Apple, or Microsoft. Lock your personal context inside their ecosystem. Re-explain yourself to every other tool.
+
+We think there's a better architecture. One context graph. Every AI tool. Your data, your ownership, your control.
+
+The next platform shift isn't artificial general intelligence. It's artificial personal intelligence.
+
+AGI trains on humanity. API trains on you.
+
+---
+
+*Mirror is in private beta. [Join the waitlist](https://bymirror.ai) to be among the first to own your personal AI context.*
+
+---
+
+**Continue reading:**
+- [Mirror vs ChatGPT Memory: Open vs. Walled Garden](/vs/chatgpt-memory)
+- [Mirror vs Granola: Meeting Notes vs. Meeting Intelligence](/vs/granola)
+- [Mirror vs OpenClaw: What Comes After the Ban](/vs/openclaw)
+- [Mirror vs Google Gemini Memory: Data vs. Context](/vs/google-gemini-memory)
+- [Mirror for Founders: Your AI That Knows Your Company](/use-case/founders)
+- [All Mirror integrations](/integrations)

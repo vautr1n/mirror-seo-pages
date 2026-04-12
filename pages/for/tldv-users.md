@@ -55,7 +55,7 @@ This isn't about adding features to tl;dv. It's about giving you the strategic c
 
 Mirror is in private beta. Join the waitlist to be among the first tl;dv users who get persistent context and strategic intelligence layered on top of your recording archive.
 
-[Join the Mirror Waitlist](https://bymirror.ai/waitlist)
+[Join the Mirror Waitlist](https://bymirror.ai)
 
 ---
 

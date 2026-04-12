@@ -10,7 +10,7 @@ schema: FAQ
 
 # Mirror vs Mem0: Personal Memory for Everyone, Not Just Developers
 
-Mem0 is genuinely impressive infrastructure. It just won Market Leader on G2 in March 2026, and the product deserves that recognition—it's a mature, well-designed SDK for developers who want to bolt persistent memory into AI applications. If you're building apps, Mem0 is the right choice.
+Mem0 is impressive infrastructure. It just won Market Leader on G2 in March 2026, and the product deserves that recognition—it's a mature, well-designed SDK for developers who want to bolt persistent memory into AI applications. If you're building apps, Mem0 is the right choice.
 
 Mem0 raised $24 million in 2025 (YC, Basis Set, Peak XV) with angels including the HubSpot, GitHub, Supabase, and PostHog CEOs. Their API handles 186 million calls per quarter — 5x growth in months. They're the exclusive memory provider for AWS's Agent SDK. Mem0 is the gorilla of AI memory infrastructure.
 

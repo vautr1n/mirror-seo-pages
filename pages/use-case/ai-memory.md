@@ -1,6 +1,16 @@
+---
+title: "AI Memory That Actually Learns You — Mirror"
+slug: use-case/ai-memory
+description: "Your AI forgets you every session. Mirror is the persistent memory layer that learns from your decisions, relationships, and patterns — and makes every AI tool smarter about you."
+keywords: ["AI memory", "persistent AI memory", "AI that remembers", "personal AI memory", "AI context", "AI forgets me"]
+og_title: "Your AI Forgets You. Every Single Day."
+og_description: "Mirror is the persistent memory layer that makes every AI tool smarter about you."
+schema: FAQ
+---
+
 # Your AI Forgets You. Every Single Day.
 
-ChatGPT is brilliant. Claude is thoughtful. Your AI tool is genuinely helpful.
+ChatGPT is brilliant. Claude is thoughtful. Your AI tool is useful.
 
 But it has amnesia.
 
@@ -189,9 +199,30 @@ That's the frontier of AI. Not smarter models. Models trained on you, not on hum
 
 ---
 
-Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.
+*Mirror is in private beta. [Join the waitlist](https://bymirror.ai) to be among the first to own your personal AI context.*
+
+## Frequently Asked Questions
+
+### Does Mirror replace ChatGPT, Claude, or other AI tools?
+No. Mirror is the memory layer underneath them. It makes every AI tool you use smarter about you by providing your personal context — relationships, commitments, decisions, patterns. Use ChatGPT, Claude, Gemini, or any AI tool. Mirror ensures they all know who you are.
+
+### How is Mirror different from ChatGPT Memory?
+ChatGPT Memory stores facts inside ChatGPT — locked in one tool. Mirror builds a portable context graph from your email, calendar, Slack, and meetings that works across every AI tool you use. Your memory isn't locked in a walled garden.
+
+### What data does Mirror use to build my memory?
+Mirror ingests your email, calendar, meeting transcripts, and messaging tools. It extracts relationships, commitments, topics, and patterns — then structures them into a knowledge graph. Your data is end-to-end encrypted and never used to train models.
+
+### How long does it take for Mirror to become useful?
+90 seconds to connect. Within hours, Mirror has enough context from your email and calendar to deliver meaningful briefings. Within weeks, it understands your relationships and patterns well enough to anticipate what you need.
+
+### Is my data secure?
+Mirror is built with institutional-grade security — end-to-end encryption, zero-knowledge architecture. Your context is yours. It's never shared, never used for training, never monetized. Built by a team that includes a former Azure Director who spent 11 years building Microsoft's enterprise security infrastructure.
 
 **Related:**
 - [Daily Brief: Cognitive Map of Your Day](/use-case/daily-brief)
 - [Security: Your Memory Is Your Most Sensitive Data](/use-case/security)
 - [Productivity: AI That Knows Your Context](/use-case/productivity)
+- [The Next Platform Shift Isn't AGI. It's API.](/blog/artificial-personal-intelligence)
+- [vs. OpenClaw: Why Persistent Memory Beats Retrieval](/vs/openclaw)
+- [vs. Mem0: Designed for You, Not for Everyone](/vs/mem0)
+- [vs. Recall: Why Privacy Matters for Personal Memory](/vs/recall)

@@ -55,7 +55,7 @@ This isn't replacement. It's continuity.
 
 Mirror is in private beta. Join the waitlist to be among the first Otter users who get persistent context and relationship continuity layered on top of your transcripts.
 
-[Join the Mirror Waitlist](https://bymirror.ai/waitlist)
+[Join the Mirror Waitlist](https://bymirror.ai)
 
 ---
 

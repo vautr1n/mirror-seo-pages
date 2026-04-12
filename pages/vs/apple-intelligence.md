@@ -12,7 +12,7 @@ schema: FAQ
 
 ## The Problem Apple Solves—and Doesn't
 
-Apple is trustworthy with your data. Apple Intelligence runs on-device. That's genuinely better for privacy than uploading everything to distant servers.
+Apple is trustworthy with your data. Apple Intelligence runs on-device. That's meaningfully better for privacy than uploading everything to distant servers.
 
 But here's the catch: being on-device means Apple Intelligence only knows what's on your phone. It can't see your email threads. It doesn't understand why that message from Sarah matters in the context of your three-year working relationship. It can't brief you before a meeting by connecting Slack conversations to calendar blocks to email context. It summarizes what's in front of you. It can't predict what you need before you need it.
 

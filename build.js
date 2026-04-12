@@ -21,13 +21,23 @@ if (fs.existsSync(path.join(__dirname, 'robots.txt'))) {
   fs.copyFileSync(path.join(__dirname, 'robots.txt'), path.join(DIST_DIR, 'robots.txt'));
 }
 
-// Copy waitlist page (also as homepage)
+// Copy waitlist page as /waitlist/ and homepage (with correct canonical for each)
 if (fs.existsSync(path.join(__dirname, 'waitlist.html'))) {
+  const waitlistContent = fs.readFileSync(path.join(__dirname, 'waitlist.html'), 'utf-8');
+
+  // /waitlist/ keeps its own canonical
   const waitlistDir = path.join(DIST_DIR, 'waitlist');
   fs.mkdirSync(waitlistDir, { recursive: true });
-  fs.copyFileSync(path.join(__dirname, 'waitlist.html'), path.join(waitlistDir, 'index.html'));
-  fs.copyFileSync(path.join(__dirname, 'waitlist.html'), path.join(DIST_DIR, 'index.html'));
+  fs.writeFileSync(path.join(waitlistDir, 'index.html'), waitlistContent);
   console.log('  ✓ /waitlist');
+
+  // Homepage gets canonical rewritten to https://bymirror.ai/
+  const homepageContent = waitlistContent
+    .replace('href="https://bymirror.ai/waitlist"', 'href="https://bymirror.ai/"')
+    .replace('"url": "https://bymirror.ai/waitlist"', '"url": "https://bymirror.ai/"')
+    .replace('content="https://bymirror.ai/waitlist"', 'content="https://bymirror.ai/"');
+  fs.writeFileSync(path.join(DIST_DIR, 'index.html'), homepageContent);
+  console.log('  ✓ / (homepage, canonical fixed)');
 }
 
 let pageCount = 0;
@@ -56,7 +66,7 @@ function processDir(dir, urlPrefix) {
     const keywords = Array.isArray(meta.keywords) ? meta.keywords.join(', ') : (meta.keywords || '');
     const ogTitle = meta.og_title || title;
     const ogDescription = meta.og_description || description;
-    const canonical = `https://bymirror.ai${urlPrefix}/${slug}`;
+    const canonical = `https://bymirror.ai${urlPrefix}/${slug}/`;
 
     // Determine breadcrumb
     let breadcrumb = '';
@@ -109,7 +119,7 @@ if (fs.existsSync(hubPath)) {
     .replace(/{{keywords}}/g, meta.keywords ? meta.keywords.join(', ') : '')
     .replace(/{{ogTitle}}/g, meta.og_title || title)
     .replace(/{{ogDescription}}/g, meta.og_description || description)
-    .replace(/{{canonical}}/g, 'https://bymirror.ai/integrations')
+    .replace(/{{canonical}}/g, 'https://bymirror.ai/integrations/')
     .replace(/{{breadcrumb}}/g, '')
     .replace(/{{badge}}/g, '')
     .replace(/{{content}}/g, htmlContent)

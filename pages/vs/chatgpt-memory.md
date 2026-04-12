@@ -10,7 +10,7 @@ schema: FAQ
 
 # Mirror vs ChatGPT Memory: Open vs. Walled Garden
 
-ChatGPT's Memory feature is genuinely useful. You have a conversation, ChatGPT remembers facts from it—your name, your interests, your preferences. Next time you talk to ChatGPT, it knows those things. That's better than starting from scratch every time.
+ChatGPT's Memory feature is useful. You have a conversation, ChatGPT remembers facts from it—your name, your interests, your preferences. Next time you talk to ChatGPT, it knows those things. That's better than starting from scratch every time.
 
 In 2026, OpenAI improved Memory significantly. ChatGPT can now search conversations from a year ago with direct links back. Free users get a lightweight version. Saved memories and chat history work as a dual system. These are real improvements. But the structural limitation hasn't changed.
 

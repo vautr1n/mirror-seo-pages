@@ -1,6 +1,6 @@
 # 93% of Knowledge Workers Use AI. 0% Have AI That Knows Them.
 
-You use AI constantly. ChatGPT. Claude. Copilot. Your AI tools are smart, helpful, genuinely useful.
+You use AI constantly. ChatGPT. Claude. Copilot. Your AI tools are smart, helpful, useful.
 
 But there's a gap that nobody talks about:
 
@@ -147,7 +147,7 @@ That's the productivity frontier. Not faster models. Models that know you.
 
 ---
 
-Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.
+Mirror is in private beta. [Join the waitlist](https://bymirror.ai) for the missing layer for personal AI.
 
 **Related:**
 - [AI Memory: Persistent Context You Build Over Time](/use-case/ai-memory)

@@ -170,9 +170,10 @@ That's what great managers do. Mirror helps you do it with 8 or 80 people.
 
 ---
 
-Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.
+*Mirror is in private beta. [Join the waitlist](https://bymirror.ai) to be among the first to own your personal AI context.*
 
 **Related:**
 - [Daily Brief: Morning Map of Your Team](/use-case/daily-brief)
 - [Meeting Prep: Preparation for Every 1:1](/use-case/meeting-prep)
 - [AI Memory: Persistent Context for Leadership](/use-case/ai-memory)
+- [For Founders: Your AI That Actually Knows Your Company](/use-case/founders)

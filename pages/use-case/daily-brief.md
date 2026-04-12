@@ -1,3 +1,13 @@
+---
+title: "AI Daily Briefing That Knows Your Day — Mirror"
+slug: use-case/daily-brief
+description: "Your calendar shows when. Mirror shows what matters. Get a morning cognitive map with relationship context, commitment tracking, and priority clarity — automatically."
+keywords: ["AI daily brief", "morning briefing AI", "daily summary tool", "AI calendar context", "meeting preparation", "cognitive map"]
+og_title: "Your Day Starts With 30 Minutes of Context Reconstruction"
+og_description: "Mirror turns your calendar into a cognitive map — relationships, commitments, priorities, every morning."
+schema: FAQ
+---
+
 # Your Day Starts With 30 Minutes of Context Reconstruction
 
 You wake up. You open your calendar.
@@ -173,9 +183,30 @@ Mirror turns your calendar from a list of obligations into a story you understan
 
 ---
 
-Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.
+*Mirror is in private beta. [Join the waitlist](https://bymirror.ai) to be among the first to own your personal AI context.*
+
+## Frequently Asked Questions
+
+### How does Mirror know what matters about each meeting?
+Mirror maintains a context graph built from your email, calendar, Slack, and meeting transcripts. Before each meeting, it cross-references attendees against your relationship history, open commitments, recent interactions, and known priorities. The briefing is specific to you — not a generic summary.
+
+### When does the daily brief arrive?
+Mirror delivers your cognitive map before your first meeting of the day. It adapts to your schedule — if your first meeting is at 7am, you get briefed earlier. If you have a late start, Mirror adjusts accordingly.
+
+### Can I customize what the brief covers?
+Yes. Mirror learns what matters to you. You can flag certain relationships, topics, or commitments as high-priority. Over time, Mirror also learns from your patterns — which briefings you engage with, which meetings you prepare for differently.
+
+### Does Mirror work with Google Calendar and Outlook?
+Mirror connects to Google Calendar at launch, with Outlook support planned. The calendar is one input — Mirror also ingests email, meeting transcripts, and messaging to build the full context behind every event.
+
+### How is this different from a calendar summary app?
+Calendar summaries reformat what's already in your calendar. Mirror builds context that isn't in your calendar at all — relationship history, unresolved commitments, emotional temperature, discussion patterns, and strategic connections between meetings. It's a cognitive map, not a reformatted schedule.
+
+---
 
 **Related:**
 - [Meeting Prep: Context Before Every Call](/use-case/meeting-prep)
 - [AI Memory: Persistent Context Across Your Work](/use-case/ai-memory)
-- [For Managers: Never Forget What Matters](/for/managers)
+- [For Managers: Context for Every Direct Report](/use-case/managers)
+- [Mirror for Founders: Your AI That Knows Your Company](/use-case/founders)
+- [The Next Platform Shift Isn't AGI. It's API.](/blog/artificial-personal-intelligence)

@@ -5,11 +5,12 @@ description: "Pieces is memory for developers in their IDE. Mirror is memory for
 keywords: "Mirror vs Pieces, AI memory, developer tools, workflow context, knowledge workers"
 og_title: "Mirror vs Pieces: Context for Your Entire Workflow"
 og_description: "Pieces is for developers. Mirror is for everyone else."
+schema: FAQ
 ---
 
 # Mirror vs Pieces: Memory for Developers vs. Memory for Everyone
 
-Pieces is genuinely thoughtful product design. It captures code snippets, workflow patterns, and development context directly in your IDE. For engineers, it's powerful—you're capturing the actual artifacts of your work (code, configurations, design patterns) and making them searchable and reusable. The team understood their audience well.
+Pieces is thoughtful product design. It captures code snippets, workflow patterns, and development context directly in your IDE. For engineers, it's powerful—you're capturing the actual artifacts of your work (code, configurations, design patterns) and making them searchable and reusable. The team understood their audience well.
 
 The insight behind Pieces is sound: your AI needs context about the work you do. The difference is *where* you do that work and *what* context matters.
 
@@ -30,7 +31,7 @@ Pieces was designed for engineers in their IDE. Mirror was designed for everyone
 Pieces captures code snippets and development patterns. Mirror captures relationships and commitments. When you're about to call your investor, Mirror reminds you of what she cares about and what you committed to. That's the knowledge worker equivalent of a developer having their code library at hand.
 
 **3. Proactive briefings, not on-demand snippets**
-Pieces is retrieval-based—you search for that pattern you remember using. Mirror is proactive—before your meeting, Mirror briefes you. You don't have to remember to search for context. We surface what matters.
+Pieces is retrieval-based—you search for that pattern you remember using. Mirror is proactive—before your meeting, Mirror briefs you. You don't have to remember to search for context. We surface what matters.
 
 **4. Works across your entire toolkit**
 Pieces integrates with IDEs. Mirror works with ChatGPT, Claude, Gemini—the AI tools where knowledge workers spend their time. Your memory is available wherever you're working.
@@ -84,8 +85,21 @@ You don't need to choose between them. If you're a developer who also needs pers
 
 But if you're not a developer, Pieces won't help you. Mirror is built for you.
 
-Compare Mirror to other approaches: [vs ChatGPT Memory](/vs/chatgpt-memory) or [vs Mem0](/vs/mem0). Or learn more about [artificial personal intelligence](/blog/artificial-personal-intelligence).
+Compare Mirror to other approaches: [vs ChatGPT Memory](/vs/chatgpt-memory) or [vs Mem0](/vs/mem0). Or learn more about [Artificial Personal Intelligence](/blog/artificial-personal-intelligence).
 
 ---
 
-*Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.*
+## Frequently Asked Questions
+
+### Can I use both Pieces and Mirror?
+Yes. They serve different domains. Pieces captures your development context — code snippets, patterns, configurations. Mirror captures your professional context — relationships, commitments, meeting intelligence. If you're a technical founder or engineering leader, using both gives you full-spectrum memory.
+
+### Does Mirror work with developer tools?
+Mirror's primary integrations are email, calendar, Slack, and meeting transcripts — the tools where professional relationships and commitments live. It works with AI coding assistants (ChatGPT, Claude, Copilot) by providing personal context that makes their responses more relevant to your situation.
+
+### Is Mirror built for non-technical users?
+Yes. Mirror connects in 90 seconds — email and calendar, done. No IDE plugins, no configuration files, no technical setup. It's designed for knowledge workers: founders, managers, consultants, lawyers, recruiters, investors.
+
+---
+
+*Mirror is in private beta. [Join the waitlist](https://bymirror.ai) for the missing layer for personal AI.*

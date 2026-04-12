@@ -11,6 +11,8 @@ og_description: "Supermemory is for developers. Mirror is for everyone."
 
 Supermemory has an ambitious vision: "What you teach one AI, every AI remembers." That's exactly right. The problem is fragmentation—every AI tool you use is siloed, with no shared understanding of who you are, what you care about, or what you've committed to. Supermemory is trying to solve that problem at the infrastructure layer.
 
+Technically, Supermemory is impressive. They score ~99% on the LongMemEval benchmark and have built sophisticated integrations like Hermes for automated memory management. But these capabilities remain developer-focused—they require engineering lift to deploy, and the tool itself is designed for builders, not end users.
+
 The team at Supermemory is talented, and the vision is sound. But like [Mem0](/vs/mem0), Supermemory is infrastructure for developers, not a product for end users.
 
 ## The Gap: Developer Infrastructure vs. User Product
@@ -82,4 +84,4 @@ Compare Mirror to [OpenAI's built-in ChatGPT Memory](/vs/chatgpt-memory) or expl
 
 ---
 
-*Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.*
+**Mirror is in private beta. [Join the waitlist](https://bymirror.ai) to be among the first to own your personal AI context.**

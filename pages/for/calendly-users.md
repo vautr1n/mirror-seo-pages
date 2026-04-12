@@ -139,7 +139,7 @@ From that moment, Mirror delivers a briefing for every meeting. No configuration
 
 Mirror is in private beta. We're building the missing layer for people who take meetings at scale and want to make every one count.
 
-[Join the Mirror Waitlist](/waitlist)
+[Join the waitlist](https://bymirror.ai)
 
 ---
 

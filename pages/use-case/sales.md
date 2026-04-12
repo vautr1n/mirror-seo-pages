@@ -167,9 +167,10 @@ That's what wins sales. Better preparation, not harder work.
 
 ---
 
-Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.
+*Mirror is in private beta. [Join the waitlist](https://bymirror.ai) to be among the first to own your personal AI context.*
 
 **Related:**
 - [Meeting Prep: Context Before Every Call](/use-case/meeting-prep)
 - [Daily Brief: Cognitive Map of Your Sales Day](/use-case/daily-brief)
 - [For Sales Professionals](/for/sales)
+- [For Account Managers: Never Walk Into a Client Call Cold](/use-case/account-managers)

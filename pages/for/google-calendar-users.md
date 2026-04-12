@@ -163,7 +163,7 @@ From that moment, every calendar event comes with context. No configuration need
 
 Mirror is in private beta. We're the missing layer for people who take their calendar seriously and want to show up prepared for every meeting.
 
-[Join the Mirror Waitlist](/waitlist)
+[Join the waitlist](https://bymirror.ai)
 
 ---
 

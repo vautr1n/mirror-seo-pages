@@ -13,7 +13,7 @@ But here's what most Fireflies users experience: you have dozens of transcripts,
 
 ## The Gap: Transcripts Without Memory
 
-Fireflies gives you words. It doesn't give you story.
+Fireflies has crossed the $1B+ valuation mark and serves 20M+ users—they're now the dominant meeting transcription platform. But dominance in transcription doesn't mean dominance in relationship intelligence. Fireflies gives you words. It doesn't give you story. Your relationship with each person is the missing dimension that transforms recordings from archives into strategic assets.
 
 You're preparing for a call with a prospect. You search Fireflies and find three prior conversations. Great. But you don't immediately know: What was their concern in meeting #1 that we still haven't addressed? Has their tone shifted? What commitments did we make that we need to honor? Are they engaging more or less than they were two months ago? What other deals are entangled with this relationship?
 
@@ -55,7 +55,7 @@ This isn't about replacing Fireflies. It's about making Fireflies transcripts ac
 
 Mirror is in private beta. Join the waitlist to be among the first Fireflies users who get persistent context and relationship intelligence layered on top of your transcripts.
 
-[Join the Mirror Waitlist](https://bymirror.ai/waitlist)
+[Join the Mirror Waitlist](https://bymirror.ai)
 
 ---
 

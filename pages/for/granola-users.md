@@ -23,7 +23,7 @@ After the meeting, Granola gives you a great transcript. But connecting it backw
 
 ## How Mirror Fills the Gap
 
-Mirror is the context layer that transforms Granola from a transcription tool into a strategic intelligence tool.
+Granola just closed a $125M Series C in March 2026, hitting a $1.5B valuation. They're adding powerful new features—Spaces for team workspaces and Recipes for automated workflows—that make their transcription engine even more essential. Mirror is the context layer that transforms Granola from a transcription tool into a strategic intelligence tool. For activated Mirror users, we cover 3 months of Granola through our Complementary Apps Stack Play, letting you layer relationship intelligence on top of Granola's transcription at no additional cost.
 
 **Scenario 1: Pre-Meeting Briefing**
 Before your Granola-recorded meeting, Mirror pulls your briefing: who this person is, your interaction history with them, open commitments you made, their communication style based on past emails and meetings, current projects that might be relevant. You walk in fully contextualized—not scrambling to remember, not worried you've forgotten something important. You listen better. You ask better questions. Your Granola notes capture a sharper conversation.
@@ -55,7 +55,7 @@ This isn't replacement. It's elevation.
 
 Mirror is in private beta. Join the waitlist to be among the first Granola power users who get the full context layer for their professional relationships.
 
-[Join the Mirror Waitlist](https://bymirror.ai/waitlist)
+[Join the Mirror Waitlist](https://bymirror.ai)
 
 ---
 
@@ -65,3 +65,4 @@ Mirror is in private beta. Join the waitlist to be among the first Granola power
 - [Mirror for Fireflies Users](/for/fireflies-users)
 - [Mirror for Otter Users](/for/otter-users)
 - [Mirror for tl;dv Users](/for/tldv-users)
+- [vs. Granola: Beyond Note-Taking](/vs/granola)

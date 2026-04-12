@@ -177,7 +177,7 @@ Mirror preserves those connections. You can context switch all day and the signa
 
 ---
 
-Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.
+Mirror is in private beta. [Join the waitlist](https://bymirror.ai) for the missing layer for personal AI.
 
 **Related:**
 - [Daily Brief: See Patterns Across Your Day](/use-case/daily-brief)

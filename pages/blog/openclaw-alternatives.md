@@ -55,7 +55,7 @@ The most interesting entry. memU doesn't try to be a "god-mode" agent. Instead, 
 
 ### Hermes Agent
 
-Three-tier memory architecture: session memory, persistent memory, and skill memory. This gives it genuinely deeper context over time compared to OpenClaw's flat approach. Also features voice mode and terminal backend isolation.
+Three-tier memory architecture: session memory, persistent memory, and skill memory. This gives it meaningfully deeper context over time compared to OpenClaw's flat approach. Also features voice mode and terminal backend isolation.
 
 **Best for:** Long-running, evolving agent workflows where context quality matters more than breadth of integrations.
 
@@ -117,4 +117,4 @@ The OpenClaw ban closed a door. The demand behind it — for an AI that remember
 
 ---
 
-*Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.*
+*Mirror is in private beta. [Join the waitlist](https://bymirror.ai) for the missing layer for personal AI.*

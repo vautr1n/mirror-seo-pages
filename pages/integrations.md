@@ -63,13 +63,15 @@ Your communication tools move messages. Mirror understands the relationships beh
 
 ## AI Assistants
 
-Your AI playgrounds are brilliant and amnésiques. Mirror is the memory they were never built with.
+Your AI playgrounds are brilliant and amnesic. Mirror is the memory they were never built with.
 
 | Tool | What it does | What Mirror adds |
 |------|-------------|-----------------|
 | [**ChatGPT**](/for/chatgpt-users) | The most popular AI assistant | Persistent personal context so every conversation starts where the last one left off |
 | [**Claude**](/for/claude-users) | Best reasoning and writing model | The personal context layer that makes Claude's reasoning *personal* |
 | [**Gemini**](/for/gemini-users) | Google's AI, deep Workspace integration | Platform-independent memory that lives on your side of the wall |
+| [**Perplexity**](/for/perplexity-users) | AI search engine with real-time web access | Personal context that makes every search answer yours, not generic |
+| [**Copilot**](/for/copilot-users) | Microsoft's AI assistant across Office and Windows | Portable personal memory that works beyond Microsoft's ecosystem |
 
 ---
 
@@ -98,6 +100,9 @@ Mirror isn't the only product thinking about AI memory. But it's the only one bu
 | [**ChatGPT Memory**](/vs/chatgpt-memory) | Built-in LLM memory | Portable across all tools vs. locked in one walled garden. |
 | [**Microsoft Recall**](/vs/recall) | Screen capture & search | Privacy-first architecture vs. troubled security history. |
 | [**Supermemory**](/vs/supermemory) | AI agent context infra | Ready-to-use product vs. developer toolkit. |
+| [**Granola**](/vs/granola) | Meeting notes ($1.5B unicorn) | Meeting notes vs. relationship intelligence. Complementary — Mirror + Granola is the stack. |
+| [**Google Gemini Memory**](/vs/google-gemini-memory) | Google AI memory | Google has data, not context. Mirror is portable across ecosystems. |
+| [**Apple Intelligence**](/vs/apple-intelligence) | On-device AI | Device-smart vs. you-smart. Privacy with depth, not just privacy. |
 
 ---
 
@@ -112,6 +117,22 @@ Not sure which integration matters to you? Start with the problem:
 - [**You switch context 400 times a day**](/use-case/context-switching) — Mirror preserves the signal across switches.
 - [**You manage people and can't track every commitment**](/use-case/managers) — Mirror remembers so you don't drop balls.
 - [**You prep for sales calls by scrambling**](/use-case/sales) — Mirror delivers deal context before every call.
+- [**You're a founder juggling investors, board, and team**](/use-case/founders) — Mirror is your institutional memory.
+- [**You're a lawyer carrying 30 active matters**](/use-case/lawyers) — Mirror tracks every client relationship.
+- [**You're a consultant switching between 5-8 clients weekly**](/use-case/consultants) — Mirror preserves context across engagements.
+- [**You're a recruiter managing 50+ candidates**](/use-case/recruiters) — Mirror remembers every conversation.
+- [**You're an investor tracking 200 founders a year**](/use-case/investors) — Mirror is your relationship graph.
+- [**You're an account manager with 20-40 accounts**](/use-case/account-managers) — Mirror surfaces renewal intelligence.
+- [**You run marketing across 15 tools a day**](/use-case/marketers) — Mirror connects the dots.
+- [**You lead communications and need institutional memory**](/use-case/communications) — Mirror never forgets context.
+- [**You run a design studio with multiple clients**](/use-case/design-studios) — Mirror tracks every brief and feedback thread.
+- [**You lose 90% of professional connections within a year**](/use-case/networking) — Mirror maintains your network.
+
+---
+
+## Learn more
+
+[**The Next Platform Shift Isn't AGI. It's API.**](/blog/artificial-personal-intelligence) — Our manifesto on Artificial Personal Intelligence.
 
 ---
 
@@ -121,4 +142,4 @@ Mirror connects to email and calendar at launch. Notes, meeting transcripts, and
 
 90 seconds to set up. No prompts to write. No Markdown to maintain.
 
-*Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.*
+*Mirror is in private beta. [Join the waitlist](https://bymirror.ai) for the missing layer for personal AI.*

@@ -71,4 +71,4 @@ The OpenClaw ban didn't kill the need for personal AI memory. It proved how urge
 
 ---
 
-*Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.*
+*Mirror is in private beta. [Join the waitlist](https://bymirror.ai) for the missing layer for personal AI.*

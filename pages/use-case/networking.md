@@ -10,7 +10,7 @@ schema: FAQ
 
 # Never Forget a Connection Again
 
-You're standing in the lobby of the Fairmont, coffee in hand, when someone approaches. They're smiling—genuinely happy to see you. "Great to see you again," they say. "How did that fundraise go? Did you end up pursuing that API integration we talked about?"
+You're standing in the lobby of the Fairmont, coffee in hand, when someone approaches. They're smiling—visibly happy to see you. "Great to see you again," they say. "How did that fundraise go? Did you end up pursuing that API integration we talked about?"
 
 You smile. You nod. You have absolutely no idea who this person is.
 
