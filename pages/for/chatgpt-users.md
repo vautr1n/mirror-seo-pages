@@ -1,8 +1,17 @@
+---
+title: "Mirror for ChatGPT Users | Portable AI Memory"
+slug: "for/chatgpt-users"
+description: "ChatGPT is brilliant but forgetful. Mirror adds your context—relationships, commitments, projects—so ChatGPT becomes your actual thought partner, not a brilliant stranger."
+keywords: ["ChatGPT + Mirror", "ChatGPT AI context", "ChatGPT AI memory", "personal AI", "meeting context"]
+og_title: "Mirror for ChatGPT Users"
+og_description: "Give ChatGPT your context so it remembers who you are and what you're working on"
+---
+
 # Mirror for ChatGPT Users
 
 ChatGPT is the most capable general-purpose AI ever built.
 
-It reasons better than most humans. It can write, code, analyze, brainstorm, teach, explain. Ask it anything and you get a thoughtful, articulate response. It's revolutionized what's possible with AI.
+It reasons better than most humans. It can write, code, analyze, brainstorm, teach, explain. Ask it anything and you get a thoughtful, articulate response. It's transformed what's possible with AI.
 
 It also has no idea who you are.
 
@@ -53,7 +62,7 @@ ChatGPT becomes a true thought partner instead of a brilliant stranger.
 Mirror works silently in the background. You don't see it. You're still using ChatGPT exactly the way you always do.
 
 But when you start a conversation with ChatGPT:
-- Mirror prepares the context you need beforehand
+- Mirror provides the context proactively
 - ChatGPT can reference your actual situation
 - You don't have to re-explain who you are, what you're working on, what the constraints are
 
@@ -100,7 +109,7 @@ You describe a problem. ChatGPT doesn't ask clarifying questions because it alre
 Stuck on a problem? ChatGPT can ideate with you. But the ideas are way better when ChatGPT actually understands your constraints, your market, your team, your customers' needs.
 
 **Follow-ups are automatic.**
-You talk to ChatGPT about something. Weeks later, Mirror surfaces relevant context and reminders: "You were thinking about the API redesign. Here's what's changed in the market since then. Here's what you should consider."
+You talk to ChatGPT about something. Weeks later, ChatGPT proactively reminds you: "You were thinking about the API redesign. Here's what's changed in the market since then. Here's what you should consider."
 
 ## The Competitive Advantage of Context
 
@@ -130,10 +139,13 @@ You stay in ChatGPT. Mirror works in the background, making sure you're never re
 
 ---
 
-**Mirror is in private beta.** [Join the waitlist](/waitlist) for the missing layer for personal AI.
+Mirror is in private beta. [Join the waitlist →](https://bymirror.ai)
 
-**Related pages:**
+## Explore Mirror for Other Tools
+
 - [Mirror for Claude users](/for/claude-users) — For even more powerful reasoning with your context
 - [Mirror for Gemini users](/for/gemini-users) — For deeply integrated Google Workspace AI with your context
 - [Mirror for Gmail users](/for/gmail-users) — The email context that powers ChatGPT
 - [Mirror for Slack users](/for/slack-users) — The communication context that powers ChatGPT
+- [Mirror for Integrations](/integrations) — See all connected tools
+- [Meeting Prep Use Case](/use-case/meeting-prep) — How Mirror helps before important conversations

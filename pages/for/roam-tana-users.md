@@ -1,3 +1,12 @@
+---
+title: "Mirror for Roam & Tana Users | Networked Thought, Zero Effort"
+slug: "for/roam-tana-users"
+description: "Roam and Tana capture connections you write. Mirror discovers connections automatically in your emails, meetings, and calendar—without manual effort."
+keywords: ["Roam Tana + Mirror", "Roam AI context", "Tana AI memory", "personal AI", "meeting context"]
+og_title: "Mirror for Roam & Tana Users"
+og_description: "Layer automatic relational intelligence underneath your intentional thinking graphs"
+---
+
 # Mirror for Roam & Tana Users
 
 Roam Research and Tana are thinking tools for a specific kind of mind — the kind that sees connections between ideas. Bi-directional links, networked thought, the ability to zoom in and out of relationships. Daily notes that compound into a graph of your thinking.
@@ -77,16 +86,14 @@ Ready to bring your thinking graph and your context graph into alignment?
 
 ---
 
+Mirror is in private beta. [Join the waitlist →](https://bymirror.ai)
+
 ## Explore Mirror for Other Tools
 
 - [Mirror for Notion Users](/for/notion-users) — Notion + automatic context layer
 - [Mirror for Obsidian Users](/for/obsidian-users) — Automatic second brain, zero maintenance
 - [Mirror for Reflect Users](/for/reflect-users) — Conscious reflection + automatic context
+- [Mirror for Integrations](/integrations) — See all connected tools
+- [Meeting Prep Use Case](/use-case/meeting-prep) — How Mirror helps before important conversations
 
 [Read more about artificial personal intelligence →](/blog/artificial-personal-intelligence)
-
-## Get Early Access
-
-Mirror is currently in private beta. Join the waitlist to build relational graphs from your actual context.
-
-[Join the waitlist](https://bymirror.ai/waitlist) — 90-second setup, no manual input needed.

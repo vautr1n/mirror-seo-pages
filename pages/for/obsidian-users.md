@@ -1,3 +1,12 @@
+---
+title: "Mirror for Obsidian Users | The Automatic Second Brain"
+slug: "for/obsidian-users"
+description: "Obsidian is your intentional knowledge graph. Mirror is your automatic context graph—built from your emails, meetings, and decisions without manual effort."
+keywords: ["Obsidian + Mirror", "Obsidian AI context", "Obsidian AI memory", "personal AI", "meeting context"]
+og_title: "Mirror for Obsidian Users"
+og_description: "Layer automatic context intelligence underneath your intentional knowledge graph"
+---
+
 # Mirror for Obsidian Users
 
 Obsidian is the thinking tool for power users. You build your second brain methodically — crafting MOCs (maps of content), linking notes, maintaining templates, creating a personal knowledge graph that evolves with your thinking.
@@ -78,16 +87,14 @@ Ready to connect your intentional thinking to your actual context?
 
 ---
 
+Mirror is in private beta. [Join the waitlist →](https://bymirror.ai)
+
 ## Explore Mirror for Other Tools
 
 - [Mirror for Notion Users](/for/notion-users) — Notion + automatic context layer
 - [Mirror for Roam & Tana Users](/for/roam-tana-users) — Networked thought that builds itself
 - [Mirror for Reflect Users](/for/reflect-users) — Conscious reflection + automatic context
+- [Mirror for Integrations](/integrations) — See all connected tools
+- [Meeting Prep Use Case](/use-case/meeting-prep) — How Mirror helps before important conversations
 
 [Read more about artificial personal intelligence →](/blog/artificial-personal-intelligence)
-
-## Get Early Access
-
-Mirror is currently in private beta. Join the waitlist to bring automatic knowledge graphs to your professional workflow.
-
-[Join the waitlist](https://bymirror.ai/waitlist) — 90-second setup, no manual input needed.

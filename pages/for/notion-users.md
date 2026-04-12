@@ -1,3 +1,12 @@
+---
+title: "Mirror for Notion Users | Context Beyond Your Wiki"
+slug: "for/notion-users"
+description: "Notion captures what you write. Mirror captures what actually happens—emails, meetings, decisions—so your structured knowledge has the context it needs to be useful."
+keywords: ["Notion + Mirror", "Notion AI context", "Notion AI memory", "personal AI", "meeting context"]
+og_title: "Mirror for Notion Users"
+og_description: "Give your Notion workspace the automatic context layer it's always been missing"
+---
+
 # Mirror for Notion Users
 
 Notion is the all-in-one workspace. You organize everything there — databases, wikis, project trackers, meeting notes, documentation. With Notion AI, you can summarize pages, generate copy, and extract insights from what you've written.
@@ -76,16 +85,14 @@ Ready to bring your full context into your professional workflow?
 
 ---
 
+Mirror is in private beta. [Join the waitlist →](https://bymirror.ai)
+
 ## Explore Mirror for Other Tools
 
 - [Mirror for Obsidian Users](/for/obsidian-users) — Automatic second brain, zero maintenance
 - [Mirror for Roam & Tana Users](/for/roam-tana-users) — Networked thought that builds itself
 - [Mirror for Reflect Users](/for/reflect-users) — Conscious reflection + automatic context
+- [Mirror for Integrations](/integrations) — See all connected tools
+- [Meeting Prep Use Case](/use-case/meeting-prep) — How Mirror helps before important conversations
 
 [Read more about artificial personal intelligence →](/blog/artificial-personal-intelligence)
-
-## Get Early Access
-
-Mirror is currently in private beta. Join the waitlist to be among the first to add the missing context layer to your professional workflow.
-
-[Join the waitlist](https://bymirror.ai/waitlist) — 90-second setup, no manual input needed.

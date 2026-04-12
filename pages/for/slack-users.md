@@ -1,3 +1,12 @@
+---
+title: "Mirror for Slack Users | Context That Doesn't Disappear"
+slug: "for/slack-users"
+description: "Slack is real-time. Mirror is memory. Extract decisions, commitments, and relationships from Slack's beautiful chaos and keep them coherent and searchable."
+keywords: ["Slack + Mirror", "Slack AI context", "Slack AI memory", "personal AI", "meeting context"]
+og_title: "Mirror for Slack Users"
+og_description: "Give your Slack conversations the intelligence they deserve"
+---
+
 # Mirror for Slack Users
 
 Slack is where work happens. It's also where work disappears.
@@ -109,9 +118,12 @@ Your competitors might have Slack. They don't have your institutional memory. Yo
 
 ---
 
-**Mirror is in private beta.** [Join the waitlist](/waitlist) for the missing layer for personal AI.
+Mirror is in private beta. [Join the waitlist →](https://bymirror.ai)
 
-**Related pages:**
+## Explore Mirror for Other Tools
+
 - [Mirror for Superhuman users](/for/superhuman-users) — Because email is part of the communication story too
 - [Mirror for Gmail users](/for/gmail-users) — For your email context layer
 - [Mirror for ChatGPT users](/for/chatgpt-users) — Because AI needs your Slack context to understand your work
+- [Mirror for Integrations](/integrations) — See all connected tools
+- [Meeting Prep Use Case](/use-case/meeting-prep) — How Mirror helps before important conversations

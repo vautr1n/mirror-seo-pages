@@ -5,11 +5,12 @@ description: "Microsoft Recall takes screenshots of everything. Mirror understan
 keywords: "Mirror vs Microsoft Recall, privacy, personal memory, AI context, surveillance"
 og_title: "Mirror vs Microsoft Recall: Memory Built on Trust"
 og_description: "Recall is surveillance. Mirror is understanding."
+schema: FAQ
 ---
 
 # Mirror vs Microsoft Recall: Privacy-First vs. Surveillance
 
-Microsoft Recall had a clear goal: make everything on your screen searchable. But it crashed into a wall of privacy concerns. The product screenshots everything you do, stores it locally, and makes it searchable. When people understood what Recall was actually doing, they rejected it—hard. Microsoft delayed the feature twice and fundamentally rearchitected how it works.
+Microsoft Recall launched in April 2025 after a year of delays — and the problems didn't stop. The feature takes continuous screenshots of everything on your screen, stores them locally, and makes them searchable. Security researchers flagged vulnerabilities immediately. Microsoft had already delayed and rearchitected the feature twice before launch. Even now in 2026, the rollout is still limited to Copilot+ PCs with Snapdragon chips, and full general availability remains uncertain.
 
 The lesson is simple: people don't want surveillance. They want *understanding*.
 
@@ -28,6 +29,8 @@ Recall captures images of your entire screen. Mirror captures structured data—
 
 **2. Built security-first, not patched later**
 Recall's privacy problems weren't accidental—they were baked into the architecture. Taking screenshots of everything and storing them locally is inherently risky. Mirror was built security-first. End-to-end encryption. No local storage of sensitive data. Privacy isn't a feature we added after launch; it's foundational.
+
+Mirror was built by Vishal, a former Azure Director at Microsoft with 11 years in cloud security. He knows exactly how enterprise-grade security works — and exactly where Recall's architecture fails.
 
 **3. Relational memory, not image search**
 Recall finds screenshots. "I remember seeing that on my screen." Mirror understands context. "I remember that you committed to reviewing Sarah's product roadmap, and she prioritizes shipping the API layer." That's the difference between surveillance and intelligence.
@@ -73,6 +76,17 @@ Recall is Windows-only (at least as designed). Mirror works across your devices 
 - You want a unified memory across all your devices
 - You don't want to sacrifice device storage
 
+## Frequently Asked Questions
+
+**Is Recall available on all Windows PCs?**
+No. As of April 2026, Recall is limited to Copilot+ PCs with Snapdragon processors. Intel and AMD support has been delayed. Most Windows users can't use it even if they wanted to.
+
+**Has Microsoft fixed Recall's security issues?**
+They've made it opt-in and added encrypted storage. But the fundamental approach — continuous screenshots of everything on your screen — remains an enormous attack surface. Mirror doesn't capture screenshots. It reads structured data (email, calendar) with your explicit consent.
+
+**Does Mirror work on Windows?**
+Mirror is cross-platform. It works wherever you work — not locked to one operating system or hardware configuration.
+
 ## The Bottom Line
 
 Recall represents a surveillance approach to memory. Capture everything, store it, search it. It's been rejected by users repeatedly because it's intrusive and because it captures the wrong data.
@@ -81,8 +95,8 @@ Mirror is the alternative. We capture what matters structurally. We respect your
 
 You shouldn't choose between surveillance and privacy. You shouldn't choose between understanding and screenshots. Mirror gives you both—privacy *and* intelligence.
 
-Microsoft had to delay Recall twice because the market rejected it. That's not a coincidence. See how Mirror compares to other approaches: [vs Limitless](/vs/limitless) or [vs ChatGPT Memory](/vs/chatgpt-memory).
+Microsoft had to delay Recall twice because the market rejected it. That's not a coincidence. See how Mirror compares to other approaches: [vs Limitless](/vs/limitless), [vs ChatGPT Memory](/vs/chatgpt-memory), [Mirror vs OpenClaw](/vs/openclaw), or explore [All Mirror integrations](/integrations).
 
 ---
 
-*Mirror is in private beta. [Join the waitlist](/waitlist) for the missing layer for personal AI.*
+*Mirror is in private beta. [Join the waitlist](https://bymirror.ai) for the missing layer for personal AI.*

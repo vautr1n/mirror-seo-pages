@@ -1,3 +1,12 @@
+---
+title: "Mirror for Claude Users | Context That Persists"
+slug: "for/claude-users"
+description: "Claude is the best reasoning engine on the market. Mirror adds your context so Claude's brilliant thinking is grounded in your actual situation, not generic frameworks."
+keywords: ["Claude + Mirror", "Claude AI context", "Claude AI memory", "personal AI", "meeting context"]
+og_title: "Mirror for Claude Users"
+og_description: "Give Claude your full context so its reasoning becomes personal reasoning"
+---
+
 # Mirror for Claude Users
 
 Claude is the best reasoning engine on the market.
@@ -56,7 +65,7 @@ With Mirror:
 - Claude knows what actually matters to you
 - Claude can reason about real constraints, not hypothetical ones
 - Claude's advice is grounded in your actual situation
-- Mirror tracks your ongoing threads and surfaces context across conversations (not just within one chat)
+- Claude remembers context across conversations (not just within one chat)
 
 The result is that Claude becomes less of a smart tool and more of a true thought partner.
 
@@ -78,7 +87,7 @@ You ask Claude to research something. Claude researches not just the topic, but 
 Generic advice is hard to act on. Claude's advice with your context is specific. It knows your constraints. It knows what's feasible. It knows who needs to be involved. It's not "here's what companies typically do." It's "here's what you should do given your specific situation."
 
 **Follow-ups are proactive.**
-You've been thinking about something with Claude. Weeks later, Mirror surfaces relevant context: new information has emerged that's relevant. Market conditions have changed. One of your stakeholders did something that affects your decision. Mirror is tracking it even when you're not.
+You've been thinking about something with Claude. Weeks later, Claude proactively brings it back: new information has emerged that's relevant. Market conditions have changed. One of your stakeholders did something that affects your decision. Claude is thinking about it even when you're not.
 
 ## The Claude Advantage: Best Reasoning + Your Context
 
@@ -134,10 +143,13 @@ It's the difference between a brilliant advisor who knows your business and a br
 
 ---
 
-**Mirror is in private beta.** [Join the waitlist](/waitlist) for the missing layer for personal AI.
+Mirror is in private beta. [Join the waitlist →](https://bymirror.ai)
 
-**Related pages:**
+## Explore Mirror for Other Tools
+
 - [Mirror for ChatGPT users](/for/chatgpt-users) — For the most popular AI with your context
 - [Mirror for Gemini users](/for/gemini-users) — For Google's AI with your context
 - [Mirror for Gmail users](/for/gmail-users) — Where your personal context begins
 - [Mirror for Slack users](/for/slack-users) — Where your work context lives
+- [Mirror for Integrations](/integrations) — See all connected tools
+- [Meeting Prep Use Case](/use-case/meeting-prep) — How Mirror helps before important conversations

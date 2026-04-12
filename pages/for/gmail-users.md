@@ -1,3 +1,12 @@
+---
+title: "Mirror for Gmail Users | Your Emails, Connected"
+slug: "for/gmail-users"
+description: "Your Gmail archive contains decades of professional context. Mirror extracts the meaning—relationships, commitments, decisions—that Gmail's search can't find."
+keywords: ["Gmail + Mirror", "Gmail AI context", "email intelligence", "personal AI", "meeting context"]
+og_title: "Mirror for Gmail Users"
+og_description: "Turn your email archive into an intelligent knowledge graph"
+---
+
 # Mirror for Gmail Users
 
 You have a decade of emails in Gmail.
@@ -115,9 +124,12 @@ You have a decade of professional context. Your competitors do too. But Mirror h
 
 ---
 
-**Mirror is in private beta.** [Join the waitlist](/waitlist) for the missing layer for personal AI.
+Mirror is in private beta. [Join the waitlist →](https://bymirror.ai)
 
-**Related pages:**
+## Explore Mirror for Other Tools
+
 - [Mirror for Superhuman users](/for/superhuman-users) — For ultra-fast email with context
 - [Mirror for Slack users](/for/slack-users) — Because your work context spans multiple tools
 - [Mirror for ChatGPT users](/for/chatgpt-users) — To give ChatGPT the context from your email
+- [Mirror for Integrations](/integrations) — See all connected tools
+- [Meeting Prep Use Case](/use-case/meeting-prep) — How Mirror helps before important conversations

@@ -1,3 +1,12 @@
+---
+title: "Mirror for Superhuman Users | Speed Meets Context"
+slug: "for/superhuman-users"
+description: "Superhuman handles email speed. Mirror handles email intelligence. Together, you're fast and informed—knowing what matters before you hit reply."
+keywords: ["Superhuman + Mirror", "Superhuman AI context", "email intelligence", "personal AI", "meeting context"]
+og_title: "Mirror for Superhuman Users"
+og_description: "Turn your email speed into email effectiveness with automatic context"
+---
+
 # Mirror for Superhuman Users
 
 Superhuman is the fastest email client ever built. It's engineered for speed: AI-powered auto-drafts, lightning-fast navigation, one-keystroke search. If you use Superhuman, you've probably saved four hours a week on email alone.
@@ -96,9 +105,12 @@ As you grow and your tools change, Mirror moves with you. It's the persistent la
 
 ---
 
-**Mirror is in private beta.** [Join the waitlist](/waitlist) for the missing layer for personal AI.
+Mirror is in private beta. [Join the waitlist →](https://bymirror.ai)
 
-**Related pages:**
+## Explore Mirror for Other Tools
+
 - [Mirror for Gmail users](/for/gmail-users) — If you're not on Superhuman yet
 - [Mirror for Slack users](/for/slack-users) — Because email is only half the communication story
 - [Mirror for ChatGPT users](/for/chatgpt-users) — Because AI needs your context to be truly useful
+- [Mirror for Integrations](/integrations) — See all connected tools
+- [Meeting Prep Use Case](/use-case/meeting-prep) — How Mirror helps before important conversations

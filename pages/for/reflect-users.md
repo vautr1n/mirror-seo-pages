@@ -1,3 +1,12 @@
+---
+title: "Mirror for Reflect Users | Automatic Meets Intentional"
+slug: "for/reflect-users"
+description: "Reflect captures your conscious thinking. Mirror captures your actual context. Together, your reflection is deeper and more grounded in what's actually happening."
+keywords: ["Reflect + Mirror", "Reflect AI context", "Reflect AI memory", "personal AI", "meeting context"]
+og_title: "Mirror for Reflect Users"
+og_description: "Reflect from a place of full context, not just memory"
+---
+
 # Mirror for Reflect Users
 
 Reflect is a beautiful space for intentional thinking. You open it to capture ideas, reflect on your day, journal about what matters. It's designed for the kind of deep, conscious thinking that happens when you sit down to *think* rather than just react.
@@ -84,16 +93,14 @@ Ready to reflect from a place of full context?
 
 ---
 
+Mirror is in private beta. [Join the waitlist →](https://bymirror.ai)
+
 ## Explore Mirror for Other Tools
 
 - [Mirror for Notion Users](/for/notion-users) — Notion + automatic context layer
 - [Mirror for Obsidian Users](/for/obsidian-users) — Automatic second brain, zero maintenance
 - [Mirror for Roam & Tana Users](/for/roam-tana-users) — Networked thought that builds itself
+- [Mirror for Integrations](/integrations) — See all connected tools
+- [Meeting Prep Use Case](/use-case/meeting-prep) — How Mirror helps before important conversations
 
 [Read more about artificial personal intelligence →](/blog/artificial-personal-intelligence)
-
-## Get Early Access
-
-Mirror is currently in private beta. Join the waitlist to bring full context to your conscious reflection.
-
-[Join the waitlist](https://bymirror.ai/waitlist) — 90-second setup, no manual input needed.
