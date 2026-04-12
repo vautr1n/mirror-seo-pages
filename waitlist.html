@@ -3,28 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>Mirror — The Personal Context Layer for AI</title>
-  <meta name="description" content="Mirror unifies your emails, meetings, and notes into a personal context graph — so AI agents can finally act on your behalf with the nuance of someone who actually knows you.">
-  <meta name="keywords" content="Mirror, personal AI context layer, AI context graph, AI that knows you, personal AI agent, Dopel, waitlist">
+  <title>Mirror — Stop Wasting 20 Minutes Before Every Meeting</title>
+  <meta name="description" content="Mirror delivers a full briefing 5 minutes before every meeting — your complete history with each attendee, open commitments, and recommended talking points. The personal AI context layer.">
+  <meta name="keywords" content="Mirror, context resurrection, AI meeting prep, personal AI context layer, AI briefing, meeting preparation, AI that knows you, personal context graph, Dopel">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://bymirror.ai/waitlist">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Mirror — The Personal Context Layer for AI">
-  <meta property="og:description" content="Mirror unifies your emails, meetings, and notes into a personal context graph. AI agents finally act with the nuance of someone who knows you.">
+  <meta property="og:title" content="Mirror — Stop Wasting 20 Minutes Before Every Meeting">
+  <meta property="og:description" content="Mirror delivers a full briefing 5 minutes before every meeting. Your complete history with each attendee, open commitments, and talking points — automatically.">
   <meta property="og:url" content="https://bymirror.ai/waitlist">
   <meta property="og:site_name" content="mirror">
   <meta property="og:image" content="https://bymirror.ai/og/waitlist.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Mirror — The Personal Context Layer for AI">
-  <meta name="twitter:description" content="Your emails, meetings, and notes — unified into a context graph. AI that finally knows you.">
+  <meta name="twitter:title" content="Mirror — Stop Wasting 20 Minutes Before Every Meeting">
+  <meta name="twitter:description" content="A full briefing lands 5 minutes before every meeting. Your history, your commitments, your talking points — automatically.">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Mirror Waitlist",
-    "description": "Mirror is the personal AI context layer — unifying your digital life into a knowledge graph so AI agents can act with the nuance of someone who knows you.",
+    "name": "Mirror — Personal AI Context Layer",
+    "description": "Mirror delivers a full briefing before every meeting — your complete history with each attendee, open commitments, and recommended talking points. The personal AI context layer.",
     "url": "https://bymirror.ai/waitlist",
     "publisher": {
       "@type": "Organization",
@@ -33,6 +33,11 @@
     }
   }
   </script>
+
+  <!-- Fonts: Satoshi for wordmark -->
+  <link rel="dns-prefetch" href="https://app.loops.so">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@500&display=swap">
 
   <style>
     :root {
@@ -44,6 +49,7 @@
       --accent: #7c3aed;
       --accent-light: #a855f7;
       --accent-subtle: #f5f3ff;
+      --fuchsia: #D946EF;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -73,19 +79,16 @@
       display: flex;
       align-items: center;
     }
-    .nav-logo svg {
-      height: 24px;
-      width: auto;
-    }
+    .nav-logo svg { height: 24px; width: auto; }
     .nav-links { display: flex; gap: 1.25rem; font-size: 0.875rem; }
     .nav-links a { color: var(--muted); text-decoration: none; transition: color 0.15s; }
     .nav-links a:hover { color: var(--text); }
 
     /* — HERO — */
     .hero {
-      max-width: 640px;
+      max-width: 660px;
       margin: 0 auto;
-      padding: 8rem 1.5rem 5rem;
+      padding: 7rem 1.5rem 5rem;
       text-align: center;
     }
     .hero-badge {
@@ -114,9 +117,9 @@
       50% { opacity: 0.3; }
     }
     .hero h1 {
-      font-size: 3.75rem;
+      font-size: 3.5rem;
       font-weight: 700;
-      line-height: 1.05;
+      line-height: 1.08;
       letter-spacing: -0.035em;
       margin-bottom: 1.5rem;
       color: var(--text);
@@ -125,26 +128,35 @@
       font-style: normal;
       color: var(--accent);
     }
+    .hero-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
     .hero-sub {
       font-size: 1.15rem;
       color: var(--muted);
-      max-width: 480px;
+      max-width: 520px;
       margin: 0 auto 2.5rem;
       line-height: 1.65;
     }
+    .hero-sub strong { color: var(--text); font-weight: 600; }
 
     /* — FORM — */
     .form-wrap {
       display: flex;
       gap: 0.5rem;
       justify-content: center;
-      max-width: 420px;
+      max-width: 440px;
       margin: 0 auto 0.75rem;
     }
     .form-wrap input[type="email"] {
       flex: 1;
-      padding: 0.8rem 1rem;
-      border-radius: 8px;
+      padding: 0.85rem 1rem;
+      border-radius: 10px;
       border: 1px solid var(--border);
       background: var(--card);
       color: var(--text);
@@ -154,31 +166,36 @@
     }
     .form-wrap input[type="email"]::placeholder { color: #9ca3af; }
     .form-wrap input[type="email"]:focus {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.08);
+      border-color: var(--fuchsia);
+      box-shadow: 0 0 0 4px rgba(217, 70, 239, 0.12);
     }
+    .form-wrap input[type="email"]:focus::placeholder { color: transparent; }
     .form-wrap button {
-      padding: 0.8rem 1.5rem;
+      padding: 0.85rem 1.5rem;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       background: var(--text);
       color: white;
       font-weight: 600;
       font-size: 0.9rem;
       cursor: pointer;
-      transition: transform 0.1s, opacity 0.15s;
+      transition: transform 0.1s, background 0.15s, box-shadow 0.15s;
       white-space: nowrap;
       letter-spacing: -0.01em;
+      box-shadow: 0 2px 8px rgba(10, 10, 10, 0.1);
     }
     .form-wrap button:hover {
-      opacity: 0.85;
+      background: var(--fuchsia);
       transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(217, 70, 239, 0.24);
     }
+    .form-wrap button:active { transform: translateY(0); }
     .form-note {
       font-size: 0.75rem;
       color: #9ca3af;
       text-align: center;
     }
+    .form-note strong { color: var(--muted); }
     .form-success {
       display: none;
       text-align: center;
@@ -186,6 +203,27 @@
       color: var(--accent);
       font-weight: 600;
       font-size: 1rem;
+      animation: slideUp 0.4s ease-out;
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .form-wrap button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
     }
 
     /* — SOCIAL PROOF — */
@@ -198,24 +236,7 @@
       font-size: 0.8rem;
       color: var(--muted);
     }
-    .proof-dots {
-      display: flex;
-      gap: 4px;
-    }
-    .proof-dots span {
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      border: 1.5px solid var(--bg);
-      margin-left: -6px;
-    }
-    .proof-dots span:first-child { margin-left: 0; }
-    .proof-dots .d1 { background: #e9d5ff; }
-    .proof-dots .d2 { background: #c4b5fd; }
-    .proof-dots .d3 { background: #a78bfa; }
-    .proof-dots .d4 { background: #8b5cf6; }
-    .proof-dots .d5 { background: #7c3aed; }
+    .proof em { font-style: normal; color: var(--text); font-weight: 500; }
 
     /* — DIVIDER — */
     .divider {
@@ -225,16 +246,127 @@
       border-top: 1px solid var(--border);
     }
 
-    /* — FEATURES — */
+    /* — PROBLEM — */
+    .problem {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 5rem 1.5rem;
+    }
+    .problem h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      margin-bottom: 1.5rem;
+      line-height: 1.15;
+    }
+    .problem p {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+    .problem p strong { color: var(--text); }
+    .problem .stat {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 12px 20px;
+      background: var(--accent-subtle);
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    /* — CONTEXT RESURRECTION (hero feature) — */
+    .cr-section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 5rem 1.5rem;
+    }
+    .cr-section .kicker {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .cr-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.5rem;
+      max-width: 640px;
+      line-height: 1.15;
+    }
+    .cr-section .cr-sub {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+      font-style: italic;
+    }
+    .cr-section > p {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 640px;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+    .cr-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+    .cr-card {
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--card);
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .cr-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .cr-card .tag {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .cr-card h3 {
+      font-size: 1rem;
+      font-weight: 650;
+      margin-bottom: 0.35rem;
+      letter-spacing: -0.01em;
+    }
+    .cr-card p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .cr-closer {
+      margin-top: 2.5rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    /* — FEATURES (secondary) — */
     .features {
       max-width: 720px;
       margin: 0 auto;
       padding: 5rem 1.5rem;
     }
+    .features h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      margin-bottom: 3rem;
+    }
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2.5rem 3rem;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
     }
     .feat-label {
       font-size: 0.7rem;
@@ -251,71 +383,95 @@
       letter-spacing: -0.01em;
     }
     .feat p {
-      font-size: 0.875rem;
+      font-size: 0.85rem;
       color: var(--muted);
       line-height: 1.6;
     }
 
-    /* — HOW IT WORKS — */
-    .how {
-      max-width: 640px;
+    /* — PERSONAL AI — */
+    .personal-ai {
+      max-width: 720px;
       margin: 0 auto;
       padding: 5rem 1.5rem;
-      text-align: center;
     }
-    .how h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: -0.025em;
-      margin-bottom: 3.5rem;
-    }
-    .steps {
-      display: flex;
-      gap: 2.5rem;
-      text-align: left;
-    }
-    .step { flex: 1; }
-    .step-num {
-      display: inline-block;
+    .personal-ai .kicker {
       font-size: 0.7rem;
       font-weight: 600;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--accent);
       margin-bottom: 0.75rem;
     }
-    .step h4 {
-      font-size: 0.95rem;
-      font-weight: 650;
-      margin-bottom: 0.4rem;
-      letter-spacing: -0.01em;
+    .personal-ai h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      margin-bottom: 1.5rem;
+      line-height: 1.15;
     }
-    .step p {
-      font-size: 0.85rem;
+    .personal-ai p {
+      font-size: 1rem;
       color: var(--muted);
-      line-height: 1.55;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+    .personal-ai p strong { color: var(--text); }
+    .personal-ai em { font-style: normal; color: var(--accent); font-weight: 600; }
+    .ai-vs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .ai-vs-card {
+      padding: 1.25rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+    .ai-vs-card.generic {
+      background: #f9fafb;
+      opacity: 0.7;
+    }
+    .ai-vs-card.personal {
+      background: var(--accent-subtle);
+      border-color: var(--accent);
+    }
+    .ai-vs-card .vs-label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .ai-vs-card.generic .vs-label { color: var(--muted); }
+    .ai-vs-card.personal .vs-label { color: var(--accent); }
+    .ai-vs-card p {
+      font-size: 0.85rem;
+      line-height: 1.6;
+      margin-bottom: 0;
     }
 
-    /* — QUOTE — */
-    .quote-section {
-      max-width: 580px;
+    /* — TRUST — */
+    .trust {
+      max-width: 640px;
       margin: 0 auto;
       padding: 4rem 1.5rem;
       text-align: center;
     }
-    .quote-section blockquote {
-      font-size: 1.35rem;
-      font-weight: 400;
-      font-style: italic;
-      color: var(--muted);
-      line-height: 1.55;
-      margin-bottom: 0;
-    }
-    .quote-section blockquote em {
-      font-style: normal;
-      color: var(--text);
+    .trust .kicker {
+      font-size: 0.7rem;
       font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
     }
+    .trust p {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    .trust p strong { color: var(--text); }
 
     /* — BOTTOM CTA — */
     .bottom-cta {
@@ -330,6 +486,7 @@
       letter-spacing: -0.025em;
       margin-bottom: 0.75rem;
     }
+    .bottom-cta h2 em { font-style: normal; color: var(--accent); }
     .bottom-cta > p {
       color: var(--muted);
       margin-bottom: 2rem;
@@ -353,14 +510,15 @@
 
     /* — RESPONSIVE — */
     @media (max-width: 768px) {
-      .hero { padding: 5rem 1.25rem 3.5rem; }
-      .hero h1 { font-size: 2.5rem; }
+      .hero { padding: 3.5rem 1.25rem 3rem; }
+      .hero h1 { font-size: 2.25rem; }
       .hero-sub { font-size: 1rem; }
       .form-wrap { flex-direction: column; }
-      .form-wrap button { width: 100%; }
+      .form-wrap button { width: 100%; min-height: 48px; }
+      .cr-grid { grid-template-columns: 1fr; }
       .features-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .steps { flex-direction: column; gap: 2rem; }
       .bottom-cta h2 { font-size: 1.75rem; }
+      .ai-vs { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -371,109 +529,158 @@
       <svg width="120" height="24" viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="mirror"><circle cx="38" cy="40" r="36" fill="#71717A" opacity="0.06"/><path d="M38 4 A36 36 0 0 0 38 76 A9 36 0 0 1 38 4 Z" fill="#71717A" opacity="0.18"/><path d="M38 4 A36 36 0 0 1 38 76 A22 36 0 0 0 38 4 Z" fill="#0A0A0A"/><text x="96" y="52" font-family="Satoshi, Inter, system-ui, sans-serif" font-size="38" font-weight="500" letter-spacing="-1" fill="#0A0A0A">mirror</text></svg>
     </a>
     <div class="nav-links">
-      <a href="/integrations">Integrations</a>
+      <a href="#context-resurrection">How it works</a>
       <a href="/blog">Blog</a>
     </div>
   </nav>
 
+  <!-- ========== HERO ========== -->
   <section class="hero">
-    <div class="hero-badge"><span class="pulse"></span> Early Access — Join the Waitlist</div>
-    <h1>Every morning, your AI<br><em>forgets who you are.</em></h1>
-    <p class="hero-sub">Mirror is the personal context layer that unifies your emails, meetings, notes, and conversations into one knowledge graph — so AI agents can finally act with the nuance of someone who actually knows you.</p>
+    <div class="hero-badge"><span class="pulse"></span> Early Access — Limited Spots</div>
+    <h1>Stop wasting 20 minutes before every <em>meeting.</em></h1>
+    <p class="hero-label">The personal AI context layer</p>
+    <p class="hero-sub">You search Gmail, check Slack, re-read three-month-old notes, scan the calendar. <strong>Mirror delivers your complete history in one document — 5 minutes before you walk in</strong>, automatically. Not a chatbot. An AI that actually knows you.</p>
 
-    <form class="form-wrap" id="waitlist-form">
-      <input type="email" name="email" placeholder="you@company.com" required autocomplete="email">
-      <button type="submit">Join the waitlist</button>
+    <form class="form-wrap" id="waitlist-form" action="https://app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7" method="POST">
+      <label for="email-hero" class="sr-only">Email address</label>
+      <input type="email" id="email-hero" name="email" placeholder="name@company.com" required autocomplete="email" autocapitalize="off" spellcheck="false" aria-required="true">
+      <input type="hidden" name="source" value="hero">
+      <button type="submit">Get early access →</button>
     </form>
-    <p class="form-note">Free during beta. No credit card. Unsubscribe anytime.</p>
-    <div class="form-success" id="form-success">You're on the list.</div>
+    <p class="form-note"><strong>Limited access</strong> — ~500 spots per wave. We'll email when yours opens.</p>
+    <div class="form-success" id="form-success">✓ You're in. We'll email when your beta slot opens.</div>
 
     <div class="proof">
-      <div class="proof-dots">
-        <span class="d1"></span>
-        <span class="d2"></span>
-        <span class="d3"></span>
-        <span class="d4"></span>
-        <span class="d5"></span>
-      </div>
-      <span>2,400+ on the waitlist</span>
+      <em>Designed for professionals with 5+ daily meetings and context across 12+ sources.</em>
     </div>
   </section>
 
   <hr class="divider">
 
+  <!-- ========== THE PROBLEM ========== -->
+  <section class="problem">
+    <h2>You spend 15–30 minutes before every meeting rebuilding context.</h2>
+    <p>
+      You open Gmail. Search for the last thread. Check Slack for what the team said last week. Re-read notes from three months ago. Scan calendar history. Open a Google Doc to find what was actually decided versus what was said. <strong>You walk in missing the one detail that matters — and find out 10 minutes in.</strong>
+    </p>
+    <p>
+      You've tried ChatGPT. It doesn't know who you met last Tuesday or what you promised Sarah. Every session, you start from zero. By the time you brief it with enough context, you've already spent 15 minutes — the problem it was supposed to solve. Generic AI reflects the average of humanity. It doesn't reflect <em>you</em>.
+    </p>
+    <div class="stat">6–12 hours per week — just remembering instead of deciding.</div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ========== CONTEXT RESURRECTION ========== -->
+  <section class="cr-section" id="context-resurrection">
+    <div class="kicker">Context Resurrection</div>
+    <h2>Five minutes before you walk in, you're not scrambling — you're ready.</h2>
+    <p class="cr-sub">Built for people with 5+ meetings a day and context spread across 12 tabs.</p>
+    <p>Mirror pulls from your email, calendar, and notes to build one document: exactly what you need to know about this person, this topic, and what's been promised. No setup. No copying. It just arrives.</p>
+
+    <div class="cr-grid">
+      <div class="cr-card">
+        <div class="tag">Who</div>
+        <h3>Your relationship history with each attendee</h3>
+        <p>Every conversation, commitment made, and open question — at a glance. You know where you stand with them. They don't know you know.</p>
+      </div>
+      <div class="cr-card">
+        <div class="tag">What</div>
+        <h3>Topics you need to own</h3>
+        <p>Inferred from ongoing projects, unresolved threads, and what's been promised. You're never caught off-guard in the room.</p>
+      </div>
+      <div class="cr-card">
+        <div class="tag">Red flags</div>
+        <h3>What could go wrong in this meeting</h3>
+        <p>You promised follow-up docs two weeks ago. The last email contradicts what you committed verbally. That relationship's been cold for 30 days. Mirror flags these before you walk in.</p>
+      </div>
+      <div class="cr-card">
+        <div class="tag">Act</div>
+        <h3>Your talking points — sourced and verified</h3>
+        <p>Suggested agenda items weighted to <em>your</em> priorities, not theirs. Every claim is one click back to the original email or note — no surprises in the room.</p>
+      </div>
+    </div>
+
+    <p class="cr-closer">No setup. No manual work. It arrives five minutes before you need it — then you're the expert in the room.</p>
+
+    <div style="margin-top: 2rem;">
+      <form class="form-wrap" id="waitlist-form-cr" action="https://app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7" method="POST" style="justify-content: flex-start;">
+        <label for="email-cr" class="sr-only">Email address</label>
+        <input type="email" id="email-cr" name="email" placeholder="name@company.com" required autocomplete="email" autocapitalize="off" spellcheck="false" aria-required="true">
+        <input type="hidden" name="source" value="cr-section">
+        <button type="submit">Get early access →</button>
+      </form>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ========== WHAT COMPOUNDS ========== -->
   <section class="features">
+    <h2>Context Resurrection is the start. Here's what compounds.</h2>
     <div class="features-grid">
       <div class="feat">
-        <div class="feat-label">Before meetings</div>
-        <h3>Context resurrection</h3>
-        <p>Five minutes before any meeting, Mirror pushes a briefing: full history with each attendee, open questions, unresolved commitments, and recommended talking points — sourced and linked to the originals.</p>
-      </div>
-      <div class="feat">
         <div class="feat-label">Every morning</div>
-        <h3>Your daily brief</h3>
-        <p>Not a calendar summary. A cognitive map of your day — context previews for every meeting, relationship signals, goal progress, and patterns you'd miss across your fragmented digital life.</p>
+        <h3>Daily Brief</h3>
+        <p>Not a calendar summary — your 30-second mental preparation for every meeting. Relationship status, what's been promised, and what's at stake before you get on the call.</p>
       </div>
       <div class="feat">
-        <div class="feat-label">Infrastructure</div>
-        <h3>Personal knowledge graph</h3>
-        <p>Mirror connects people, topics, and interactions in three dimensions — entities, relationships, and temporal dynamics. Every interaction makes Mirror smarter about you.</p>
+        <div class="feat-label">On your behalf</div>
+        <h3>The Dopel</h3>
+        <p>Your AI twin that drafts follow-ups in your voice, catches what you missed — contradictions, unmet commitments — and surfaces next moves before the meeting ends.</p>
       </div>
       <div class="feat">
-        <div class="feat-label">Agent</div>
-        <h3>Your Dopel</h3>
-        <p>A personal AI agent that acts on your behalf — drafts follow-ups in your voice, routes action items, flags overdue commitments, and tracks your goals across every interaction.</p>
-      </div>
-      <div class="feat">
-        <div class="feat-label">Security</div>
-        <h3>Your data stays yours</h3>
-        <p>Led by a former Azure Director with 11+ years at Microsoft. Encrypted architecture, no model training on your data, full data ownership, consent, and auditability.</p>
-      </div>
-      <div class="feat">
-        <div class="feat-label">Simplicity</div>
-        <h3>Email + calendar. That's it.</h3>
-        <p>Mirror delivers meaningful value from just two connections. No complex setup, no dozen integrations to configure. Connect and let it work.</p>
+        <div class="feat-label">To your counterpart</div>
+        <h3>Context Gift</h3>
+        <p>Share a briefing with attendees — they arrive prepared too. Every shared briefing carries your Mirror badge. As more people use it, the advantage compounds.</p>
       </div>
     </div>
   </section>
 
   <hr class="divider">
 
-  <section class="how">
-    <h2>How Mirror works</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">Step 01</div>
-        <h4>Connect email and calendar</h4>
-        <p>Mirror starts building your personal context graph — relationships, topics, commitments, patterns — from the two richest sources of your professional life.</p>
+  <!-- ========== PERSONAL AI ========== -->
+  <section class="personal-ai">
+    <div class="kicker">Personal AI</div>
+    <h2>Not another chatbot. An AI that actually <em>knows you.</em></h2>
+    <p>
+      Every AI you've used starts from zero. Mirror doesn't. It builds a <strong>persistent context graph</strong> — your relationships, your commitments, your communication patterns, your unresolved questions — and compounds this understanding over time. Every interaction makes it smarter about you.
+    </p>
+    <p>
+      The result: an AI that knows who you are to different people, how you communicate in different contexts, what you care about, and what you've committed to. Not the average of humanity. <em>You.</em>
+    </p>
+
+    <div class="ai-vs">
+      <div class="ai-vs-card generic">
+        <div class="vs-label">Generic AI</div>
+        <p>"Tell me about your meeting with Sarah." You spend 5 minutes briefing it. It gives you a generic summary. Tomorrow, it's forgotten everything.</p>
       </div>
-      <div class="step">
-        <div class="step-num">Step 02</div>
-        <h4>Mirror works in the background</h4>
-        <p>No queries, no prompts. Mirror proactively pushes briefings before meetings, delivers your daily brief, and surfaces patterns you'd miss.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">Step 03</div>
-        <h4>Your Dopel takes action</h4>
-        <p>Review and approve — your Dopel drafts follow-ups in your voice, suggests next steps informed by your full history, and executes with one click.</p>
+      <div class="ai-vs-card personal">
+        <div class="vs-label">Mirror — Personal AI</div>
+        <p>Mirror already knows your 18-month history with Sarah, the three commitments still open, the tension from last quarter, and the fact that she prefers direct communication. It just arrives.</p>
       </div>
     </div>
   </section>
 
   <hr class="divider">
 
-  <section class="quote-section">
-    <blockquote>"AI agents built on generic LLMs reflect <em>the average of humanity</em> — not the singular individual they serve. Mirror is the missing layer that changes that."</blockquote>
+  <!-- ========== TRUST ========== -->
+  <section class="trust">
+    <div class="kicker">Who's building this</div>
+    <p>Built by founders who've shipped at <strong>Microsoft, Amazon, and Stanford labs</strong> — and taken products from zero to IPO. We've secured infrastructure at cloud scale. Your data is encrypted, isolated, and never used for training. We're paranoid about security so you don't have to be.</p>
   </section>
 
+  <!-- ========== BOTTOM CTA ========== -->
   <section class="bottom-cta">
-    <h2>Stop rebuilding context.<br>Start compounding it.</h2>
-    <p>Mirror is the infrastructure layer between your fragmented digital life and the AI agents that act on your behalf.</p>
-    <form class="form-wrap" id="waitlist-form-2">
-      <input type="email" name="email" placeholder="you@company.com" required autocomplete="email">
-      <button type="submit">Join the waitlist</button>
+    <h2>Walk in as the best-prepared person in the <em>room.</em></h2>
+    <p>A personal AI that knows you, compounds over time, and pushes context before you need it. Private beta rolling out now.</p>
+    <form class="form-wrap" id="waitlist-form-2" action="https://app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7" method="POST">
+      <label for="email-bottom" class="sr-only">Email address</label>
+      <input type="email" id="email-bottom" name="email" placeholder="name@company.com" required autocomplete="email" autocapitalize="off" spellcheck="false" aria-required="true">
+      <input type="hidden" name="source" value="bottom">
+      <button type="submit">Get early access →</button>
     </form>
-    <p class="form-note">We'll notify you when your spot opens up.</p>
+    <p class="form-note">One email when your beta slot opens. Unsubscribe anytime.</p>
   </section>
 
   <footer class="footer">
@@ -487,12 +694,14 @@
     document.querySelectorAll('form').forEach(function(form) {
       form.addEventListener('submit', function(e) {
         e.preventDefault();
-        var email = form.querySelector('input[type="email"]').value;
-        fetch('https://formspree.io/f/YOUR_FORM_ID', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email, source: 'mirror-waitlist', timestamp: new Date().toISOString() })
-        }).catch(function() {});
+        var emailInput = form.querySelector('input[type="email"]');
+        if (!emailInput || !emailInput.value) return;
+        var btn = form.querySelector('button');
+        if (btn) { btn.disabled = true; btn.innerHTML = 'Sending\u2026'; }
+
+        var body = 'userGroup=&mailingLists=&email=' + encodeURIComponent(emailInput.value);
+
+        // Show success immediately
         form.style.display = 'none';
         var note = form.parentElement.querySelector('.form-note');
         if (note) note.style.display = 'none';
@@ -503,9 +712,23 @@
           var msg = document.createElement('p');
           msg.className = 'form-success';
           msg.style.display = 'block';
-          msg.textContent = "You're on the list.";
+          msg.textContent = "\u2713 You\u2019re in. We\u2019ll email when your beta slot opens.";
           form.parentElement.insertBefore(msg, form.nextSibling);
         }
+
+        // Send to Loops
+        fetch(form.action, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: body
+        }).then(function(response) {
+          if (!response.ok) throw new Error('Submission failed');
+        }).catch(function() {
+          if (btn) { btn.disabled = false; btn.innerHTML = 'Try again \u2192'; }
+          form.style.display = 'flex';
+          if (note) note.style.display = 'block';
+          if (success) success.style.display = 'none';
+        });
       });
     });
   </script>
