@@ -21,6 +21,19 @@ if (fs.existsSync(path.join(__dirname, 'robots.txt'))) {
   fs.copyFileSync(path.join(__dirname, 'robots.txt'), path.join(DIST_DIR, 'robots.txt'));
 }
 
+// Copy og/ folder (social-sharing images)
+const OG_SRC = path.join(__dirname, 'og');
+if (fs.existsSync(OG_SRC)) {
+  const OG_DEST = path.join(DIST_DIR, 'og');
+  fs.mkdirSync(OG_DEST, { recursive: true });
+  for (const entry of fs.readdirSync(OG_SRC, { withFileTypes: true })) {
+    if (entry.isFile()) {
+      fs.copyFileSync(path.join(OG_SRC, entry.name), path.join(OG_DEST, entry.name));
+    }
+  }
+  console.log('  ✓ /og (social images)');
+}
+
 // Copy waitlist page as /waitlist/ and homepage (with correct canonical for each)
 if (fs.existsSync(path.join(__dirname, 'waitlist.html'))) {
   const waitlistContent = fs.readFileSync(path.join(__dirname, 'waitlist.html'), 'utf-8');
