@@ -559,12 +559,22 @@
       var body = 'userGroup=&mailingLists=&email=' + encodeURIComponent(emailInput.value);
       if (sourceInput) body += '&source=' + encodeURIComponent(sourceInput.value);
 
-      /* Fire conversion immediately on submit — don't wait for Loops response */
+      /* Fire form_submit (GA4) + conversion (Google Ads) + form_success (GA4) */
       if (window.gtag) {
+        gtag('event', 'form_submit', {
+          page: window.location.pathname,
+          form_location: 'cross_tool_memory'
+        });
         gtag('event', 'conversion', {
           'send_to': 'AW-18066065136/x84dCKLyqpYcEPCNyaZD',
           'value': 1.0,
           'currency': 'EUR'
+        });
+        gtag('event', 'form_success', {
+          page: window.location.pathname,
+          form_location: 'cross_tool_memory',
+          value: 1.0,
+          currency: 'EUR'
         });
       }
 

@@ -12,7 +12,17 @@
   gtag('js', new Date());
   gtag('config', 'AW-18066065136');
   function trackConversion() {
+    gtag('event', 'form_submit', {
+      page: window.location.pathname,
+      form_location: 'switch'
+    });
     gtag('event', 'conversion', {'send_to': 'AW-18066065136/ROk9CM_z-7kYEJu7ycwq'});
+    gtag('event', 'form_success', {
+      page: window.location.pathname,
+      form_location: 'switch',
+      value: 1.0,
+      currency: 'EUR'
+    });
   }
 </script>
 

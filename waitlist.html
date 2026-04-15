@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 
-  <!-- Google Analytics 4 -->
+  <!-- Google tag (gtag.js) — GA4 + Google Ads -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LDZDKP6XZ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-0LDZDKP6XZ');
+    gtag('config', 'AW-18066065136');
   </script>
 
   <title>Mirror — Walk into every meeting already prepared.</title>
@@ -1003,6 +1004,25 @@
 
         var body = 'userGroup=&mailingLists=&email=' + encodeURIComponent(emailInput.value);
 
+        /* Fire form_submit (GA4) + conversion (Google Ads) + form_success (GA4) */
+        if (window.gtag) {
+          gtag('event', 'form_submit', {
+            page: window.location.pathname,
+            form_location: 'homepage'
+          });
+          gtag('event', 'conversion', {
+            'send_to': 'AW-18066065136/x84dCKLyqpYcEPCNyaZD',
+            'value': 1.0,
+            'currency': 'EUR'
+          });
+          gtag('event', 'form_success', {
+            page: window.location.pathname,
+            form_location: 'homepage',
+            value: 1.0,
+            currency: 'EUR'
+          });
+        }
+
         var shareUrl = 'https://bymirror.ai/waitlist';
         var shareText = "I just joined the Mirror waitlist — a personal AI that prepares you for every meeting.";
 
@@ -1046,6 +1066,46 @@
         });
       });
     });
+  </script>
+
+  <!-- Funnel Tracking: scroll_50, cta_visible, form_focus -->
+  <script>
+  (function() {
+    // scroll_50 — fires when user scrolls past 50% of page
+    var scrollFired = false;
+    window.addEventListener('scroll', function() {
+      if (scrollFired) return;
+      var scrollPct = (window.scrollY + window.innerHeight) / document.body.scrollHeight;
+      if (scrollPct >= 0.5) {
+        scrollFired = true;
+        if (typeof gtag === 'function') gtag('event', 'scroll_50', { page: window.location.pathname });
+      }
+    }, { passive: true });
+
+    // cta_visible — fires when the first signup form enters viewport
+    var ctaObserved = false;
+    var ctaEl = document.querySelector('form.form-wrap, form.signup, form.loops-form');
+    if (ctaEl && 'IntersectionObserver' in window) {
+      var obs = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting && !ctaObserved) {
+          ctaObserved = true;
+          if (typeof gtag === 'function') gtag('event', 'cta_visible', { page: window.location.pathname });
+          obs.disconnect();
+        }
+      }, { threshold: 0.5 });
+      obs.observe(ctaEl);
+    }
+
+    // form_focus — fires when user clicks into any email input
+    var focusFired = false;
+    document.querySelectorAll('input[type="email"]').forEach(function(input) {
+      input.addEventListener('focus', function() {
+        if (focusFired) return;
+        focusFired = true;
+        if (typeof gtag === 'function') gtag('event', 'form_focus', { page: window.location.pathname });
+      });
+    });
+  })();
   </script>
 
 </body>
