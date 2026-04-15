@@ -3,28 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>Mirror — Stop Wasting 20 Minutes Before Every Meeting</title>
-  <meta name="description" content="Mirror delivers a full briefing 5 minutes before every meeting — your complete history with each attendee, open commitments, and recommended talking points. The personal AI context layer.">
-  <meta name="keywords" content="Mirror, context resurrection, AI meeting prep, personal AI context layer, AI briefing, meeting preparation, AI that knows you, personal context graph, Dopel">
+  <title>Mirror — Walk into every meeting already prepared.</title>
+  <meta name="description" content="Mirror is the personal AI context layer. A full briefing lands in your inbox 5 minutes before every meeting — history, commitments, red flags, talking points. Private beta — invite-only.">
+  <meta name="keywords" content="Mirror, personal AI, context resurrection, AI meeting prep, personal AI context layer, AI briefing, meeting preparation, AI that knows you, personal context graph, Dopel">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://bymirror.ai/waitlist">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Mirror — Stop Wasting 20 Minutes Before Every Meeting">
-  <meta property="og:description" content="Mirror delivers a full briefing 5 minutes before every meeting. Your complete history with each attendee, open commitments, and talking points — automatically.">
+  <meta property="og:title" content="Mirror — Walk into every meeting already prepared.">
+  <meta property="og:description" content="A full briefing lands 5 minutes before every meeting. History, commitments, talking points — automatically. Private beta — invite-only.">
   <meta property="og:url" content="https://bymirror.ai/waitlist">
   <meta property="og:site_name" content="mirror">
   <meta property="og:image" content="https://bymirror.ai/og/waitlist.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Mirror — Stop Wasting 20 Minutes Before Every Meeting">
-  <meta name="twitter:description" content="A full briefing lands 5 minutes before every meeting. Your history, your commitments, your talking points — automatically.">
+  <meta name="twitter:title" content="Mirror — Walk into every meeting already prepared.">
+  <meta name="twitter:description" content="A full briefing lands 5 minutes before every meeting. History, commitments, talking points — automatically.">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Mirror — Personal AI Context Layer",
-    "description": "Mirror delivers a full briefing before every meeting — your complete history with each attendee, open commitments, and recommended talking points. The personal AI context layer.",
+    "description": "Mirror delivers a full briefing 5 minutes before every meeting — your history with each attendee, open commitments, red flags, and talking points. The personal AI context layer.",
     "url": "https://bymirror.ai/waitlist",
     "publisher": {
       "@type": "Organization",
@@ -34,7 +34,6 @@
   }
   </script>
 
-  <!-- Fonts: Satoshi for wordmark -->
   <link rel="dns-prefetch" href="https://app.loops.so">
   <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
   <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@500&display=swap">
@@ -45,11 +44,15 @@
       --card: #ffffff;
       --text: #1a1a1a;
       --muted: #6b7280;
+      --muted-2: #4b5563;
       --border: #e5e7eb;
       --accent: #7c3aed;
       --accent-light: #a855f7;
       --accent-subtle: #f5f3ff;
       --fuchsia: #D946EF;
+      --amber: #f59e0b;
+      --green: #10b981;
+      --red: #ef4444;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -69,7 +72,7 @@
       justify-content: space-between;
       max-width: 960px;
       margin: 0 auto;
-      padding: 1.5rem 1.5rem;
+      padding: 1.25rem 1.5rem;
     }
     .nav-logo {
       font-weight: 700;
@@ -80,29 +83,38 @@
       align-items: center;
     }
     .nav-logo svg { height: 24px; width: auto; }
-    .nav-links { display: flex; gap: 1.25rem; font-size: 0.875rem; }
+    .nav-links { display: flex; gap: 1.25rem; font-size: 0.875rem; align-items: center; }
     .nav-links a { color: var(--muted); text-decoration: none; transition: color 0.15s; }
     .nav-links a:hover { color: var(--text); }
+    .nav-count {
+      font-size: 0.75rem;
+      color: var(--muted);
+      padding: 4px 10px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+    }
+    .nav-count strong { color: var(--text); font-weight: 600; }
 
     /* — HERO — */
     .hero {
-      max-width: 660px;
+      max-width: 720px;
       margin: 0 auto;
-      padding: 7rem 1.5rem 5rem;
+      padding: 5rem 1.5rem 3rem;
       text-align: center;
     }
     .hero-badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 6px 16px;
+      padding: 6px 14px;
       border: 1px solid var(--border);
       border-radius: 100px;
       font-size: 0.78rem;
       color: var(--muted);
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
       background: var(--card);
-      letter-spacing: 0.02em;
+      letter-spacing: 0.01em;
     }
     .hero-badge .pulse {
       display: inline-block;
@@ -113,35 +125,27 @@
       animation: pulse 2.5s ease-in-out infinite;
     }
     @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.85); }
     }
     .hero h1 {
-      font-size: 3.5rem;
+      font-size: 3.75rem;
       font-weight: 700;
-      line-height: 1.08;
-      letter-spacing: -0.035em;
-      margin-bottom: 1.5rem;
+      line-height: 1.04;
+      letter-spacing: -0.04em;
+      margin-bottom: 1.25rem;
       color: var(--text);
     }
     .hero h1 em {
       font-style: normal;
       color: var(--accent);
     }
-    .hero-label {
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 1.5rem;
-    }
     .hero-sub {
-      font-size: 1.15rem;
-      color: var(--muted);
-      max-width: 520px;
-      margin: 0 auto 2.5rem;
-      line-height: 1.65;
+      font-size: 1.2rem;
+      color: var(--muted-2);
+      max-width: 560px;
+      margin: 0 auto 2.25rem;
+      line-height: 1.55;
     }
     .hero-sub strong { color: var(--text); font-weight: 600; }
 
@@ -150,17 +154,17 @@
       display: flex;
       gap: 0.5rem;
       justify-content: center;
-      max-width: 440px;
+      max-width: 460px;
       margin: 0 auto 0.75rem;
     }
     .form-wrap input[type="email"] {
       flex: 1;
-      padding: 0.85rem 1rem;
+      padding: 0.95rem 1rem;
       border-radius: 10px;
       border: 1px solid var(--border);
       background: var(--card);
       color: var(--text);
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       outline: none;
       transition: border-color 0.2s, box-shadow 0.2s;
     }
@@ -171,13 +175,13 @@
     }
     .form-wrap input[type="email"]:focus::placeholder { color: transparent; }
     .form-wrap button {
-      padding: 0.85rem 1.5rem;
+      padding: 0.95rem 1.5rem;
       border: none;
       border-radius: 10px;
       background: var(--text);
       color: white;
       font-weight: 600;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       cursor: pointer;
       transition: transform 0.1s, background 0.15s, box-shadow 0.15s;
       white-space: nowrap;
@@ -191,18 +195,14 @@
     }
     .form-wrap button:active { transform: translateY(0); }
     .form-note {
-      font-size: 0.75rem;
-      color: #9ca3af;
+      font-size: 0.8rem;
+      color: var(--muted);
       text-align: center;
+      margin-top: 0.25rem;
     }
-    .form-note strong { color: var(--muted); }
+    .form-note strong { color: var(--text); font-weight: 600; }
     .form-success {
       display: none;
-      text-align: center;
-      padding: 1rem;
-      color: var(--accent);
-      font-weight: 600;
-      font-size: 1rem;
       animation: slideUp 0.4s ease-out;
     }
     @keyframes slideUp {
@@ -216,27 +216,92 @@
     }
     .sr-only {
       position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
       overflow: hidden;
       clip: rect(0,0,0,0);
       white-space: nowrap;
       border: 0;
     }
 
-    /* — SOCIAL PROOF — */
-    .proof {
+    /* — SUCCESS STATE (referral mechanic) — */
+    .success-card {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: var(--card);
+      border: 2px solid var(--accent);
+      border-radius: 16px;
+      text-align: left;
+    }
+    .success-card h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+    .success-card .pos {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin: 0.75rem 0;
+    }
+    .success-card .pos small { font-size: 0.8rem; font-weight: 500; color: var(--muted); letter-spacing: 0; }
+    .success-card p {
+      font-size: 0.9rem;
+      color: var(--muted-2);
+      margin-bottom: 1rem;
+      line-height: 1.55;
+    }
+    .success-card .share-line {
+      font-size: 0.95rem;
+      color: var(--text);
+      font-weight: 600;
+      margin: 1.25rem 0 0.5rem;
+    }
+    .share-buttons {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .share-btn {
+      flex: 1;
+      min-width: 110px;
+      padding: 0.65rem 0.85rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--card);
+      color: var(--text);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .share-btn:hover { border-color: var(--accent); background: var(--accent-subtle); }
+    .share-btn.copy { background: var(--text); color: white; border-color: var(--text); }
+    .share-btn.copy:hover { background: var(--fuchsia); border-color: var(--fuchsia); }
+
+    /* — HERO META ROW — */
+    .hero-meta {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 0.5rem;
-      margin-top: 2.5rem;
-      font-size: 0.8rem;
+      gap: 1.5rem;
+      margin-top: 2.25rem;
+      font-size: 0.82rem;
       color: var(--muted);
+      flex-wrap: wrap;
     }
-    .proof em { font-style: normal; color: var(--text); font-weight: 500; }
+    .hero-meta .dot {
+      width: 3px; height: 3px; border-radius: 50%;
+      background: #cbd5e1;
+    }
+    .hero-meta strong { color: var(--text); font-weight: 600; }
 
     /* — DIVIDER — */
     .divider {
@@ -246,251 +311,437 @@
       border-top: 1px solid var(--border);
     }
 
-    /* — PROBLEM — */
-    .problem {
-      max-width: 640px;
+    /* — BRIEFING PREVIEW (replaces product visuals) — */
+    .preview-section {
+      max-width: 720px;
       margin: 0 auto;
-      padding: 5rem 1.5rem;
+      padding: 4rem 1.5rem 2rem;
     }
-    .problem h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: -0.025em;
-      margin-bottom: 1.5rem;
-      line-height: 1.15;
-    }
-    .problem p {
-      font-size: 1rem;
-      color: var(--muted);
-      line-height: 1.7;
-      margin-bottom: 1rem;
-    }
-    .problem p strong { color: var(--text); }
-    .problem .stat {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 12px 20px;
-      background: var(--accent-subtle);
-      border-radius: 10px;
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--accent);
-    }
-
-    /* — CONTEXT RESURRECTION (hero feature) — */
-    .cr-section {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 5rem 1.5rem;
-    }
-    .cr-section .kicker {
-      font-size: 0.7rem;
+    .preview-section .kicker {
+      font-size: 0.72rem;
       font-weight: 600;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--accent);
       margin-bottom: 0.75rem;
+      text-align: center;
     }
-    .cr-section h2 {
+    .preview-section h2 {
       font-size: 2rem;
       font-weight: 700;
-      letter-spacing: -0.025em;
-      margin-bottom: 0.5rem;
-      max-width: 640px;
+      letter-spacing: -0.03em;
       line-height: 1.15;
+      text-align: center;
+      margin-bottom: 2rem;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .cr-section .cr-sub {
-      font-size: 0.88rem;
+    .brief {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px -12px rgba(15, 23, 42, 0.12);
+    }
+    .brief-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 1.25rem;
+      background: #f9fafb;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.78rem;
       color: var(--muted);
-      margin-bottom: 0.75rem;
+    }
+    .brief-head .from { color: var(--text); font-weight: 600; }
+    .brief-head .time { color: var(--accent); font-weight: 600; }
+    .brief-body {
+      padding: 1.5rem 1.5rem 1.75rem;
+    }
+    .brief-body .subject {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      margin-bottom: 0.25rem;
+    }
+    .brief-body .subject-sub {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+    .brief-section {
+      padding: 0.9rem 0;
+      border-top: 1px dashed var(--border);
+    }
+    .brief-section:first-of-type { border-top: none; padding-top: 0; }
+    .brief-section .label {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+    .brief-section .label.who { background: #ede9fe; color: #6d28d9; }
+    .brief-section .label.what { background: #dbeafe; color: #1d4ed8; }
+    .brief-section .label.flag { background: #fef2f2; color: #b91c1c; }
+    .brief-section .label.act { background: #dcfce7; color: #15803d; }
+    .brief-section p {
+      font-size: 0.88rem;
+      color: var(--muted-2);
+      line-height: 1.6;
+    }
+    .brief-section p strong { color: var(--text); font-weight: 600; }
+    .brief-section ul {
+      font-size: 0.88rem;
+      color: var(--muted-2);
+      line-height: 1.65;
+      list-style: none;
+      padding: 0;
+    }
+    .brief-section ul li { padding-left: 1.1rem; position: relative; margin-bottom: 0.25rem; }
+    .brief-section ul li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .brief-cite {
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 0.35rem;
+    }
+    .preview-caption {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 1.25rem;
       font-style: italic;
     }
-    .cr-section > p {
-      font-size: 1rem;
-      color: var(--muted);
-      max-width: 640px;
-      line-height: 1.7;
-      margin-bottom: 2.5rem;
-    }
-    .cr-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.25rem;
-    }
-    .cr-card {
-      padding: 1.5rem;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: var(--card);
-      transition: border-color 0.15s, transform 0.15s;
-    }
-    .cr-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-    .cr-card .tag {
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.5rem;
-    }
-    .cr-card h3 {
-      font-size: 1rem;
-      font-weight: 650;
-      margin-bottom: 0.35rem;
-      letter-spacing: -0.01em;
-    }
-    .cr-card p {
-      font-size: 0.85rem;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-    .cr-closer {
-      margin-top: 2.5rem;
-      font-size: 1.1rem;
-      font-weight: 500;
-      color: var(--text);
-    }
 
-    /* — FEATURES (secondary) — */
-    .features {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 5rem 1.5rem;
-    }
-    .features h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: -0.025em;
-      margin-bottom: 3rem;
-    }
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2.5rem;
-    }
-    .feat-label {
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.5rem;
-    }
-    .feat h3 {
-      font-size: 1.05rem;
-      font-weight: 650;
-      margin-bottom: 0.4rem;
-      letter-spacing: -0.01em;
-    }
-    .feat p {
-      font-size: 0.85rem;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    /* — PERSONAL AI — */
-    .personal-ai {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 5rem 1.5rem;
-    }
-    .personal-ai .kicker {
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.75rem;
-    }
-    .personal-ai h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: -0.025em;
-      margin-bottom: 1.5rem;
-      line-height: 1.15;
-    }
-    .personal-ai p {
-      font-size: 1rem;
-      color: var(--muted);
-      line-height: 1.7;
-      margin-bottom: 1rem;
-    }
-    .personal-ai p strong { color: var(--text); }
-    .personal-ai em { font-style: normal; color: var(--accent); font-weight: 600; }
-    .ai-vs {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.25rem;
-      margin-top: 2rem;
-    }
-    .ai-vs-card {
-      padding: 1.25rem;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-    }
-    .ai-vs-card.generic {
-      background: #f9fafb;
-      opacity: 0.7;
-    }
-    .ai-vs-card.personal {
-      background: var(--accent-subtle);
-      border-color: var(--accent);
-    }
-    .ai-vs-card .vs-label {
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 0.5rem;
-    }
-    .ai-vs-card.generic .vs-label { color: var(--muted); }
-    .ai-vs-card.personal .vs-label { color: var(--accent); }
-    .ai-vs-card p {
-      font-size: 0.85rem;
-      line-height: 1.6;
-      margin-bottom: 0;
-    }
-
-    /* — TRUST — */
-    .trust {
+    /* — PROBLEM / STATS — */
+    .problem {
       max-width: 640px;
       margin: 0 auto;
       padding: 4rem 1.5rem;
       text-align: center;
     }
-    .trust .kicker {
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
+    .problem h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.25rem;
+      line-height: 1.15;
+    }
+    .problem h2 em { font-style: normal; color: var(--accent); }
+    .problem p {
+      font-size: 1rem;
+      color: var(--muted-2);
+      line-height: 1.65;
+      max-width: 560px;
+      margin: 0 auto 1rem;
+    }
+    .problem p strong { color: var(--text); font-weight: 600; }
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+    .stat-box {
+      padding: 1.25rem 0.75rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    .stat-box .num {
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .stat-box .lbl {
+      font-size: 0.72rem;
       color: var(--muted);
+      margin-top: 0.4rem;
+      line-height: 1.35;
+    }
+
+    /* — HOW IT WORKS — */
+    .how {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+    .how h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    .how > p.sub {
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 3rem;
+    }
+    .how-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .how-step {
+      position: relative;
+      padding: 1.5rem 1.25rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    .how-step .n {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 700;
       margin-bottom: 0.75rem;
     }
-    .trust p {
+    .how-step h3 {
       font-size: 1rem;
+      font-weight: 650;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.5rem;
+    }
+    .how-step p {
+      font-size: 0.85rem;
       color: var(--muted);
-      line-height: 1.7;
+      line-height: 1.6;
     }
-    .trust p strong { color: var(--text); }
 
-    /* — BOTTOM CTA — */
-    .bottom-cta {
-      max-width: 580px;
+    /* — SUBSIDY HOOK — */
+    .subsidy {
+      max-width: 720px;
       margin: 0 auto;
-      padding: 5rem 1.5rem 3rem;
-      text-align: center;
+      padding: 3rem 1.5rem;
     }
-    .bottom-cta h2 {
-      font-size: 2.25rem;
+    .subsidy-card {
+      padding: 2rem 1.75rem;
+      background: linear-gradient(135deg, #f5f3ff 0%, #fdf4ff 100%);
+      border: 1px solid var(--accent);
+      border-radius: 16px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .subsidy-card .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      padding: 4px 10px;
+      background: white;
+      border-radius: 100px;
+      border: 1px solid var(--accent);
+      margin-bottom: 1rem;
+    }
+    .subsidy-card h3 {
+      font-size: 1.6rem;
       font-weight: 700;
       letter-spacing: -0.025em;
       margin-bottom: 0.75rem;
+      line-height: 1.2;
+    }
+    .subsidy-card h3 em { font-style: normal; color: var(--accent); }
+    .subsidy-card p {
+      font-size: 0.95rem;
+      color: var(--muted-2);
+      max-width: 460px;
+      margin: 0 auto 1rem;
+      line-height: 1.55;
+    }
+    .subsidy-logos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+    }
+    .chip {
+      padding: 6px 12px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 0.78rem;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* — PERSONAL AI VS — */
+    .personal-ai {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+    .personal-ai h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      text-align: center;
+      margin-bottom: 2.25rem;
+      line-height: 1.15;
+    }
+    .personal-ai h2 em { font-style: normal; color: var(--accent); }
+    .ai-vs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    .ai-vs-card {
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+    .ai-vs-card.generic { background: #f9fafb; }
+    .ai-vs-card.personal { background: var(--accent-subtle); border-color: var(--accent); }
+    .ai-vs-card .vs-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    .ai-vs-card.generic .vs-label { color: var(--muted); }
+    .ai-vs-card.personal .vs-label { color: var(--accent); }
+    .ai-vs-card h4 {
+      font-size: 1rem;
+      font-weight: 650;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.5rem;
+    }
+    .ai-vs-card p {
+      font-size: 0.85rem;
+      color: var(--muted-2);
+      line-height: 1.6;
+    }
+
+    /* — TRUST — */
+    .trust {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem;
+      text-align: center;
+    }
+    .trust .kicker {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .trust h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+    .trust p {
+      font-size: 0.95rem;
+      color: var(--muted-2);
+      line-height: 1.65;
+      max-width: 560px;
+      margin: 0 auto 0.75rem;
+    }
+    .trust p strong { color: var(--text); font-weight: 600; }
+    .trust .pill-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+    }
+
+    /* — FAQ — */
+    .faq {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+    .faq h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .faq details {
+      border-bottom: 1px solid var(--border);
+      padding: 1.1rem 0;
+    }
+    .faq details:first-of-type { border-top: 1px solid var(--border); }
+    .faq summary {
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after {
+      content: "+";
+      color: var(--accent);
+      font-size: 1.3rem;
+      font-weight: 400;
+      transition: transform 0.15s;
+    }
+    .faq details[open] summary::after { content: "−"; }
+    .faq details p {
+      font-size: 0.9rem;
+      color: var(--muted-2);
+      line-height: 1.65;
+      margin-top: 0.6rem;
+    }
+    .faq details p strong { color: var(--text); font-weight: 600; }
+
+    /* — BOTTOM CTA — */
+    .bottom-cta {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+    }
+    .bottom-cta h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.75rem;
+      line-height: 1.1;
     }
     .bottom-cta h2 em { font-style: normal; color: var(--accent); }
     .bottom-cta > p {
-      color: var(--muted);
+      color: var(--muted-2);
       margin-bottom: 2rem;
-      font-size: 1rem;
+      font-size: 1.05rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.55;
     }
 
     /* — FOOTER — */
@@ -510,15 +761,21 @@
 
     /* — RESPONSIVE — */
     @media (max-width: 768px) {
-      .hero { padding: 3.5rem 1.25rem 3rem; }
-      .hero h1 { font-size: 2.25rem; }
-      .hero-sub { font-size: 1rem; }
+      .hero { padding: 2.5rem 1.25rem 2rem; }
+      .hero h1 { font-size: 2.4rem; letter-spacing: -0.035em; }
+      .hero-sub { font-size: 1.05rem; }
       .form-wrap { flex-direction: column; }
       .form-wrap button { width: 100%; min-height: 48px; }
-      .cr-grid { grid-template-columns: 1fr; }
-      .features-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .bottom-cta h2 { font-size: 1.75rem; }
+      .hero-meta { gap: 0.75rem; font-size: 0.75rem; }
+      .hero-meta .dot { display: none; }
+      .stat-row { grid-template-columns: 1fr; }
+      .how-steps { grid-template-columns: 1fr; }
       .ai-vs { grid-template-columns: 1fr; }
+      .bottom-cta h2 { font-size: 1.85rem; }
+      .preview-section h2, .problem h2, .how h2, .personal-ai h2, .faq h2 { font-size: 1.6rem; }
+      .subsidy-card h3 { font-size: 1.3rem; }
+      .brief-body { padding: 1.25rem; }
+      .footer { flex-direction: column; gap: 0.5rem; text-align: center; }
     }
   </style>
 </head>
@@ -529,156 +786,172 @@
       <svg width="120" height="24" viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="mirror"><circle cx="38" cy="40" r="36" fill="#71717A" opacity="0.06"/><path d="M38 4 A36 36 0 0 0 38 76 A9 36 0 0 1 38 4 Z" fill="#71717A" opacity="0.18"/><path d="M38 4 A36 36 0 0 1 38 76 A22 36 0 0 0 38 4 Z" fill="#0A0A0A"/><text x="96" y="52" font-family="Satoshi, Inter, system-ui, sans-serif" font-size="38" font-weight="500" letter-spacing="-1" fill="#0A0A0A">mirror</text></svg>
     </a>
     <div class="nav-links">
-      <a href="#context-resurrection">How it works</a>
       <a href="/blog">Blog</a>
     </div>
   </nav>
 
   <!-- ========== HERO ========== -->
   <section class="hero">
-    <div class="hero-badge"><span class="pulse"></span> Early Access — Limited Spots</div>
-    <h1>Stop wasting 20 minutes before every <em>meeting.</em></h1>
-    <p class="hero-label">The personal AI context layer</p>
-    <p class="hero-sub">You search Gmail, check Slack, re-read three-month-old notes, scan the calendar. <strong>Mirror delivers your complete history in one document — 5 minutes before you walk in</strong>, automatically. Not a chatbot. An AI that actually knows you.</p>
+    <div class="hero-badge"><span class="pulse"></span> Private beta — invite-only</div>
+    <h1>Walk into every meeting <em>already prepared.</em></h1>
+    <p class="hero-sub">Mirror pushes a full briefing <strong>5 minutes before every meeting</strong> — to your phone, your desktop and mobile app, or your inbox. Their history, your commitments, red flags, talking points. Share it, sync to your notes, debrief after. <strong>You just walk in.</strong></p>
 
     <form class="form-wrap" id="waitlist-form" action="https://app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7" method="POST">
       <label for="email-hero" class="sr-only">Email address</label>
       <input type="email" id="email-hero" name="email" placeholder="name@company.com" required autocomplete="email" autocapitalize="off" spellcheck="false" aria-required="true">
       <input type="hidden" name="source" value="hero">
-      <button type="submit">Get early access →</button>
+      <button type="submit">Claim my spot →</button>
     </form>
-    <p class="form-note"><strong>Limited access</strong> — ~500 spots per wave. We'll email when yours opens.</p>
-    <div class="form-success" id="form-success">✓ You're in. We'll email when your beta slot opens.</div>
+    <p class="form-note">Beta activated in waves. We'll email when your slot opens.</p>
 
-    <div class="proof">
-      <em>Designed for professionals with 5+ daily meetings and context across 12+ sources.</em>
+    <div class="hero-meta">
+      <span>Invite-only private beta</span>
+      <span class="dot"></span>
+      <span>One read · no chat UI</span>
+      <span class="dot"></span>
+      <span><strong>Free</strong> during beta</span>
     </div>
+  </section>
+
+  <!-- ========== BRIEFING PREVIEW (replaces product visuals) ========== -->
+  <section class="preview-section">
+    <div class="kicker">What Mirror pushes 5 minutes before</div>
+    <h2>Here's the briefing landing before your 9am.</h2>
+    <div class="brief">
+      <div class="brief-head">
+        <span><span class="from">Mirror</span> &nbsp;·&nbsp; briefings@bymirror.ai</span>
+        <span class="time">⏱ 9:00am in 5 min</span>
+      </div>
+      <div class="brief-body">
+        <div class="subject">Your 9:00am with Sarah Chen (Acme Corp)</div>
+        <div class="subject-sub">Q2 renewal call · 30 min · last met 34 days ago</div>
+
+        <div class="brief-section">
+          <span class="label who">Who</span>
+          <p><strong>Sarah Chen — VP Product, Acme.</strong> You've met 7 times since Jan 2024. Relationship is warm but cooling — last Slack reply was curt (<em>"let's discuss live"</em>). She prefers <strong>direct asks</strong> and tends to decide in-meeting, not after.</p>
+        </div>
+
+        <div class="brief-section">
+          <span class="label what">What's open</span>
+          <ul>
+            <li>Security doc you promised on <strong>Mar 12</strong> — still not sent</li>
+            <li>Pricing delta of <strong>$18K/yr</strong> raised twice, unresolved</li>
+            <li>Integration timeline she asked about in <strong>last email</strong> — no reply from you</li>
+          </ul>
+        </div>
+
+        <div class="brief-section">
+          <span class="label flag">Red flag</span>
+          <p>You told her in writing the integration would ship Q1. <strong>Eng moved it to Q3.</strong> She has not been told. If she opens with timeline, lead with the truth — don't get cornered.</p>
+          <div class="brief-cite">Source: #eng-updates thread · Mar 28</div>
+        </div>
+
+        <div class="brief-section">
+          <span class="label act">Your move</span>
+          <ul>
+            <li>Open with the security doc — unblocks her legal ask</li>
+            <li>Reframe pricing: tie the $18K to the new <strong>enterprise SSO tier</strong></li>
+            <li>Get the Q3 timeline on the table in the first 10 min, not the last 5</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="preview-caption">Delivered as a phone notification, in the desktop and mobile app, and your inbox — whichever you reach for first. Share it with attendees, sync it to your notes app, or debrief with Mirror after the meeting.</p>
   </section>
 
   <hr class="divider">
 
   <!-- ========== THE PROBLEM ========== -->
   <section class="problem">
-    <h2>You spend 15–30 minutes before every meeting rebuilding context.</h2>
-    <p>
-      You open Gmail. Search for the last thread. Check Slack for what the team said last week. Re-read notes from three months ago. Scan calendar history. Open a Google Doc to find what was actually decided versus what was said. <strong>You walk in missing the one detail that matters — and find out 10 minutes in.</strong>
-    </p>
-    <p>
-      You've tried ChatGPT. It doesn't know who you met last Tuesday or what you promised Sarah. Every session, you start from zero. By the time you brief it with enough context, you've already spent 15 minutes — the problem it was supposed to solve. Generic AI reflects the average of humanity. It doesn't reflect <em>you</em>.
-    </p>
-    <div class="stat">6–12 hours per week — just remembering instead of deciding.</div>
+    <h2>Every meeting, you rebuild context <em>you already had.</em></h2>
+    <p>Gmail search. Slack scrollback. That Notion doc from three months ago. The meeting notes you swore you'd find. You've tried ChatGPT — it doesn't know who you met last Tuesday or what you promised Sarah. <strong>Every session, you start from zero.</strong></p>
+    <p>Generic AI reflects the average of humanity. It doesn't reflect <strong>you.</strong></p>
   </section>
 
   <hr class="divider">
 
-  <!-- ========== CONTEXT RESURRECTION ========== -->
-  <section class="cr-section" id="context-resurrection">
-    <div class="kicker">Context Resurrection</div>
-    <h2>Five minutes before you walk in, you're not scrambling — you're ready.</h2>
-    <p class="cr-sub">Built for people with 5+ meetings a day and context spread across 12 tabs.</p>
-    <p>Mirror pulls from your email, calendar, and notes to build one document: exactly what you need to know about this person, this topic, and what's been promised. No setup. No copying. It just arrives.</p>
-
-    <div class="cr-grid">
-      <div class="cr-card">
-        <div class="tag">Who</div>
-        <h3>Your relationship history with each attendee</h3>
-        <p>Every conversation, commitment made, and open question — at a glance. You know where you stand with them. They don't know you know.</p>
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="how">
+    <h2>Three steps. Then it's automatic.</h2>
+    <p class="sub">No chat interface. No daily prompting. Mirror runs in the background.</p>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="n">1</div>
+        <h3>Connect once</h3>
+        <p>Gmail, Calendar, Slack, Notion — OAuth in under 2 minutes. No manual setup.</p>
       </div>
-      <div class="cr-card">
-        <div class="tag">What</div>
-        <h3>Topics you need to own</h3>
-        <p>Inferred from ongoing projects, unresolved threads, and what's been promised. You're never caught off-guard in the room.</p>
+      <div class="how-step">
+        <div class="n">2</div>
+        <h3>Mirror builds your context graph</h3>
+        <p>Every relationship, commitment, and unresolved thread — mapped and kept current silently.</p>
       </div>
-      <div class="cr-card">
-        <div class="tag">Red flags</div>
-        <h3>What could go wrong in this meeting</h3>
-        <p>You promised follow-up docs two weeks ago. The last email contradicts what you committed verbally. That relationship's been cold for 30 days. Mirror flags these before you walk in.</p>
-      </div>
-      <div class="cr-card">
-        <div class="tag">Act</div>
-        <h3>Your talking points — sourced and verified</h3>
-        <p>Suggested agenda items weighted to <em>your</em> priorities, not theirs. Every claim is one click back to the original email or note — no surprises in the room.</p>
-      </div>
-    </div>
-
-    <p class="cr-closer">No setup. No manual work. It arrives five minutes before you need it — then you're the expert in the room.</p>
-
-    <div style="margin-top: 2rem;">
-      <form class="form-wrap" id="waitlist-form-cr" action="https://app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7" method="POST" style="justify-content: flex-start;">
-        <label for="email-cr" class="sr-only">Email address</label>
-        <input type="email" id="email-cr" name="email" placeholder="name@company.com" required autocomplete="email" autocapitalize="off" spellcheck="false" aria-required="true">
-        <input type="hidden" name="source" value="cr-section">
-        <button type="submit">Get early access →</button>
-      </form>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- ========== WHAT COMPOUNDS ========== -->
-  <section class="features">
-    <h2>Context Resurrection is the start. Here's what compounds.</h2>
-    <div class="features-grid">
-      <div class="feat">
-        <div class="feat-label">Every morning</div>
-        <h3>Daily Brief</h3>
-        <p>Not a calendar summary — your 30-second mental preparation for every meeting. Relationship status, what's been promised, and what's at stake before you get on the call.</p>
-      </div>
-      <div class="feat">
-        <div class="feat-label">On your behalf</div>
-        <h3>The Dopel</h3>
-        <p>Your AI twin that drafts follow-ups in your voice, catches what you missed — contradictions, unmet commitments — and surfaces next moves before the meeting ends.</p>
-      </div>
-      <div class="feat">
-        <div class="feat-label">To your counterpart</div>
-        <h3>Context Gift</h3>
-        <p>Share a briefing with attendees — they arrive prepared too. Every shared briefing carries your Mirror badge. As more people use it, the advantage compounds.</p>
+      <div class="how-step">
+        <div class="n">3</div>
+        <h3>Pushed to you 5 min before</h3>
+        <p>Phone notification, desktop and mobile app, inbox — whichever you open first. Share it, sync to your notes, debrief after.</p>
       </div>
     </div>
   </section>
 
-  <hr class="divider">
-
-  <!-- ========== PERSONAL AI ========== -->
+  <!-- ========== PERSONAL AI VS — sharpened ========== -->
   <section class="personal-ai">
-    <div class="kicker">Personal AI</div>
     <h2>Not another chatbot. An AI that actually <em>knows you.</em></h2>
-    <p>
-      Every AI you've used starts from zero. Mirror doesn't. It builds a <strong>persistent context graph</strong> — your relationships, your commitments, your communication patterns, your unresolved questions — and compounds this understanding over time. Every interaction makes it smarter about you.
-    </p>
-    <p>
-      The result: an AI that knows who you are to different people, how you communicate in different contexts, what you care about, and what you've committed to. Not the average of humanity. <em>You.</em>
-    </p>
 
     <div class="ai-vs">
       <div class="ai-vs-card generic">
         <div class="vs-label">Generic AI</div>
-        <p>"Tell me about your meeting with Sarah." You spend 5 minutes briefing it. It gives you a generic summary. Tomorrow, it's forgotten everything.</p>
+        <h4>Tabula rasa, forever.</h4>
+        <p>"Tell me about your meeting with Sarah." You brief it for 5 minutes. It gives you a generic summary. Tomorrow, it's forgotten everything. You're the memory. It's the parrot.</p>
       </div>
       <div class="ai-vs-card personal">
         <div class="vs-label">Mirror — Personal AI</div>
-        <p>Mirror already knows your 18-month history with Sarah, the three commitments still open, the tension from last quarter, and the fact that she prefers direct communication. It just arrives.</p>
+        <h4>Knows your 18-month history.</h4>
+        <p>Already knows your three open commitments with Sarah, the tension from last quarter, that she prefers direct asks, and that you owe her a doc from Mar 12. It just arrives — no prompt required.</p>
       </div>
     </div>
   </section>
 
   <hr class="divider">
 
-  <!-- ========== TRUST ========== -->
-  <section class="trust">
-    <div class="kicker">Who's building this</div>
-    <p>Built by founders who've shipped at <strong>Microsoft, Amazon, and Stanford labs</strong> — and taken products from zero to IPO. We've secured infrastructure at cloud scale. Your data is encrypted, isolated, and never used for training. We're paranoid about security so you don't have to be.</p>
+  <!-- ========== FAQ (handle objections) ========== -->
+  <section class="faq">
+    <h2>Objections, handled.</h2>
+
+    <details>
+      <summary>Is this actually different from ChatGPT or Claude?</summary>
+      <p><strong>Yes — and the difference is memory.</strong> Generic AI starts from zero every session. Mirror builds a persistent context graph of your relationships, commitments, and communication patterns. It compounds. ChatGPT parrots. Mirror knows.</p>
+    </details>
+
+    <details>
+      <summary>What integrations are live in beta?</summary>
+      <p>Gmail, Google Calendar, Slack, and Notion at activation. We're expanding the integration set regularly — tell us what you need when you activate.</p>
+    </details>
+
+    <details>
+      <summary>How much will it cost?</summary>
+      <p><strong>The private beta is free.</strong> Post-beta pricing will be shared well before any charge. Founding-wave users will receive preferential pricing at launch — details to follow as we approach general availability.</p>
+    </details>
+
+    <details>
+      <summary>When will I actually get in?</summary>
+      <p>We're activating users in waves. You'll receive an email as soon as your slot opens. Sharing Mirror with others helps us prioritize new waves.</p>
+    </details>
+
+    <details>
+      <summary>Do I need to prompt it?</summary>
+      <p>No. Mirror is not a chat interface. It runs silently and pushes briefings to you 5 minutes before each meeting. You can ask follow-ups via email reply if you want — but most users never need to.</p>
+    </details>
   </section>
 
   <!-- ========== BOTTOM CTA ========== -->
   <section class="bottom-cta">
-    <h2>Walk in as the best-prepared person in the <em>room.</em></h2>
-    <p>A personal AI that knows you, compounds over time, and pushes context before you need it. Private beta rolling out now.</p>
+    <h2>Be the <em>best-prepared person</em> in every room.</h2>
+    <p>Stop spending another Sunday rebuilding context you already had. Private beta rolling out in waves.</p>
     <form class="form-wrap" id="waitlist-form-2" action="https://app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7" method="POST">
       <label for="email-bottom" class="sr-only">Email address</label>
       <input type="email" id="email-bottom" name="email" placeholder="name@company.com" required autocomplete="email" autocapitalize="off" spellcheck="false" aria-required="true">
       <input type="hidden" name="source" value="bottom">
-      <button type="submit">Get early access →</button>
+      <button type="submit">Claim my spot →</button>
     </form>
     <p class="form-note">One email when your beta slot opens. Unsubscribe anytime.</p>
   </section>
@@ -690,44 +963,72 @@
     </div>
   </footer>
 
+  <!-- ========== SUCCESS CARD TEMPLATE (hidden until submit) ========== -->
+  <template id="success-template">
+    <div class="success-card">
+      <h3>You're on the list.</h3>
+      <p>We'll email you when your beta slot opens. Invitations roll out in waves.</p>
+      <p class="share-line">Know someone else who'd use this?</p>
+      <div class="share-buttons">
+        <a class="share-btn" href="#" data-share="twitter">Share on X</a>
+        <a class="share-btn" href="#" data-share="linkedin">LinkedIn</a>
+        <button class="share-btn copy" data-share="copy">Copy link</button>
+      </div>
+    </div>
+  </template>
+
   <script>
-    document.querySelectorAll('form').forEach(function(form) {
+    // ——— Form submit with share-focused success state ———
+    document.querySelectorAll('form.form-wrap').forEach(function(form) {
       form.addEventListener('submit', function(e) {
         e.preventDefault();
         var emailInput = form.querySelector('input[type="email"]');
         if (!emailInput || !emailInput.value) return;
         var btn = form.querySelector('button');
-        if (btn) { btn.disabled = true; btn.innerHTML = 'Sending\u2026'; }
+        if (btn) { btn.disabled = true; btn.innerHTML = 'Sending…'; }
 
         var body = 'userGroup=&mailingLists=&email=' + encodeURIComponent(emailInput.value);
 
-        // Show success immediately
-        form.style.display = 'none';
-        var note = form.parentElement.querySelector('.form-note');
-        if (note) note.style.display = 'none';
-        var success = form.parentElement.querySelector('.form-success');
-        if (success) {
-          success.style.display = 'block';
-        } else {
-          var msg = document.createElement('p');
-          msg.className = 'form-success';
-          msg.style.display = 'block';
-          msg.textContent = "\u2713 You\u2019re in. We\u2019ll email when your beta slot opens.";
-          form.parentElement.insertBefore(msg, form.nextSibling);
-        }
+        var shareUrl = 'https://bymirror.ai/waitlist';
+        var shareText = "I just joined the Mirror waitlist — a personal AI that prepares you for every meeting.";
 
-        // Send to Loops
+        // Build success card from template
+        var tpl = document.getElementById('success-template');
+        var clone = tpl.content.firstElementChild.cloneNode(true);
+
+        // Wire share buttons
+        clone.querySelectorAll('[data-share]').forEach(function(b) {
+          var t = b.getAttribute('data-share');
+          if (t === 'twitter') {
+            b.href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText) + '&url=' + encodeURIComponent(shareUrl);
+            b.target = '_blank'; b.rel = 'noopener';
+          } else if (t === 'linkedin') {
+            b.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(shareUrl);
+            b.target = '_blank'; b.rel = 'noopener';
+          } else if (t === 'copy') {
+            b.addEventListener('click', function(ev) {
+              ev.preventDefault();
+              navigator.clipboard && navigator.clipboard.writeText(shareUrl);
+              b.textContent = '✓ Copied';
+              setTimeout(function(){ b.textContent = 'Copy link'; }, 2200);
+            });
+          }
+        });
+
+        // Swap form for success card
+        var parent = form.parentElement;
+        form.style.display = 'none';
+        var note = parent.querySelector('.form-note');
+        if (note) note.style.display = 'none';
+        parent.insertBefore(clone, form.nextSibling);
+
+        // Fire to Loops
         fetch(form.action, {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: body
-        }).then(function(response) {
-          if (!response.ok) throw new Error('Submission failed');
         }).catch(function() {
-          if (btn) { btn.disabled = false; btn.innerHTML = 'Try again \u2192'; }
-          form.style.display = 'flex';
-          if (note) note.style.display = 'block';
-          if (success) success.style.display = 'none';
+          if (btn) { btn.disabled = false; btn.innerHTML = 'Claim my spot →'; }
         });
       });
     });
