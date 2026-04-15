@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18066065136"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18066065136');
+  function trackConversion() {
+    gtag('event', 'conversion', {'send_to': 'AW-18066065136/ROk9CM_z-7kYEJu7ycwq'});
+  }
+</script>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LDZDKP6XZ"></script>
+<script>gtag('config', 'G-0LDZDKP6XZ');</script>
+
+<!-- Plausible — uncomment when account is set up -->
+<!-- <script defer data-domain="bymirror.ai" src="https://plausible.io/js/script.js"></script> -->
+
+<!-- SEO: Primary -->
+<title>Switching from ChatGPT? Don't Lose Your Context — Mirror</title>
+<meta name="description" content="Don't rebuild who you are every time you switch AI tools. Mirror builds one persistent context layer above ChatGPT, Claude, and Gemini. No lock-in. Transcend the choice." />
+<meta name="keywords" content="ChatGPT to Claude, AI tool migration, switching AI tools, lose ChatGPT context, Claude context, AI memory layer, personal AI context, Mirror AI, bymirror.ai" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<meta name="author" content="mirror" />
+<meta name="theme-color" content="#0A0A0A" />
+<link rel="canonical" href="https://bymirror.ai/switch" />
+<link rel="alternate" hreflang="en" href="https://bymirror.ai/switch" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Switching from ChatGPT to Claude? Keep Your Context — Mirror" />
+<meta property="og:description" content="One persistent memory layer above any AI tool. Switch freely. Never lose your context again." />
+<meta property="og:url" content="https://bymirror.ai/switch" />
+<meta property="og:site_name" content="mirror" />
+<meta property="og:image" content="https://bymirror.ai/og/switch.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Switching from ChatGPT? Don't Lose Your Context" />
+<meta name="twitter:description" content="Mirror is the context layer that lives above every AI tool. Use ChatGPT today, Claude tomorrow." />
+<meta name="twitter:image" content="https://bymirror.ai/og/switch.png" />
+<meta name="twitter:site" content="@bymirrorai" />
+
+<!-- Schema.org: Organization -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"mirror",
+  "alternateName":"Mirror",
+  "url":"https://bymirror.ai",
+  "logo":"https://bymirror.ai/brand/logo/lockup-fuchsia-white-720w.png",
+  "description":"The missing layer for personal AI. Artificial Personal Intelligence — trained on you.",
+  "email":"contact@bymirror.ai",
+  "sameAs":["https://x.com/bymirrorai"]
+}
+</script>
+
+<!-- Fonts: Inter (body/headings) + Satoshi (wordmark only, per brand guidelines) -->
+<link rel="preconnect" href="https://rsms.me/" crossorigin />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@500&display=swap" />
+
+<style>
+  :root {
+    /* Core */
+    --near-black: #0A0A0A;
+    --dark:       #1A1A1A;
+    --charcoal:   #27272A;
+    --white:      #FFFFFF;
+
+    /* Neutral scale (Zinc) */
+    --zinc-600:   #52525B;
+    --zinc-500:   #71717A;
+    --zinc-400:   #A1A1AA;
+    --zinc-300:   #D4D4D8;
+    --zinc-200:   #E4E4E7;
+    --zinc-100:   #F4F4F5;
+
+    /* Tinted backgrounds */
+    --offwhite:   #F5F5F3;
+    --blush:      #FDF2F8;
+    --lavender:   #F3E8FF;
+
+    /* Primary gradient — use sparingly */
+    --grad-fuchsia: #D946EF;
+    --grad-violet:  #8B5CF6;
+    --gradient: linear-gradient(135deg, #D946EF 0%, #8B5CF6 100%);
+
+    /* Layout */
+    --radius: 14px;
+    --maxw:   1040px;
+    --font:   "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    --font-wordmark: "Satoshi", "Inter", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--offwhite); color: var(--near-black);
+    font-family: var(--font); font-feature-settings: "ss01","cv11";
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.58;
+  }
+  @supports (font-variation-settings: normal) { html, body { font-family: "Inter var", var(--font); } }
+  a { color: var(--near-black); text-decoration: underline; text-decoration-color: var(--zinc-300); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--grad-fuchsia); }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 32px; }
+  .sr { position: absolute; left: -9999px; }
+
+  /* ========== HEADER ========== */
+  header.top { padding: 18px 0; }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .logo-link { display: inline-flex; align-items: center; text-decoration: none; }
+  .logo-link svg { height: 32px; width: auto; display: block; }
+  nav.menu a {
+    color: var(--zinc-500); font-size: 14px; font-weight: 500;
+    margin-left: 28px; text-decoration: none;
+  }
+  nav.menu a:hover { color: var(--near-black); }
+
+  /* ========== HERO ========== */
+  .hero { padding: 28px 0 40px; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--white); color: var(--charcoal);
+    font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 9px 16px; border-radius: 999px; margin-bottom: 12px;
+    border: 1px solid var(--zinc-200);
+  }
+  .eyebrow .dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--gradient);
+    box-shadow: 0 0 0 0 rgba(217,70,239,.6);
+    animation: pulse 2.2s infinite;
+  }
+  @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(217,70,239,.6)} 70%{box-shadow:0 0 0 12px rgba(217,70,239,0)} 100%{box-shadow:0 0 0 0 rgba(217,70,239,0)} }
+
+  h1 {
+    font-size: clamp(36px, 4.5vw, 50px);
+    line-height: 1.06; letter-spacing: -0.035em;
+    margin: 0 0 14px; font-weight: 700;
+    color: var(--near-black); max-width: 20ch;
+  }
+  h1 em {
+    font-style: normal;
+    background: var(--gradient);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .lede {
+    font-size: clamp(16px, 1.8vw, 19px);
+    color: var(--zinc-600); max-width: 640px;
+    margin: 0 0 18px; line-height: 1.5;
+  }
+  .lede strong { color: var(--near-black); font-weight: 600; }
+
+  /* CTA */
+  form.signup { display: flex; gap: 12px; max-width: 560px; flex-wrap: wrap; }
+  form.signup input[type="email"] {
+    flex: 1 1 260px; min-width: 0;
+    background: var(--white); color: var(--near-black);
+    border: 1px solid var(--zinc-300); border-radius: var(--radius);
+    padding: 14px 18px; font-size: 16px; font-family: var(--font);
+    outline: none; transition: border-color .15s ease, box-shadow .15s ease;
+  }
+  form.signup input[type="email"]::placeholder { color: var(--zinc-400); }
+  form.signup input[type="email"]:focus { border-color: var(--grad-fuchsia); box-shadow: 0 0 0 4px rgba(217,70,239,.28); }
+  form.signup input[type="email"]:focus::placeholder { color: transparent; }
+  form.signup button.primary {
+    background: var(--near-black); color: var(--white);
+    border: 0; border-radius: var(--radius);
+    padding: 14px 28px; font-size: 16px; font-weight: 600;
+    cursor: pointer; letter-spacing: -0.01em; font-family: var(--font);
+    transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+    box-shadow: 0 2px 8px rgba(10, 10, 10, 0.12);
+  }
+  form.signup button.primary:hover { background: var(--grad-fuchsia); transform: translateY(-2px); box-shadow: 0 4px 16px rgba(217, 70, 239, 0.24); }
+  form.signup button.primary:active { transform: translateY(0); box-shadow: 0 2px 8px rgba(217, 70, 239, 0.2); }
+  form.signup button.primary:focus { outline: 2px solid var(--grad-violet); outline-offset: 2px; }
+  @media (max-width: 720px) { form.signup button.primary { min-height: 48px; } }
+  .consent { color: var(--zinc-500); font-size: 13px; margin-top: 10px; max-width: 560px; }
+  .consent a { color: var(--zinc-500); }
+
+  /* ========== SECTIONS ========== */
+  section.block { padding: 104px 0; border-top: 1px solid var(--zinc-200); background: var(--white); }
+  section.block.tinted { background: var(--offwhite); }
+  section.block.dark { background: var(--near-black); color: var(--white); border-top: 0; }
+  section.block.dark h2, section.block.dark h3 { color: var(--white); }
+  section.block.dark p { color: var(--zinc-400); }
+
+  .kicker {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--zinc-500); margin-bottom: 18px;
+  }
+  section.block.dark .kicker { color: var(--zinc-400); }
+  h2 {
+    font-size: clamp(32px, 4.6vw, 52px);
+    line-height: 1.06; letter-spacing: -0.028em;
+    margin: 0 0 22px; font-weight: 700;
+    color: var(--near-black); max-width: 22ch;
+  }
+  h3 { font-size: 20px; margin: 0 0 10px; letter-spacing: -0.012em; font-weight: 600; color: var(--near-black); }
+  section p { color: var(--zinc-600); max-width: 720px; font-size: 17.5px; }
+  section p strong { color: var(--near-black); font-weight: 600; }
+
+  /* ========== FEATURE GRID ========== */
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-top: 44px; }
+  .feat { border: 1px solid var(--zinc-200); border-radius: var(--radius); padding: 28px; background: var(--white); transition: border-color .15s ease, transform .15s ease; }
+  .feat:hover { border-color: var(--zinc-400); transform: translateY(-2px); }
+  .feat .num { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--zinc-500); }
+  .feat h3 { margin-top: 12px; font-size: 20px; }
+  .feat p { font-size: 14.5px; color: var(--zinc-500); margin: 8px 0 0; line-height: 1.58; }
+
+  /* ========== MANIFESTO ========== */
+  .manifesto { padding: 104px 0; }
+  .manifesto p { color: var(--zinc-600); font-size: 17.5px; margin-top: 0; }
+  .manifesto .intro { font-size: 20px; line-height: 1.65; color: var(--charcoal); max-width: 720px; margin-bottom: 0; margin-top: 20px; }
+
+  /* ========== COMPLEMENTARY ========== */
+  .complementary .stack { margin-top: 40px; display: grid; grid-template-columns: 1fr auto 1fr; gap: 28px; align-items: center; }
+  .stack-card {
+    background: var(--white); border: 1px solid var(--zinc-200);
+    border-radius: var(--radius); padding: 28px;
+  }
+  .stack-card h3 { font-size: 17px; margin-bottom: 14px; letter-spacing: -0.005em; }
+  .stack-card ul { margin: 0; padding: 0; list-style: none; }
+  .stack-card li { color: var(--zinc-500); font-size: 15px; padding: 6px 0; border-bottom: 1px solid var(--zinc-100); }
+  .stack-card li:last-child { border-bottom: 0; }
+  .stack-plus { font-size: 32px; color: var(--zinc-300); font-weight: 300; text-align: center; }
+  .stack-card.mirror-card { border-color: var(--grad-violet); background: var(--lavender); }
+  .stack-card.mirror-card h3 { color: var(--near-black); }
+  .stack-card.mirror-card li { color: var(--charcoal); border-bottom-color: rgba(139,92,246,.15); }
+  @media (max-width: 760px) {
+    .complementary .stack { grid-template-columns: 1fr; }
+    .stack-plus { transform: rotate(90deg); }
+  }
+
+  /* ========== FINAL CTA (dark sandwich) ========== */
+  .final { padding: 120px 0; text-align: center; }
+  .final h2 { color: var(--white); margin: 0 auto 20px; max-width: 20ch; font-size: clamp(34px, 5vw, 56px); }
+  .final p { color: var(--zinc-400); margin: 0 auto; max-width: 580px; font-size: 18px; }
+  .final form.signup { margin: 40px auto 0; justify-content: center; }
+  .final form.signup input[type="email"] {
+    background: #18181B; border-color: #3F3F46; color: var(--white);
+  }
+  .final form.signup input[type="email"]::placeholder { color: var(--zinc-500); }
+  .final form.signup input[type="email"]:focus { border-color: var(--grad-fuchsia); box-shadow: 0 0 0 3px rgba(217,70,239,.22); }
+  .final form.signup button.primary {
+    background: var(--gradient); color: var(--white);
+    box-shadow: 0 4px 16px rgba(217, 70, 239, 0.32);
+  }
+  .final form.signup button.primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(217, 70, 239, 0.4); }
+  .final .signature { color: var(--zinc-500); font-size: 14px; margin-top: 36px; }
+  .final .signature em { color: var(--zinc-300); font-style: normal; }
+
+  /* ========== FOOTER ========== */
+  footer { padding: 42px 0 56px; background: var(--near-black); color: var(--zinc-500); font-size: 13.5px; }
+  footer .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 18px; }
+  footer .footer-logo svg { height: 28px; width: auto; }
+  footer a { color: var(--zinc-400); text-decoration: none; }
+  footer a:hover { color: var(--white); }
+  footer .tagline { font-size: 12px; color: var(--zinc-500); margin-top: 6px; }
+
+  @media (max-width: 720px) {
+    .hero { padding-top: 20px; padding-bottom: 28px; }
+    section.block, .final { padding-top: 72px; padding-bottom: 72px; }
+    nav.menu { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="top">
+  <div class="wrap">
+    <a href="/" class="logo-link" aria-label="mirror — home">
+      <svg width="160" height="32" viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="mirror">
+        <circle cx="38" cy="40" r="36" fill="#71717A" opacity="0.06"/>
+        <path d="M38 4 A36 36 0 0 0 38 76 A9 36 0 0 1 38 4 Z" fill="#71717A" opacity="0.18"/>
+        <path d="M38 4 A36 36 0 0 1 38 76 A22 36 0 0 0 38 4 Z" fill="#0A0A0A"/>
+        <text x="96" y="52" font-family="Satoshi, Inter, system-ui, sans-serif" font-size="38" font-weight="500" letter-spacing="-1" fill="#0A0A0A">mirror</text>
+      </svg>
+    </a>
+    <nav class="menu" aria-label="Primary">
+      <a href="#the-trap">The problem</a>
+      <a href="#the-solution">The solution</a>
+      <a href="#beyond">Beyond the choice</a>
+      <a href="#signup">Early access</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span> PERSONAL AI CONTEXT LAYER</span>
+    <h1>Don't migrate. Transcend.</h1>
+    <p class="lede">
+      Switching from ChatGPT to Claude. You'll spend the next week re-explaining who you are. Or you could get Mirror — one context layer above both, so <strong>switching tools never means starting over.</strong>
+    </p>
+
+    <form class="signup loops-form" id="signup" action="https://app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7" method="POST" novalidate onsubmit="trackConversion()">
+      <label class="sr" for="email-hero">Email address</label>
+      <input type="email" id="email-hero" name="email" placeholder="name@company.com" required autocomplete="email" autocapitalize="off" spellcheck="false" aria-required="true" />
+      <input type="hidden" name="source" value="google-ads-chatgpt-migration" />
+      <input type="hidden" name="utm_campaign" value="context-resurrector" />
+      <button type="submit" class="primary">Get early access</button>
+    </form>
+    <p class="consent"><strong>Limited access</strong> — rolling beta. We'll email when your spot opens. No spam, <a href="#">privacy</a>.</p>
+  </div>
+</section>
+
+<!-- ========== THE MIGRATION TRAP ========== -->
+<section id="the-trap" class="block">
+  <div class="wrap">
+    <div class="kicker">The migration trap</div>
+    <h2>Every switch resets the clock.</h2>
+    <p style="margin-bottom: 32px;">ChatGPT uninstalls spiked 295 percent when Claude 3.5 launched. But switching AI tools means losing everything you've taught it — your work style, your relationships, your decision history, your inside jokes. You start from zero.</p>
+
+    <div class="features">
+      <div class="feat">
+        <div class="num">01</div>
+        <h3>The exit cost is hidden</h3>
+        <p>ChatGPT uninstalls spiked 295 percent in a single day. But switching AI tools means losing everything you've taught it.</p>
+      </div>
+      <div class="feat">
+        <div class="num">02</div>
+        <h3>Export doesn't solve it</h3>
+        <p>Export your ChatGPT data. You get a JSON dump. Good luck making Claude understand it. The context you built is trapped.</p>
+      </div>
+      <div class="feat">
+        <div class="num">03</div>
+        <h3>The real problem</h3>
+        <p>The problem isn't which AI you use. It's that none of them let you take your context with you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== THE SOLUTION ========== -->
+<section id="the-solution" class="block tinted">
+  <div class="wrap">
+    <div class="kicker">Above the switch</div>
+    <h2>Mirror makes migration irrelevant.</h2>
+    <p style="margin-bottom: 32px;">Your context shouldn't live inside ChatGPT or Claude. It should live above them — persistent, reconciled, ready to follow you anywhere.</p>
+
+    <div class="features">
+      <div class="feat">
+        <div class="num">01</div>
+        <h3>Your context lives above any tool</h3>
+        <p>Mirror maintains your relationships, topics, and history independently. Use ChatGPT today, Claude tomorrow, Gemini next week. Mirror remembers.</p>
+      </div>
+      <div class="feat">
+        <div class="num">02</div>
+        <h3>No export/import needed</h3>
+        <p>Mirror builds your context from your actual digital life — emails, calendar, notes, meetings. Not from any AI tool's memory.</p>
+      </div>
+      <div class="feat">
+        <div class="num">03</div>
+        <h3>Switch freely, forever</h3>
+        <p>No vendor lock-in. No migration anxiety. The best AI tool for any task, with full context every time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BEYOND THE AI WARS ========== -->
+<section id="beyond" class="block manifesto">
+  <div class="wrap">
+    <div class="kicker">Beyond the ai wars</div>
+    <h2>The question isn't ChatGPT or Claude. It's: who owns your context?</h2>
+
+    <p class="intro">
+      Right now, your AI memory is a hostage. ChatGPT remembers you — inside ChatGPT. Claude remembers you — inside Claude. The moment you switch, you start from zero. This is the vendor lock-in nobody talks about.
+    </p>
+
+    <p style="margin-top: 32px;">
+      Mirror changes the equation. Your context graph is yours. It sits above any AI tool, follows you anywhere, and makes every tool smarter about you from the first message. You're not choosing between AI companies. You're choosing a memory layer that makes every choice better.
+    </p>
+
+    <p style="margin-top: 22px;">
+      Don't choose an AI. Choose a memory layer.
+    </p>
+  </div>
+</section>
+
+<!-- ========== HOW IT FITS ========== -->
+<section class="block complementary">
+  <div class="wrap">
+    <div class="kicker">How it fits</div>
+    <h2>Not a replacement. The layer beside it.</h2>
+    <p style="margin-bottom: 32px;">
+      ChatGPT, Claude, Gemini — they're brilliant but stateless. Every chat is a fresh start, trained on everyone, optimized for no one. Mirror is the <strong>personal context layer beside them</strong> — the memory you carry with you across every tool, so when you show up in any of those playgrounds, you show up as yourself.
+    </p>
+
+    <div class="stack">
+      <div class="stack-card">
+        <h3>Your AI playgrounds</h3>
+        <ul>
+          <li>ChatGPT</li>
+          <li>Claude</li>
+          <li>Gemini</li>
+          <li>Your favorite agent</li>
+        </ul>
+        <p style="font-size:13px; color:var(--zinc-400); margin-top:14px;">Open-ended. Brilliant. Trained on everyone.</p>
+      </div>
+      <div class="stack-plus">+</div>
+      <div class="stack-card mirror-card">
+        <h3>mirror</h3>
+        <ul>
+          <li>Your persistent memory</li>
+          <li>Your reconciled context</li>
+          <li>Proactive delivery</li>
+          <li>Institutional-grade security</li>
+        </ul>
+        <p style="font-size:13px; color:var(--charcoal); margin-top:14px;">Personal. Singular. Trained on <em>you</em>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TEAM ========== -->
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">Who's building this</div>
+    <h2>Not a side project. Not a wrapper.</h2>
+    <p>Mirror is built by a seasoned team of senior engineers, product leaders, and operators from <strong>Stanford, Microsoft, Amazon</strong>, and publicly listed consumer companies. We've shipped security infrastructure at cloud scale, taught NLP and deep learning at research level, and taken products from zero to IPO. This isn't our first build — it's the one that matters most.</p>
+  </div>
+</section>
+
+<!-- ========== FINAL CTA — dark sandwich ========== -->
+<section class="block dark final">
+  <div class="wrap">
+    <h2>Your context shouldn't belong to any AI company.</h2>
+    <p>Mirror is the personal context layer that makes every switch painless and every AI tool smarter. One memory. No lock-in.</p>
+    <form class="signup loops-form" action="https://app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7" method="POST" novalidate onsubmit="trackConversion()">
+      <label class="sr" for="email-final">Email address</label>
+      <input type="email" id="email-final" name="email" placeholder="name@company.com" required autocomplete="email" autocapitalize="off" spellcheck="false" aria-required="true" />
+      <input type="hidden" name="source" value="google-ads-chatgpt-migration" />
+      <input type="hidden" name="utm_campaign" value="context-resurrector" />
+      <button type="submit" class="primary">Get early access</button>
+    </form>
+    <p class="consent" style="color: var(--zinc-500); font-size: 13px; margin-top: 14px; text-align: center;">One email when your beta slot opens. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-logo" aria-label="mirror">
+      <svg width="140" height="28" viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="mirror">
+        <circle cx="38" cy="40" r="36" fill="#FFFFFF" opacity="0.06"/>
+        <path d="M38 4 A36 36 0 0 0 38 76 A9 36 0 0 1 38 4 Z" fill="#FFFFFF" opacity="0.18"/>
+        <path d="M38 4 A36 36 0 0 1 38 76 A22 36 0 0 0 38 4 Z" fill="#FFFFFF"/>
+        <text x="96" y="52" font-family="Satoshi, Inter, system-ui, sans-serif" font-size="38" font-weight="500" letter-spacing="-1" fill="#FFFFFF">mirror</text>
+      </svg>
+      <div class="tagline">The missing layer for personal AI.</div>
+    </div>
+    <div>
+      © 2026 mirror &nbsp;·&nbsp;
+      <a href="mailto:contact@bymirror.ai">contact@bymirror.ai</a> &nbsp;·&nbsp;
+      <a href="https://x.com/bymirrorai" target="_blank" rel="noopener">@bymirrorai</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.loops-form').forEach(form => {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      try {
+        await fetch(form.action, {
+          method: 'POST',
+          body: new URLSearchParams(formData),
+          headers: { 'Accept': 'application/json' }
+        });
+        form.reset();
+      } catch (err) {
+        console.error('Form submission error:', err);
+      }
+    });
+  });
+</script>
+
+<!-- Funnel Tracking: scroll_50, cta_visible, form_focus -->
+<script>
+(function() {
+  // scroll_50 — fires when user scrolls past 50% of page
+  var scrollFired = false;
+  window.addEventListener('scroll', function() {
+    if (scrollFired) return;
+    var scrollPct = (window.scrollY + window.innerHeight) / document.body.scrollHeight;
+    if (scrollPct >= 0.5) {
+      scrollFired = true;
+      if (typeof gtag === 'function') gtag('event', 'scroll_50', { page: window.location.pathname });
+    }
+  }, { passive: true });
+
+  // cta_visible — fires when the first signup form enters viewport
+  var ctaObserved = false;
+  var ctaEl = document.querySelector('form.signup, form.loops-form');
+  if (ctaEl && 'IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting && !ctaObserved) {
+        ctaObserved = true;
+        if (typeof gtag === 'function') gtag('event', 'cta_visible', { page: window.location.pathname });
+        obs.disconnect();
+      }
+    }, { threshold: 0.5 });
+    obs.observe(ctaEl);
+  }
+
+  // form_focus — fires when user clicks into any email input
+  var focusFired = false;
+  document.querySelectorAll('input[type="email"]').forEach(function(input) {
+    input.addEventListener('focus', function() {
+      if (focusFired) return;
+      focusFired = true;
+      if (typeof gtag === 'function') gtag('event', 'form_focus', { page: window.location.pathname });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

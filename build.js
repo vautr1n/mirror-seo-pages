@@ -34,6 +34,20 @@ if (fs.existsSync(OG_SRC)) {
   console.log('  ✓ /og (social images)');
 }
 
+// Copy raw HTML landing pages (paid-ads pages) as-is: raw/<slug>/index.html → dist/<slug>/index.html
+const RAW_SRC = path.join(__dirname, 'raw');
+if (fs.existsSync(RAW_SRC)) {
+  for (const entry of fs.readdirSync(RAW_SRC, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    const srcIndex = path.join(RAW_SRC, entry.name, 'index.html');
+    if (!fs.existsSync(srcIndex)) continue;
+    const destDir = path.join(DIST_DIR, entry.name);
+    fs.mkdirSync(destDir, { recursive: true });
+    fs.copyFileSync(srcIndex, path.join(destDir, 'index.html'));
+    console.log(`  ✓ /${entry.name} (raw landing page)`);
+  }
+}
+
 // Copy waitlist page as /waitlist/ and homepage (with correct canonical for each)
 if (fs.existsSync(path.join(__dirname, 'waitlist.html'))) {
   const waitlistContent = fs.readFileSync(path.join(__dirname, 'waitlist.html'), 'utf-8');
