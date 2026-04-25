@@ -409,8 +409,45 @@
   .little-fig:nth-child(5) { animation-delay: 2.4s; }
   @keyframes rise { 0% { opacity: 0; transform: translateY(0); } 30% { opacity: 0.9; } 100% { opacity: 0; transform: translateY(-180px); } }
 
-  /* SCREEN 15 — Quiet drift */
-  .drift-stage { flex: 1; display: flex; align-items: flex-end; justify-content: space-around; padding: 0 12px 12px; }
+  /* SCREEN 15 — Disambiguator */
+  .disambig-stage { flex: 1; display: flex; flex-direction: column; gap: 10px; padding: 8px 4px; justify-content: center; position: relative; }
+  .disambig-row { display: flex; align-items: center; gap: 12px; padding: 10px 12px; background: rgba(224,33,138,0.05); border: 1px solid rgba(224,33,138,0.2); border-radius: 12px; position: relative; }
+  .disambig-row.near-miss { border-color: var(--fuchsia); box-shadow: 0 0 16px rgba(224,33,138,0.3); animation: nearmiss 2.4s ease-in-out infinite; }
+  @keyframes nearmiss { 0%,100% { box-shadow: 0 0 16px rgba(224,33,138,0.3); } 50% { box-shadow: 0 0 28px rgba(224,33,138,0.55); } }
+  .disambig-initial { width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; background: var(--fuchsia); color: white; font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 600; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 14px rgba(224,33,138,0.4); }
+  .disambig-context { font-size: 11px; color: var(--grey-light); line-height: 1.35; flex: 1; }
+  .disambig-context strong { color: var(--offwhite); font-weight: 500; }
+  .disambig-icons { display: flex; gap: 4px; opacity: 0.8; }
+  .disambig-icon { width: 16px; height: 16px; border-radius: 3px; background: rgba(245,245,240,0.12); display: flex; align-items: center; justify-content: center; font-size: 9px; color: var(--grey-light); }
+  .disambig-break { height: 1px; background: repeating-linear-gradient(90deg, transparent 0 6px, rgba(224,33,138,0.4) 6px 10px); margin: 0 36px; }
+
+  /* SCREEN 16 — One-Question Person */
+  .topic-list { flex: 1; display: flex; flex-direction: column; gap: 10px; justify-content: center; padding: 4px 2px; }
+  .topic-row { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 10px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); }
+  .topic-initial { width: 38px; flex-shrink: 0; font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 600; color: var(--fuchsia); letter-spacing: 0.04em; }
+  .topic-arrow { color: var(--grey); font-size: 11px; flex-shrink: 0; }
+  .topic-name { flex: 1; font-size: 12px; color: var(--offwhite); font-weight: 500; letter-spacing: 0.02em; }
+  .topic-name em { color: var(--grey-light); font-style: italic; font-weight: 400; font-size: 10.5px; display: block; margin-top: 2px; }
+  .topic-pct { font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 600; color: var(--fuchsia); padding: 4px 10px; background: rgba(224,33,138,0.1); border-radius: 100px; flex-shrink: 0; }
+
+  /* SCREEN 17 — Lineage */
+  .lineage-stage { flex: 1; position: relative; padding: 30px 6px 24px; display: flex; align-items: center; }
+  .lineage-track { position: relative; width: 100%; height: 60px; }
+  .lineage-line { position: absolute; top: 50%; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent 0%, var(--fuchsia) 8%, var(--fuchsia) 92%, transparent 100%); transform: translateY(-50%); box-shadow: 0 0 12px rgba(224,33,138,0.5); }
+  .lineage-node { position: absolute; top: 50%; transform: translate(-50%, -50%); width: 14px; height: 14px; border-radius: 50%; background: rgba(224,33,138,0.5); border: 2px solid var(--fuchsia); }
+  .lineage-node.origin, .lineage-node.approval { width: 20px; height: 20px; background: var(--fuchsia); box-shadow: 0 0 16px var(--fuchsia); }
+  .lineage-node.thick { width: 18px; height: 18px; }
+  .lineage-channel { position: absolute; top: 50%; transform: translate(-50%, -50%); font-size: 9px; color: var(--offwhite); background: var(--ink); padding: 2px 5px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.08); letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; }
+  .lineage-label { position: absolute; font-size: 9px; color: var(--grey); letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; white-space: nowrap; }
+  .lineage-label.top { top: -8px; }
+  .lineage-label.bottom { bottom: -10px; }
+  .lineage-label em { color: var(--fuchsia); font-style: normal; font-weight: 700; }
+  .lineage-people { position: absolute; top: -22px; left: 50%; transform: translateX(-50%); display: flex; gap: 3px; }
+  .lineage-person { width: 14px; height: 14px; border-radius: 50%; background: rgba(245,245,240,0.18); border: 1px solid rgba(245,245,240,0.3); font-size: 7px; color: var(--offwhite); display: flex; align-items: center; justify-content: center; font-weight: 700; }
+
+  /* SCREEN 18 — Quiet drift */
+  .drift-stage { flex: 1; display: flex; align-items: flex-end; justify-content: space-around; padding: 0 12px 12px; position: relative; background: linear-gradient(180deg, transparent 0%, transparent 30%, rgba(245,245,240,0.04) 70%, rgba(245,245,240,0.10) 100%); border-radius: 14px; overflow: hidden; }
+  .drift-stage::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 100%, rgba(245,245,240,0.08), transparent 65%); pointer-events: none; }
   .ghost-figure { display: flex; flex-direction: column; align-items: center; gap: 6px; }
   .ghost-fig {
     background: var(--fuchsia);
@@ -448,26 +485,27 @@
   }
 
   /* SCREEN 17 — Mirror Archetype */
-  .arch-icon-stage { flex: 1; display: flex; align-items: center; justify-content: center; position: relative; }
+  .arch-icon-stage { display: flex; align-items: center; justify-content: center; position: relative; height: 150px; margin: 8px 0 4px; }
   .arch-icon-main {
-    width: 140px; height: 140px;
-    background: rgba(224,33,138,0.08);
+    width: 110px; height: 110px;
+    background: rgba(224,33,138,0.10);
     border: 2px solid var(--fuchsia);
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 0 50px rgba(224,33,138,0.4);
+    box-shadow: 0 0 50px rgba(224,33,138,0.45);
     position: relative;
+    z-index: 2;
   }
   .arch-icon-main .glyph {
-    width: 50px; height: 70px;
+    width: 38px; height: 52px;
     background: var(--fuchsia);
-    clip-path: polygon(20% 0, 80% 0, 80% 35%, 100% 35%, 50% 100%, 0 35%, 20% 35%);
-    transform: rotate(180deg);
+    /* Inverted hourglass for The Bottleneck */
+    clip-path: polygon(0 0, 100% 0, 55% 50%, 100% 100%, 0 100%, 45% 50%);
   }
-  .arch-orbit { position: absolute; inset: 0; }
-  .arch-mini { position: absolute; width: 12px; height: 12px; background: rgba(245,245,240,0.2); border-radius: 50%; }
-  .archetypes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 12px; }
-  .arch-pill { padding: 7px 10px; border-radius: 8px; background: rgba(255,255,255,0.04); font-size: 10px; color: var(--grey-light); border: 1px solid rgba(255,255,255,0.05); text-align: center; letter-spacing: 0.04em; }
+  .arch-orbit { position: absolute; inset: 0; pointer-events: none; }
+  .arch-mini { position: absolute; width: 14px; height: 14px; background: rgba(245,245,240,0.18); border: 1px solid rgba(245,245,240,0.25); border-radius: 50%; }
+  .archetypes-bar { display: flex; gap: 4px; margin-top: 10px; }
+  .arch-pill { flex: 1; padding: 6px 4px; border-radius: 6px; background: rgba(255,255,255,0.04); font-size: 9px; color: var(--grey-light); border: 1px solid rgba(255,255,255,0.05); text-align: center; letter-spacing: 0.02em; }
   .arch-pill.you { background: var(--fuchsia); color: white; border-color: var(--fuchsia); font-weight: 700; box-shadow: 0 0 16px rgba(224,33,138,0.4); }
 
   /* SCREEN 18 — Portrait Double / share */
@@ -497,14 +535,14 @@
 
 <div class="header">
   <h1>Context Audit · <em>Wrapped v3</em></h1>
-  <p>18 screens · vertical 9:16 · swipeable · screenshot-grade. Copy v3 — clearer, warmer, aligned with the engineering spec (Dopel voice, initials only, spec-mandated lines preserved). Default Dopel name: <em>Noitbe</em> — your first name, mirrored.</p>
+  <p>21 screens · vertical 9:16 · swipeable · screenshot-grade. Copy v3 aligned with the engineering spec. Includes the new <em>"Mini-act — What only your Dopel could see"</em> trio (Cards 15-17): Disambiguator, One-Question Person, Lineage — the flagship context-graph demonstrations. Default Dopel name: <em>Noitbe</em> — your first name, mirrored.</p>
 </div>
 
 <div class="stack">
 
   <!-- 1 — THE CURTAIN -->
   <div class="card">
-    <div class="num">01 / 18</div>
+    <div class="num">01 / 21</div>
     <div class="label">The Curtain</div>
     <div class="ticker-stage">
       <div class="ticker-line l1">re: friday plans · weekly sync · q4 board prep · catching up · tomorrow 2pm · re: re: re: budget · investor faq · re: friday plans · weekly sync · q4 board prep · catching up · tomorrow 2pm · re: re: re: budget · investor faq</div>
@@ -519,7 +557,7 @@
 
   <!-- 2 — MEET YOUR DOPEL -->
   <div class="card">
-    <div class="num">02 / 18</div>
+    <div class="num">02 / 21</div>
     <div class="label">Meet Your Dopel</div>
     <div class="dopel-stage">
       <div class="silhouette-figure sil-user"></div>
@@ -536,7 +574,7 @@
 
   <!-- 3 — THE VOLUME -->
   <div class="card">
-    <div class="num">03 / 18</div>
+    <div class="num">03 / 21</div>
     <div class="label">The Volume</div>
     <div style="text-align:center; margin-top: 12px;">
       <div class="hero-num num-massive">1,124</div>
@@ -553,7 +591,7 @@
 
   <!-- 4 — THE ICEBERG -->
   <div class="card">
-    <div class="num">04 / 18</div>
+    <div class="num">04 / 21</div>
     <div class="label">The Iceberg</div>
     <div class="iceberg-stage">
       <div class="ice-label tip">147h · focus</div>
@@ -571,8 +609,8 @@
 
   <!-- 5 — MOST PRODUCTIVE HOUR -->
   <div class="card">
-    <div class="num">05 / 18</div>
-    <div class="label">Most Productive Hour</div>
+    <div class="num">05 / 21</div>
+    <div class="label">Your Sharpest Hour</div>
     <div class="clock-stage">
       <div class="clock-disc" id="clock-disc">
         <div class="clock-time">7:11 <small>AM</small></div>
@@ -586,7 +624,7 @@
 
   <!-- 6 — THE LOYALTY TEST -->
   <div class="card">
-    <div class="num">06 / 18</div>
+    <div class="num">06 / 21</div>
     <div class="label">The Loyalty Test</div>
     <div class="loyalty-pair">
       <div class="oval fast">
@@ -606,7 +644,7 @@
 
   <!-- 7 — THE CANCELLATIONS -->
   <div class="card">
-    <div class="num">07 / 18</div>
+    <div class="num">07 / 21</div>
     <div class="label">The Cancellations</div>
     <div class="copy small">47 meetings cancelled this year.<br/><span style="color: var(--grey-light); font-size: 17px;">14 of them on the same person.</span></div>
     <div class="cancel-bars">
@@ -623,8 +661,8 @@
 
   <!-- 8 — THE TONAL SHIFT -->
   <div class="card">
-    <div class="num">08 / 18</div>
-    <div class="label">The Tonal Shift</div>
+    <div class="num">08 / 21</div>
+    <div class="label">Something Happened</div>
     <div class="line-stage">
       <svg viewBox="0 0 320 220" preserveAspectRatio="none">
         <defs>
@@ -648,7 +686,7 @@
 
   <!-- 9 — THE CRUSH -->
   <div class="card">
-    <div class="num">09 / 18</div>
+    <div class="num">09 / 21</div>
     <div class="label">The Crush</div>
     <div class="crush-stage">
       <div style="text-align:center;">
@@ -664,7 +702,7 @@
 
   <!-- 10 — THE DRAFTS -->
   <div class="card">
-    <div class="num">10 / 18</div>
+    <div class="num">10 / 21</div>
     <div class="label">The Drafts You Didn't Send</div>
     <div class="copy small">14 messages drafted in anger.<br/><span style="color: var(--grey-light);">Sent: 3. Still in your drafts folder: <em>11</em>.</span></div>
     <div class="phone-frame">
@@ -685,7 +723,7 @@
 
   <!-- 11 — THE CEMETERY -->
   <div class="card">
-    <div class="num">11 / 18</div>
+    <div class="num">11 / 21</div>
     <div class="label">The Cemetery</div>
     <div class="copy small">You wrote 412 notes this year.<br/><span style="color: var(--grey-light);">You re-read <em>34</em>.</span></div>
     <div class="stone-field">
@@ -703,15 +741,15 @@
 
   <!-- 12 — THE OPEN LETTER -->
   <div class="card">
-    <div class="num">12 / 18</div>
+    <div class="num">12 / 21</div>
     <div class="label">The Open Letter</div>
     <div class="copy small">The reply you started writing on <em>June 12</em>.<br/>Then again on <em>August 4</em>.<br/>Then again <em>last Tuesday</em>.</div>
     <div class="email-app">
       <div class="email-row"><div class="from">Linda K.</div><div>Re: hiring plan v3</div></div>
       <div class="email-row haunted">
-        <div class="from">M.<span class="counter">3 drafts · 87d</span></div>
+        <div class="from">M.<span class="counter">87d</span></div>
         <div>Re: ████████ ████ ███</div>
-        <div class="preview">draft started Jun 12 · Aug 4 · last Tuesday — none sent</div>
+        <div class="preview">3 drafts started · Jun 12 · Aug 4 · last Tuesday · none sent</div>
       </div>
       <div class="email-row"><div class="from">VC Updates</div><div>Q3 portfolio newsletter</div></div>
       <div class="email-row"><div class="from">Sarah B.</div><div>Re: lunch next week</div></div>
@@ -723,7 +761,7 @@
 
   <!-- 13 — THE PHRASE -->
   <div class="card">
-    <div class="num">13 / 18</div>
+    <div class="num">13 / 21</div>
     <div class="label">The Phrase</div>
     <div class="copy small">You said sorry <em>1,247</em> times.<br/>You said thanks <em>612</em> times.</div>
     <div class="phrase-pair" style="margin-top: 10px;">
@@ -740,7 +778,7 @@
 
   <!-- 14 — THE VAMPIRE -->
   <div class="card">
-    <div class="num">14 / 18</div>
+    <div class="num">14 / 21</div>
     <div class="label">The Vampire</div>
     <div class="copy small">You called 247 meetings.<br/>89 had no agenda.<br/><em>412 humans gave you 187 hours of their year.</em></div>
     <div class="vault-stage">
@@ -762,9 +800,107 @@
     <div class="sig">— "Your Dopel is the first to mention it." — Noitbe</div>
   </div>
 
-  <!-- 15 — THE QUIET DRIFT -->
+  <!-- 15 — THE DISAMBIGUATOR (graph capability #1) -->
   <div class="card">
-    <div class="num">15 / 18</div>
+    <div class="num">15 / 21</div>
+    <div class="label">The Disambiguator</div>
+    <div class="copy small">You have <em>three S.s</em> in your inbox.</div>
+    <div class="disambig-stage">
+      <div class="disambig-row">
+        <div class="disambig-initial">S.</div>
+        <div class="disambig-context"><strong>One you hired in March.</strong><br/>Your colleague.</div>
+        <div class="disambig-icons"><div class="disambig-icon">✉</div><div class="disambig-icon">📅</div></div>
+      </div>
+      <div class="disambig-break"></div>
+      <div class="disambig-row">
+        <div class="disambig-initial">S.</div>
+        <div class="disambig-context"><strong>One is your investor.</strong><br/>Quarterly updates.</div>
+        <div class="disambig-icons"><div class="disambig-icon">$</div><div class="disambig-icon">✉</div></div>
+      </div>
+      <div class="disambig-break"></div>
+      <div class="disambig-row near-miss">
+        <div class="disambig-initial">S.</div>
+        <div class="disambig-context"><strong>One emailed you about a contract you never signed.</strong><br/><em>Near-miss · Jun 12, 11:47 PM.</em></div>
+        <div class="disambig-icons"><div class="disambig-icon">📄</div></div>
+      </div>
+    </div>
+    <div class="compare">On June 12 at 11:47 PM, you started typing the wrong reply to the wrong S. <strong>Your Dopel caught it half a second before you did.</strong></div>
+    <div class="sig">— "Tracked as three different people for 365 days. Always." — Noitbe</div>
+  </div>
+
+  <!-- 16 — THE ONE-QUESTION PERSON (graph capability #2) -->
+  <div class="card">
+    <div class="num">16 / 21</div>
+    <div class="label">The One-Question Person</div>
+    <div class="copy small">With each name in your inbox, <em>you ask one specific question</em>.</div>
+    <div class="topic-list">
+      <div class="topic-row">
+        <div class="topic-initial">M.B.</div>
+        <div class="topic-arrow">→</div>
+        <div class="topic-name">pricing<em>almost always</em></div>
+        <div class="topic-pct">71%</div>
+      </div>
+      <div class="topic-row">
+        <div class="topic-initial">D.T.</div>
+        <div class="topic-arrow">→</div>
+        <div class="topic-name">customers<em>never written about anything else</em></div>
+        <div class="topic-pct">84%</div>
+      </div>
+      <div class="topic-row">
+        <div class="topic-initial">S.K.</div>
+        <div class="topic-arrow">→</div>
+        <div class="topic-name">hiring<em>then, sometimes, your weekend</em></div>
+        <div class="topic-pct">62%</div>
+      </div>
+      <div class="topic-row">
+        <div class="topic-initial">L.K.</div>
+        <div class="topic-arrow">→</div>
+        <div class="topic-name">the board<em>only the board</em></div>
+        <div class="topic-pct">93%</div>
+      </div>
+    </div>
+    <div class="sig">— "Your Dopel knows what each name in your inbox is for." — Noitbe</div>
+  </div>
+
+  <!-- 17 — THE LINEAGE (graph capability #3) -->
+  <div class="card">
+    <div class="num">17 / 21</div>
+    <div class="label">The Lineage</div>
+    <div class="copy small">Your biggest decision this year started as a single sentence in a <em>note</em> on <em>March 4</em>.</div>
+    <div class="lineage-stage">
+      <div class="lineage-track">
+        <div class="lineage-line"></div>
+        <div class="lineage-node origin" style="left: 4%;"></div>
+        <div class="lineage-channel" style="left: 4%; top: -22px;">note</div>
+        <div class="lineage-label top" style="left: 4%; transform: translateX(-50%); top: -28px;"><em>origin</em></div>
+        <div class="lineage-label bottom" style="left: 4%; transform: translateX(-50%);">Mar 4</div>
+
+        <div class="lineage-node" style="left: 22%;"></div>
+        <div class="lineage-channel" style="left: 22%; top: -22px;">email</div>
+
+        <div class="lineage-node thick" style="left: 38%;"></div>
+        <div class="lineage-channel" style="left: 38%; top: -22px;">mtg</div>
+
+        <div class="lineage-node" style="left: 52%;"></div>
+        <div class="lineage-channel" style="left: 52%; top: -22px;">doc</div>
+
+        <div class="lineage-node thick" style="left: 70%;"></div>
+        <div class="lineage-channel" style="left: 70%; top: -22px;">mtg</div>
+
+        <div class="lineage-node approval" style="left: 92%;"></div>
+        <div class="lineage-channel" style="left: 92%; top: -22px;">email</div>
+        <div class="lineage-label top" style="left: 92%; transform: translateX(-50%); top: -28px;"><em>approved</em></div>
+        <div class="lineage-label bottom" style="left: 92%; transform: translateX(-50%);">Oct 8</div>
+      </div>
+    </div>
+    <div class="sub">It moved through <strong>87 emails</strong>, <strong>14 meetings</strong>, <strong>6 docs</strong>, and <strong>23 people</strong>.</div>
+    <div class="compare">It was approved on <strong>October 8</strong>. <em>You haven't reviewed it since.</em></div>
+    <div class="sig">— "Your Dopel remembers every step." — Noitbe</div>
+  </div>
+
+  <!-- 18 — THE QUIET DRIFT -->
+  <div class="card">
+    <div class="num">18 / 21</div>
     <div class="label">The Quiet Drift</div>
     <div class="copy small">Three people who used to matter to you haven't heard from you in <em>62 to 94 days</em>.</div>
     <div class="drift-stage">
@@ -777,10 +913,10 @@
     <div class="sig">— Noitbe, your Dopel</div>
   </div>
 
-  <!-- 16 — MBTI -->
+  <!-- 19 — MBTI -->
   <div class="card">
-    <div class="num">16 / 18</div>
-    <div class="label">Your MBTI · From Your Behavior</div>
+    <div class="num">19 / 21</div>
+    <div class="label">Your MBTI · Read From Your Data</div>
     <div class="axes">
       <div class="axis">
         <div class="axis-letter">E</div>
@@ -808,33 +944,46 @@
       </div>
     </div>
     <div class="mbti-result">INFJ</div>
-    <div class="compare center">Your Dopel is <strong>87% sure</strong>. Not from a quiz — from a year of how you actually behave. <strong>You're the 11th INFJ your Dopel has met.</strong></div>
+    <div class="copy center small" style="margin-top: 6px; font-size: 16px;">Your Dopel is <em>87%</em> sure.</div>
+    <div class="compare center">Not from a quiz — from a year of how you actually behave. <strong>You're the 11th INFJ your Dopel has met.</strong></div>
     <div class="sig center">Tap any axis to see the receipts.</div>
   </div>
 
-  <!-- 17 — MIRROR ARCHETYPE -->
+  <!-- 20 — MIRROR ARCHETYPE -->
   <div class="card">
-    <div class="num">17 / 18</div>
+    <div class="num">20 / 21</div>
     <div class="label">Your Mirror Archetype</div>
-    <div class="copy" style="margin-top: 6px;">You are :</div>
-    <div class="hero-num" style="font-size: 44px; line-height: 1;">The Bottleneck.</div>
-    <div class="quote" style="font-size: 12px; margin-top: 10px;">"<em>Twenty-three</em> teams in 3 companies are quietly waiting for one specific tab in your browser. You haven't opened it yet. <em>You will. You always do. They will forgive you. They always do.</em>"</div>
-    <div class="archetypes-grid">
+    <div class="copy" style="margin-top: 4px;">You are: <span style="color: var(--fuchsia);">The Bottleneck.</span></div>
+    <div class="arch-icon-stage">
+      <div class="arch-orbit">
+        <div class="arch-mini" style="top: 8%; left: 50%; transform: translateX(-50%);"></div>
+        <div class="arch-mini" style="top: 28%; right: 12%;"></div>
+        <div class="arch-mini" style="bottom: 28%; right: 12%;"></div>
+        <div class="arch-mini" style="bottom: 8%; left: 50%; transform: translateX(-50%);"></div>
+        <div class="arch-mini" style="bottom: 28%; left: 12%;"></div>
+        <div class="arch-mini" style="top: 28%; left: 12%;"></div>
+      </div>
+      <div class="arch-icon-main">
+        <div class="glyph"></div>
+      </div>
+    </div>
+    <div class="quote" style="font-size: 11.5px; margin-top: 4px;">"<em>Twenty-three</em> teams in 3 companies are quietly waiting for one specific tab in your browser. You haven't opened it yet. <em>You will. You always do. They will forgive you. They always do.</em>"</div>
+    <div class="archetypes-bar">
       <div class="arch-pill">Scatterer</div>
       <div class="arch-pill you">Bottleneck</div>
       <div class="arch-pill">Ghost</div>
       <div class="arch-pill">Collector</div>
       <div class="arch-pill">Drainer</div>
       <div class="arch-pill">Fortress</div>
-      <div class="arch-pill" style="grid-column: span 2;">Multiplier</div>
+      <div class="arch-pill">Multiplier</div>
     </div>
     <div class="compare">One of 247 Bottlenecks. <strong>INFJ × Bottleneck</strong> — your Dopel hasn't met another one this year.</div>
     <div class="sig">— Noitbe, your Dopel</div>
   </div>
 
-  <!-- 18 — PORTRAIT DOUBLE -->
+  <!-- 21 — PORTRAIT DOUBLE -->
   <div class="card">
-    <div class="num">18 / 18</div>
+    <div class="num">21 / 21</div>
     <div class="label">Portrait Double</div>
     <div class="copy center" style="font-size: 20px; margin-top: 4px;">A year is a long thing to read alone.<br/><span style="font-size: 13px; color: var(--grey-light);"><em>Now go show them.</em></span></div>
     <div class="portrait-stage">
